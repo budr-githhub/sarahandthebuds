@@ -240,3 +240,7 @@ Source: `src/components/SiteHeader.astro` and `SiteFooter.astro`.
 - Booking email: booksarahandbud@gmail.com
 - Bud’s radio show and solo work at Plan & Adapt → `https://planandadapt.com/music`
 - Accessibility link: Skip to content → `#main`
+
+## Style-guide presentation
+
+Headings display uppercase through CSS; names retain their correct ampersands in source. Show times use uppercase AM/PM, a preceding space, and an en dash. The homepage uses the supplied S&B microphone artwork with the full band name nearby.

@@ -31,3 +31,7 @@ See [migration notes](docs/migration.md) for the completed separation and ongoin
 ## Editing shows
 
 Edit `src/data/events.json` for the combined calendar. Dates use YYYY-MM-DD and times HH:MM in America/New_York. Preserve unknown fields as omitted. Run `pnpm build` and review before release. See [dashboard](docs/dashboard.md) for current deployment status.
+
+## Visual identity
+
+Follow [the S&B style guide](docs/style-guide.md) for colors, typography, logo artwork, photography and promotional materials. Its original DOCX is archived in docs/assets.

@@ -12,3 +12,5 @@ Start with the dashboard. These documents use Plan & Adapt's naming and ownershi
 | [Migration notes](migration.md) | Band/radio/solo separation and calendar dependencies |
 
 Shared agent rules live in [AGENTS.md](../AGENTS.md); Claude imports them from [CLAUDE.md](../CLAUDE.md). Do not copy Plan & Adapt's unrelated coaching, email or domain settings into this project.
+
+- [Visual identity / style guide](style-guide.md): Bud’s supplied September 2026 guide and original artwork reference.

@@ -10,6 +10,10 @@ Sarah & the Buds is an independent Astro static site for the full band and Sarah
 
 Unless authorized by Bud in the current conversation, do not commit, push, deploy, modify DNS, delete files, or add significant dependencies/services. Explain replacements before overwriting existing content. Existing authorization in the conversation remains valid within its scope; do not ask again for the same action. Repository preparation does not itself authorize a production release or DNS cutover.
 
+## Visual identity memory
+
+Read [the S&B style guide](docs/style-guide.md) before visual or promotional changes. It supersedes the original Plan & Adapt palette and serif typography. Use supplied logo artwork, never retyped S&B. Preserve natural performer photos and unknown lineup assignments.
+
 ## Project principles
 
 Prefer simple, accessible, fast, static solutions with minimal JavaScript and no database. Keep changes small and reviewable. Do not invent biographies, recordings, testimonials, performance dates, performer assignments, or booking terms. Preserve the existing band and duo distinction. Bud's radio show and solo work belong on Plan & Adapt.
