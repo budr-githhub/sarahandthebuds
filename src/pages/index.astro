@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import songbook from "../data/songbook.json";
 
 // Migrated from Plan & Adapt; see docs/migration.md.
 const bookingContexts = [
@@ -16,66 +17,65 @@ const bookingContexts = [
 // Sample repertoire, organized by artist and alphabetized by artist then
 // song (a leading "The" is ignored for sorting). Drawn title-level from the
 // band's own master song list; a small sample of a 180+ song book.
-const coversByArtist = [
-  { artist: "The Band", songs: ["Up on Cripple Creek"] },
-  { artist: "The Beatles", songs: ["Blackbird", "Hey Jude"] },
-  { artist: "Bob Dylan", songs: ["Like a Rolling Stone"] },
-  { artist: "Boston", songs: ["Peace of Mind"] },
-  { artist: "boygenius", songs: ["Not Strong Enough"] },
-  { artist: "Chappell Roan", songs: ["Pink Pony Club"] },
-  { artist: "Coldplay", songs: ["Yellow"] },
-  { artist: "Counting Crows", songs: ["Accidentally in Love"] },
-  { artist: "The Cranberries", songs: ["Zombie"] },
-  { artist: "Dolly Parton", songs: ["Jolene"] },
-  { artist: "Ella Langley", songs: ["Choosin' Texas"] },
-  { artist: "Elle King & Tyler Childers", songs: ["Jersey Giant"] },
-  { artist: "First Aid Kit", songs: ["Emmylou"] },
-  { artist: "Fleetwood Mac", songs: ["Landslide"] },
-  { artist: "Glen Hansard & Markéta Irglová", songs: ["Low Rising"] },
-  { artist: "Gracie Abrams", songs: ["That's So True"] },
-  { artist: "Green Day", songs: ["Basket Case"] },
-  { artist: "Guns N' Roses / Sheryl Crow", songs: ["Sweet Child o' Mine"] },
-  { artist: "Jimmy Eat World", songs: ["The Middle"] },
-  { artist: "John Denver", songs: ["Take Me Home, Country Roads"] },
-  { artist: "Kacey Musgraves", songs: ["The Architect"] },
-  { artist: "Nancy Sinatra", songs: ["These Boots Are Made for Walkin'"] },
-  { artist: "Neil Diamond", songs: ["Sweet Caroline"] },
-  { artist: "Nelly Furtado", songs: ["I'm Like a Bird"] },
-  { artist: "Noah Kahan", songs: ["Stick Season"] },
-  { artist: "Oasis", songs: ["Champagne Supernova"] },
-  { artist: "Patsy Cline", songs: ["Crazy"] },
-  { artist: "Paul Simon", songs: ["Graceland"] },
-  { artist: "The Rolling Stones", songs: ["Paint It Black"] },
-  { artist: "Shania Twain", songs: ["Whose Bed Have Your Boots Been Under?"] },
-  { artist: "Stealers Wheel", songs: ["Stuck in the Middle with You"] },
-  { artist: "TLC", songs: ["No Scrubs"] },
-  { artist: "Tom Petty", songs: ["Free Fallin'", "I Won't Back Down"] },
-  { artist: "Townes Van Zandt", songs: ["Pancho and Lefty"] },
-  { artist: "Tracy Chapman", songs: ["Fast Car"] },
-  { artist: "Van Morrison", songs: ["Brown Eyed Girl"] },
-  { artist: "Willie Nelson", songs: ["Always on My Mind"] },
+const coversByArtist = songbook.sample;
+// One row per artist: two examples, with a third when the titles are short.
+const songRows = coversByArtist.map(({artist, songs}) => {
+  const examples = songs.slice(0, 2);
+  if (songs[2] && [...examples, songs[2]].join(" · ").length <= 55) examples.push(songs[2]);
+  return {artist, songs: examples};
+});
+
+
+const introductions = [
+  {
+    "src": "/images/music/sarah-and-the-buds-georgetown-underground-portrait.webp",
+    "alt": "The four members of Sarah & the Buds holding Georgetown Underground stickers.",
+    "width": 1636,
+    "height": 1920
+  },
+  {
+    "src": "/images/music/sarah-and-bud-portrait-with-guitar-and-microphone.webp",
+    "alt": "Sarah & Bud smiling with an acoustic guitar and microphone.",
+    "width": 1536,
+    "height": 1864
+  }
 ];
 
-// Real original titles from the "Our Songs" section of the master list,
-// alphabetized.
-const originals = [
-  "All the Real Girls",
-  "Bloom",
-  "Down to the River",
-  "Drive You Crazy",
-  "Going to Memphis",
-  "Home",
-  "Hope and Peace",
-  "Met My Muse",
-  "Met You in Nashville (Sha La La)",
-  "Promised Land",
-  "Saint Margaret's Hope",
-  "This Country",
-  "Under a Falling Moon",
-  "When You Loved Me",
+const newPhotos = [
+  {
+    "src": "/images/music/sarah-and-bud-performing-beside-wine-barrels.webp",
+    "alt": "Sarah & Bud performing beside wine barrels.",
+    "width": 1440,
+    "height": 1440
+  },
+  {
+    "src": "/images/music/sarah-and-the-buds-performing-in-wine-barrel-room.webp",
+    "alt": "Sarah & the Buds performing with vocals, guitar, drums and bass in a wine-barrel room.",
+    "width": 1920,
+    "height": 1440
+  },
+  {
+    "src": "/images/music/sarah-and-the-buds-band-portrait-in-barn.webp",
+    "alt": "The four members of Sarah & the Buds smiling together in a wooden barn.",
+    "width": 1920,
+    "height": 1268
+  },
+  {
+    "src": "/images/music/sarah-and-the-buds-outdoor-crowd-selfie.webp",
+    "alt": "Sarah & the Buds taking an outdoor group selfie with a crowd.",
+    "width": 1920,
+    "height": 1440
+  },
+  {
+    "src": "/images/music/sarah-and-the-buds-georgetown-storefront-with-show-sign.webp",
+    "alt": "Sarah & the Buds outside Georgetown Underground beside a chalkboard show sign.",
+    "width": 1920,
+    "height": 1440
+  }
 ];
 
 const gallery = [
+  { src: "/images/music/sarah-and-buds-georgetown-underground.webp", alt: "Sarah & the Buds outside Georgetown Underground with a chalkboard sign from a past show." },
   { src: "/images/music/facebook/sarah-and-buds-cover-band.jpg", alt: "Sarah & the Buds performing together as a full band." },
   { src: "/images/music/facebook/sarah-and-buds-stage-performance.jpg", alt: "Sarah & the Buds performing on an indoor stage." },
   { src: "/images/music/facebook/sarah-and-buds-porch-performance.jpg", alt: "Sarah & Bud playing an acoustic set on a porch." },
@@ -101,7 +101,7 @@ const musicGroupSchema = {
   ogImageAlt="Sarah & the Buds performing together as a full band."
   structuredData={musicGroupSchema}
 >
-  <div class="page-container music-page">
+  <div class="page-container music-page" id="top" tabindex="-1">
     <div class="page-content text-container">
       <div class="brand-intro"><img class="brand-mark" src="/images/brand/sb-mark.png" alt="S&B microphone mark" width="1124" height="797" /><h1>Sarah &amp; the Buds</h1></div>
       <p class="lede">
@@ -136,8 +136,9 @@ const musicGroupSchema = {
     <div class="music-hero">
       <div class="image-frame">
         <img
-          src="/images/music/sarah-and-buds-georgetown-underground.webp"
-          alt="Sarah & the Buds outside Georgetown Underground, a record shop and venue, with a chalkboard sign reading Sarah and the Buds."
+          src="/images/music/sarah-and-the-buds-band-only-hero.webp"
+          width="1542" height="1020" fetchpriority="high"
+          alt="The four members of Sarah & the Buds smiling together against a dark background."
         />
       </div>
     </div>
@@ -158,6 +159,16 @@ const musicGroupSchema = {
         > is the acoustic duo.
       </p>
 
+      <div class="introduction-photos">
+        {introductions.map((photo) => (
+          <figure>
+            <img src={photo.src} alt={photo.alt} width={photo.width} height={photo.height} loading="lazy" decoding="async" />
+          </figure>
+        ))}
+      </div>
+
+      <a class="back-to-top" href="#top">Back to top ↑</a>
+
       <h2 id="where-we-play" tabindex="-1">Where they play</h2>
       <p>Sarah &amp; the Buds and Sarah &amp; Bud are available for:</p>
       <ul class="booking-contexts">
@@ -169,54 +180,56 @@ const musicGroupSchema = {
           >booksarahandbud@gmail.com</a
         >.
       </p>
+      <a class="back-to-top" href="#top">Back to top ↑</a>
     </div>
 
     <section aria-labelledby="photos">
       <h2 id="photos" tabindex="-1">Photos</h2>
-      <div class="music-gallery">
-        {
-          gallery.map((img) => (
-            <div class="image-frame">
-              <img src={img.src} alt={img.alt} loading="lazy" />
-            </div>
-          ))
-        }
+      <div class="photo-gallery">
+        {[...gallery, ...newPhotos].map((photo) => (
+          <div class="image-frame">
+            <img src={photo.src} alt={photo.alt}
+              width={"width" in photo ? photo.width : undefined}
+              height={"height" in photo ? photo.height : undefined}
+              loading="lazy" decoding="async" />
+          </div>
+        ))}
       </div>
+      <a class="back-to-top" href="#top">Back to top ↑</a>
     </section>
 
     <div class="page-content text-container">
       <h2 id="songbook" tabindex="-1">A taste of the songbook</h2>
       <p>
-        A small sample from a book of more than 180 songs, organized by artist.
+        This is just a taste of our songbook—there are many more songs available.{" "}
+        <a href="/songbook">See the full song list &rarr;</a>{" "}
         Sarah &amp; the Buds also take requests; if you have a song in mind for
         your event, just ask.
       </p>
-      <ul class="repertoire">
-        {
-          coversByArtist.map((a) => (
-            <li>
-              <span class="repertoire-artist">{a.artist}</span>
-              <span class="repertoire-songs">{a.songs.join(" · ")}</span>
-            </li>
-          ))
-        }
-      </ul>
+      <details class="songbook-panel">
+        <summary>Browse the songbook <span>({songRows.length} artists · selected songs)</span></summary>
+        <ul class="repertoire songbook-rows">
+          {songRows.map((row) => (
+            <li><span class="repertoire-artist">{row.artist}</span><span class="repertoire-songs">{row.songs.join(" · ")}</span></li>
+          ))}
+        </ul>
+      </details>
+      <p><a href="/songbook">See the full song list &rarr;</a></p>
+
+      <a class="back-to-top" href="#top">Back to top ↑</a>
 
       <h2 id="originals" tabindex="-1">Originals</h2>
-      <p>
-        The band writes and performs its own songs, more than forty of them,
-        as a real part of the act, not an afterthought. A few:
-      </p>
-      <ul class="repertoire repertoire--originals">
-        {originals.map((o) => <li>{o}</li>)}
-      </ul>
+      <p>Original songs available by request. <a href="mailto:booksarahandbud@gmail.com?subject=Original%20song%20request">Ask us about our originals.</a></p>
+
+      <a class="back-to-top" href="#top">Back to top ↑</a>
 
       <h2 id="holidays" tabindex="-1">Holidays</h2>
       <p>
         For December bookings, the set makes room for Christmas favorites,
-        from "Feliz Navidad" to "Fairytale of New York," alongside Bud's
-        original holiday song, "Merry Mary."
+        from "Feliz Navidad" to "Fairytale of New York," with original songs available by request.
       </p>
+
+      <a class="back-to-top" href="#top">Back to top ↑</a>
 
       <h2 id="follow-along" tabindex="-1">Follow along</h2>
       <p>
@@ -236,11 +249,43 @@ const musicGroupSchema = {
           >Email Sarah &amp; Bud booking</a
         >
       </p>
+      <a class="back-to-top" href="#top">Back to top ↑</a>
     </div>
   </div>
 </BaseLayout>
 
 <style>
+  .songbook-rows li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 12px; padding-block: 8px; }
+  .songbook-rows .repertoire-artist { flex-shrink: 0; }
+  .back-to-top { display: inline-block; padding-block: 12px; font-size: var(--text-small); }
+  @media (max-width: 600px) { .songbook-rows li { display: block; } }
+
+  .songbook-panel { margin-block: 24px; border-block: 1px solid var(--color-muted); }
+  .songbook-panel summary { cursor: pointer; padding-block: 14px; font-weight: 600; }
+  .songbook-panel summary span { font-size: var(--text-small); font-weight: 400; }
+  .songbook-panel summary:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+
+  .introduction-photos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    margin-block: 24px 32px;
+    align-items: start;
+  }
+  .introduction-photos figure { margin: 0; min-width: 0; }
+  .introduction-photos img {
+    display: block; width: 100%; height: auto; aspect-ratio: 4 / 5;
+    object-fit: cover; object-position: center; border-radius: 8px;
+  }
+  .photo-gallery { columns: 3; column-gap: 16px; }
+  .photo-gallery .image-frame { break-inside: avoid; margin-bottom: 16px; }
+  .photo-gallery img { display: block; width: 100%; height: auto; }
+  @media (max-width: 900px) { .photo-gallery { columns: 2; } }
+  @media (max-width: 600px) {
+    .introduction-photos { grid-template-columns: 1fr; }
+    .photo-gallery { columns: 1; }
+  }
+
   .music-actions {
     display: flex;
     flex-wrap: wrap;

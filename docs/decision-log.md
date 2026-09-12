@@ -57,3 +57,43 @@ Append dated entries using Date, Decision, Reason, Alternatives considered, and 
 ## Apply supplied S&B visual identity
 
 Bud supplied Sarah-and-the-Buds-Style-Guide.docx version 1.0 (September 2026) and requested it be retained as project memory and applied to the site. It replaces the inherited green/cream serif design with Stage Black/Warm White and Avenir Next/Montserrat. Preserve the original logo as artwork, keep existing events and natural photos, and use uppercase AM/PM. Source document and text transcription are archived in docs; release remains subject to review.
+
+## Add approved natural photography
+
+**Date:** 2026-09-12
+
+**Decision:** Add seven prepared photos while keeping existing images. Use photo 10 instead of photo 11. Two introduction portraits distinguish the full band and acoustic duo; five gallery additions show performances, community and a past venue appearance.
+
+**Reason:** Bud approved these selections and requested additions to the existing site.
+
+**Alternatives considered:** Replacing existing photos or displaying all 15; neither matches the selected scope.
+
+**Impact:** WebP assets and descriptive captions added; no dependency, calendar or DNS change. Release pending review.
+
+## Hero and caption revision — 2026-09-12
+
+Bud requested pictures without visible captions and a band-only version of photo 4 at the top. Move the former hero into the gallery; preserve the original barn portrait in the introduction. A dark-background AI-edited hero is prepared for likeness review. Accessible alt text remains. This supersedes the earlier visible-caption plan; release remains pending.
+
+## Symmetric portraits and continuous gallery — 2026-09-12
+
+Bud requested matching band/duo image dimensions and removal of empty gallery spaces. Photo 10 now pairs with the duo in matching 4:5 frames, retaining all four band members. The original barn portrait moves into the gallery. All 12 gallery photos flow in responsive columns (three desktop, two tablet, one phone) at natural aspect ratios, eliminating separate grids and tall-row gaps. No captions; hero unchanged. Supersedes earlier placement notes.
+
+## Expanded collapsible songbook — 2026-09-12
+
+Bud requested more songs from artists with multiple entries. Expanded to 70 songs / 44 artists using the August master song list. Whole-songbook and multi-song artist disclosures use native details/summary without JavaScript. See [source inventory](songbook-source.md). Prepared in PR #5; not released.
+
+## Full songbook reference and compact rows — 2026-09-12
+
+Bud requested no artist disclosures, compact multi-song rows inside the overall collapsible songbook, a full reference page and section back-to-top links. `/songbook` now lists 184 deduplicated entries from the August master TOC: 137 covers, 41 originals, five holiday entries and one specialty song. Covers are title-only because the source does not consistently identify artists. The future-suggestions section is excluded. `src/data/songbook.json` holds metadata only. Homepage links to the full reference; both pages have section return links. This supersedes nested artist disclosures. Release pending in PR #5.
+
+## Artist examples and owner additions — 2026-09-12
+
+Bud requested exactly one homepage row per artist: roughly two examples, with a third for short titles and natural wrapping. Added owner-supplied With or Without You, One and Acrobat (U2); Into the Mystic (Van Morrison); Falling Slowly and Song of Good Hope (Glen Hansard & Markéta Irglová). Newly requested examples are prioritized. The full reference now contains 189 unique entries (Into the Mystic was already present); these additions are authorized by Bud beyond the August document. A second full-list link follows the collapsible section. Supersedes earlier row/count notes; release pending in PR #5.
+
+## Original songs by request — 2026-09-12
+
+Bud requested removal of the specialty section and no named originals yet. Both public pages now say “Original songs available by request” with a contact link. Removed original/specialty arrays from public songbook metadata and removed Merry Mary from the holiday listing and homepage copy. The source document remains unchanged. The reference displays 146 covers/seasonal entries (142 covers, four holiday selections), plus the request-only originals section. This supersedes earlier public counts and original-title lists. PR #5 remains pending release.
+
+## Inline spacing correction — 2026-09-12
+
+Reviewed rendered paragraph/heading text on the homepage, songbook and shows pages. Astro removed source newline whitespace on both sides of the homepage inline full-song-list link. Explicit spaces now separate the surrounding sentences and link. Other reviewed prose boundaries render correctly. No wording changes.

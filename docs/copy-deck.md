@@ -244,3 +244,21 @@ Source: `src/components/SiteHeader.astro` and `SiteFooter.astro`.
 ## Style-guide presentation
 
 Headings display uppercase through CSS; names retain their correct ampersands in source. Show times use uppercase AM/PM, a preceding space, and an en dash. The homepage uses the supplied S&B microphone artwork with the full band name nearby.
+
+## Photo presentation
+
+Photos have no visible captions, as requested by Bud. Descriptive alt text remains for accessibility. The band-only adaptation of the barn portrait is the hero; the former Georgetown hero is now in the Photos gallery.
+
+## Songbook presentation
+
+This is just a taste of our songbook—there are many more songs available. See the full song list → `/songbook`. Sarah & the Buds also take requests; if you have a song in mind for your event, just ask.
+
+Control: Browse the songbook (44 artists · selected songs). One row per artist shows two examples, or three short titles, and wraps naturally. See the full song list appears above and below the disclosure.
+
+Reference page: Our songbook. 189 selections from our songbook, including covers, originals and seasonal favorites. Have a favorite in mind? Ask us about it.
+
+Sections: Covers, Our originals, Holiday songs, Specialty songs. Each section and each homepage section has a Back to top ↑ link. Complete titles are maintained in `src/data/songbook.json`.
+
+## Original songs by request — 2026-09-12
+
+Bud requested removal of the specialty section and no named originals yet. Both public pages now say “Original songs available by request” with a contact link. Removed original/specialty arrays from public songbook metadata and removed Merry Mary from the holiday listing and homepage copy. The source document remains unchanged. The reference displays 146 covers/seasonal entries (142 covers, four holiday selections), plus the request-only originals section. This supersedes earlier public counts and original-title lists. PR #5 remains pending release.
