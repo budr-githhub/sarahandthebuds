@@ -1,0 +1,293 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+// Migrated from Plan & Adapt; see docs/migration.md.
+const bookingContexts = [
+  "Private parties",
+  "Corporate events",
+  "Wineries & breweries",
+  "Festivals",
+  "Weddings",
+  "Porch concerts",
+  "Restaurants",
+  "Holiday parties",
+];
+
+// Sample repertoire, organized by artist and alphabetized by artist then
+// song (a leading "The" is ignored for sorting). Drawn title-level from the
+// band's own master song list; a small sample of a 180+ song book.
+const coversByArtist = [
+  { artist: "The Band", songs: ["Up on Cripple Creek"] },
+  { artist: "The Beatles", songs: ["Blackbird", "Hey Jude"] },
+  { artist: "Bob Dylan", songs: ["Like a Rolling Stone"] },
+  { artist: "Boston", songs: ["Peace of Mind"] },
+  { artist: "boygenius", songs: ["Not Strong Enough"] },
+  { artist: "Chappell Roan", songs: ["Pink Pony Club"] },
+  { artist: "Coldplay", songs: ["Yellow"] },
+  { artist: "Counting Crows", songs: ["Accidentally in Love"] },
+  { artist: "The Cranberries", songs: ["Zombie"] },
+  { artist: "Dolly Parton", songs: ["Jolene"] },
+  { artist: "Ella Langley", songs: ["Choosin' Texas"] },
+  { artist: "Elle King & Tyler Childers", songs: ["Jersey Giant"] },
+  { artist: "First Aid Kit", songs: ["Emmylou"] },
+  { artist: "Fleetwood Mac", songs: ["Landslide"] },
+  { artist: "Glen Hansard & Markéta Irglová", songs: ["Low Rising"] },
+  { artist: "Gracie Abrams", songs: ["That's So True"] },
+  { artist: "Green Day", songs: ["Basket Case"] },
+  { artist: "Guns N' Roses / Sheryl Crow", songs: ["Sweet Child o' Mine"] },
+  { artist: "Jimmy Eat World", songs: ["The Middle"] },
+  { artist: "John Denver", songs: ["Take Me Home, Country Roads"] },
+  { artist: "Kacey Musgraves", songs: ["The Architect"] },
+  { artist: "Nancy Sinatra", songs: ["These Boots Are Made for Walkin'"] },
+  { artist: "Neil Diamond", songs: ["Sweet Caroline"] },
+  { artist: "Nelly Furtado", songs: ["I'm Like a Bird"] },
+  { artist: "Noah Kahan", songs: ["Stick Season"] },
+  { artist: "Oasis", songs: ["Champagne Supernova"] },
+  { artist: "Patsy Cline", songs: ["Crazy"] },
+  { artist: "Paul Simon", songs: ["Graceland"] },
+  { artist: "The Rolling Stones", songs: ["Paint It Black"] },
+  { artist: "Shania Twain", songs: ["Whose Bed Have Your Boots Been Under?"] },
+  { artist: "Stealers Wheel", songs: ["Stuck in the Middle with You"] },
+  { artist: "TLC", songs: ["No Scrubs"] },
+  { artist: "Tom Petty", songs: ["Free Fallin'", "I Won't Back Down"] },
+  { artist: "Townes Van Zandt", songs: ["Pancho and Lefty"] },
+  { artist: "Tracy Chapman", songs: ["Fast Car"] },
+  { artist: "Van Morrison", songs: ["Brown Eyed Girl"] },
+  { artist: "Willie Nelson", songs: ["Always on My Mind"] },
+];
+
+// Real original titles from the "Our Songs" section of the master list,
+// alphabetized.
+const originals = [
+  "All the Real Girls",
+  "Bloom",
+  "Down to the River",
+  "Drive You Crazy",
+  "Going to Memphis",
+  "Home",
+  "Hope and Peace",
+  "Met My Muse",
+  "Met You in Nashville (Sha La La)",
+  "Promised Land",
+  "Saint Margaret's Hope",
+  "This Country",
+  "Under a Falling Moon",
+  "When You Loved Me",
+];
+
+const gallery = [
+  { src: "/images/music/facebook/sarah-and-buds-cover-band.jpg", alt: "Sarah & the Buds performing together as a full band." },
+  { src: "/images/music/facebook/sarah-and-buds-stage-performance.jpg", alt: "Sarah & the Buds performing on an indoor stage." },
+  { src: "/images/music/facebook/sarah-and-buds-porch-performance.jpg", alt: "Sarah & Bud playing an acoustic set on a porch." },
+  { src: "/images/music/facebook/sarah-singing-porch.jpg", alt: "Sarah singing during a porch performance." },
+  { src: "/images/music/facebook/bud-bass-porch.jpg", alt: "Bud playing bass at an outdoor show." },
+  { src: "/images/music/facebook/porchfest-crowd.jpg", alt: "A crowd gathered for an outdoor porch concert." },
+];
+
+const musicGroupSchema = {
+  "@context": "https://schema.org",
+  "@type": "MusicGroup",
+  name: "Sarah & the Buds",
+  genre: ["Rock", "Country", "Americana", "Folk", "Pop"],
+  areaServed: "Lexington and Midway, Kentucky area",
+  email: "booksarahandbud@gmail.com",
+};
+---
+
+<BaseLayout
+  title="Sarah & the Buds"
+  description="Sarah & the Buds (full band) and the Sarah & Bud acoustic duo: live music for weddings, wineries, festivals, and parties around Lexington and Midway, Kentucky."
+  ogImage="/images/music/facebook/sarah-and-buds-cover-band.jpg"
+  ogImageAlt="Sarah & the Buds performing together as a full band."
+  structuredData={musicGroupSchema}
+>
+  <div class="page-container music-page">
+    <div class="page-content text-container">
+      <h1>Sarah &amp; the Buds</h1>
+      <p class="lede">
+        <strong>Sarah &amp; the Buds</strong> is a full band built for singing
+        along. <strong>Sarah &amp; Bud</strong> is the acoustic duo version of
+        the same thing, for smaller rooms and porches.
+      </p>
+
+      <div class="music-actions">
+        <a class="button button-primary" href="/shows">Upcoming shows</a>
+        <a
+          class="button button-secondary"
+          href="mailto:booksarahandbud@gmail.com?subject=Booking%20inquiry"
+          >Book the band</a
+        >
+      </div>
+
+      <nav class="music-sections" aria-label="Music page sections">
+        <p>On this page</p>
+        <ul>
+          <li><a href="#band-and-duo">Band &amp; duo</a></li>
+          <li><a href="#where-we-play">Where we play</a></li>
+          <li><a href="#photos">Photos</a></li>
+          <li><a href="#songbook">Songbook</a></li>
+          <li><a href="#originals">Originals</a></li>
+          <li><a href="#holidays">Holidays</a></li>
+          <li><a href="#follow-along">Follow along</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="music-hero">
+      <div class="image-frame">
+        <img
+          src="/images/music/sarah-and-buds-georgetown-underground.webp"
+          alt="Sarah & the Buds outside Georgetown Underground, a record shop and venue, with a chalkboard sign reading Sarah and the Buds."
+        />
+      </div>
+    </div>
+
+    <div class="page-content text-container">
+      <p>
+        The set list is familiar and fun: rock, country, Americana, folk, and
+        pop you already know, played so people can sing along. Woven through it
+        are the band's own originals, which are as much a part of a night as
+        the covers.
+      </p>
+
+      <h2 id="band-and-duo" tabindex="-1">The band and the duo</h2>
+      <p>
+        <strong>Sarah &amp; the Buds</strong> is the full-band experience, with
+        more sound and more energy for a bigger room or event. <strong
+          >Sarah &amp; Bud</strong
+        > is the acoustic duo.
+      </p>
+
+      <h2 id="where-we-play" tabindex="-1">Where they play</h2>
+      <p>Sarah &amp; the Buds and Sarah &amp; Bud are available for:</p>
+      <ul class="booking-contexts">
+        {bookingContexts.map((c) => <li>{c}</li>)}
+      </ul>
+      <p>
+        Booking pricing is available on request. To check a date or ask about a
+        show, email <a href="mailto:booksarahandbud@gmail.com?subject=Booking%20inquiry"
+          >booksarahandbud@gmail.com</a
+        >.
+      </p>
+    </div>
+
+    <section aria-labelledby="photos">
+      <h2 id="photos" tabindex="-1">Photos</h2>
+      <div class="music-gallery">
+        {
+          gallery.map((img) => (
+            <div class="image-frame">
+              <img src={img.src} alt={img.alt} loading="lazy" />
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    <div class="page-content text-container">
+      <h2 id="songbook" tabindex="-1">A taste of the songbook</h2>
+      <p>
+        A small sample from a book of more than 180 songs, organized by artist.
+        Sarah &amp; the Buds also take requests; if you have a song in mind for
+        your event, just ask.
+      </p>
+      <ul class="repertoire">
+        {
+          coversByArtist.map((a) => (
+            <li>
+              <span class="repertoire-artist">{a.artist}</span>
+              <span class="repertoire-songs">{a.songs.join(" · ")}</span>
+            </li>
+          ))
+        }
+      </ul>
+
+      <h2 id="originals" tabindex="-1">Originals</h2>
+      <p>
+        The band writes and performs its own songs, more than forty of them,
+        as a real part of the act, not an afterthought. A few:
+      </p>
+      <ul class="repertoire repertoire--originals">
+        {originals.map((o) => <li>{o}</li>)}
+      </ul>
+
+      <h2 id="holidays" tabindex="-1">Holidays</h2>
+      <p>
+        For December bookings, the set makes room for Christmas favorites,
+        from "Feliz Navidad" to "Fairytale of New York," alongside Bud's
+        original holiday song, "Merry Mary."
+      </p>
+
+      <h2 id="follow-along" tabindex="-1">Follow along</h2>
+      <p>
+        See and hear more on <a href="https://www.instagram.com/sarah.and.bud/"
+          >Instagram</a
+        >, <a href="https://www.youtube.com/@sarahandbud">YouTube</a>, and <a
+          href="https://www.facebook.com/sarahandbud">Facebook</a
+        >.
+      </p>
+
+      <p>
+        <a href="/shows">See upcoming shows &rarr;</a>
+      </p>
+
+      <p>
+        <a class="button button-primary" href="mailto:booksarahandbud@gmail.com?subject=Booking%20inquiry"
+          >Email Sarah &amp; Bud booking</a
+        >
+      </p>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .music-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2) var(--space-3);
+  }
+
+  .music-actions .button {
+    padding-inline: var(--space-3);
+  }
+
+  .music-sections {
+    margin-top: var(--space-4);
+    padding: var(--space-3) 0;
+    border-block: 1px solid var(--color-muted);
+  }
+
+  .music-sections p {
+    margin: 0;
+    font-size: var(--text-small);
+    font-weight: 700;
+  }
+
+  .music-sections ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 var(--space-3);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .music-sections a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding-block: var(--space-2);
+    text-underline-offset: 0.2em;
+  }
+
+  /* Leave room for a wrapped header if it becomes sticky. Native fragment
+     navigation stays instant, including with reduced-motion preferences. */
+  h2[id] {
+    scroll-margin-top: calc(var(--space-8) + var(--space-5));
+  }
+
+  h2[id]:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 4px;
+  }
+</style>
