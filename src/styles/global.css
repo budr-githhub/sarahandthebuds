@@ -1,0 +1,195 @@
+/* Initial palette and typography adapted from Plan & Adapt. */
+:root {
+  --color-primary:#33473e;
+  --color-background:#f7f2e9;
+  --color-text:#2b2925;
+  --color-accent:#b5623f;
+  --color-muted:#7a7266;
+  --space-2:8px;
+  --space-3:16px;
+  --space-4:24px;
+  --space-5:32px;
+  --space-8:96px;
+  --text-small:.875rem}
+
+
+* {
+  box-sizing:border-box}
+
+body {
+  margin:0;
+  background:var(--color-background);
+  color:var(--color-text);
+  font-family:Karla,system-ui,sans-serif;
+  line-height:1.65}
+
+h1,h2,h3,.site-name {
+  font-family:Fraunces,Georgia,serif;
+  line-height:1.2}
+
+h1 {
+  font-size:clamp(2.4rem,6vw,4rem);
+  margin:0 0 24px}
+
+h2 {
+  font-size:1.8rem;
+  margin:40px 0 16px}
+
+p {
+  margin:0 0 20px}
+
+a {
+  color:var(--color-primary);
+  text-underline-offset:.2em}
+
+a:focus-visible {
+  outline:3px solid var(--color-primary);
+  outline-offset:4px}
+
+img {
+  display:block;
+  max-width:100%;
+  height:auto}
+
+main {
+  min-height:65vh}
+
+.site-header {
+  border-bottom:1px solid var(--color-muted)}
+
+.header-inner {
+  max-width:1100px;
+  margin:auto;
+  padding:24px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  flex-wrap:wrap}
+
+.site-name {
+  font-size:1.5rem;
+  text-decoration:none}
+
+.header-inner nav {
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px}
+
+.header-inner nav a {
+  display:inline-flex;
+  align-items:center;
+  min-height:44px}
+
+.page-container {
+  max-width:1100px;
+  margin:auto;
+  padding:32px 24px}
+
+.text-container {
+  max-width:760px;
+  margin-inline:auto}
+
+.page-content {
+  padding-block:24px}
+
+.lede {
+  font-size:1.25rem}
+
+.button {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:48px;
+  padding:12px 20px;
+  border:1px solid var(--color-primary);
+  border-radius:6px;
+  text-decoration:none;
+  font-weight:700}
+
+.button-primary {
+  background:var(--color-primary);
+  color:var(--color-background)}
+
+.button:hover {
+  filter:brightness(.9)}
+
+.music-hero {
+  margin:24px auto}
+
+.image-frame {
+  overflow:hidden;
+  border-radius:8px}
+
+.music-hero img {
+  width:100%}
+
+.music-gallery {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px}
+
+.music-gallery img {
+  width:100%;
+  aspect-ratio:4/3;
+  object-fit:cover}
+
+.booking-contexts {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:8px}
+
+.repertoire {
+  list-style:none;
+  padding:0}
+
+.repertoire li {
+  padding:10px 0;
+  border-bottom:1px solid #d6cec1}
+
+.repertoire-artist {
+  display:block;
+  font-weight:700}
+
+.repertoire-songs {
+  display:block}
+
+.repertoire--originals {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:0 24px}
+
+.site-footer {
+  padding:32px 24px;
+  text-align:center;
+  border-top:1px solid var(--color-muted);
+  overflow-wrap:anywhere}
+
+.site-footer p {
+  margin-bottom:8px}
+
+.skip-link {
+  position:absolute;
+  left:16px;
+  top:-100px;
+  padding:12px;
+  background:white;
+  z-index:10}
+
+.skip-link:focus {
+  top:16px}
+
+@media(max-width:640px) {
+  .music-gallery {
+  grid-template-columns:repeat(2,minmax(0,1fr))}
+
+.repertoire--originals {
+  grid-template-columns:1fr}
+
+.header-inner {
+  gap:12px}
+
+.page-container {
+  padding:24px 16px}
+
+}
