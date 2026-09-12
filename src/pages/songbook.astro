@@ -14,7 +14,7 @@ const total = sections.reduce((n, section) => n + section.songs.length, 0);
     <div class="page-content text-container">
       <a href="/#songbook">← Back to the band</a>
       <h1>Our songbook</h1>
-      <p>{total} selections from our {songbook.sourceVersion} songbook, including covers, originals and seasonal favorites. Have a favorite in mind? <a href="mailto:booksarahandbud@gmail.com?subject=Song%20request">Ask us about it.</a></p>
+      <p>{total} selections from our songbook, including covers, originals and seasonal favorites. Have a favorite in mind? <a href="mailto:booksarahandbud@gmail.com?subject=Song%20request">Ask us about it.</a></p>
       <nav aria-label="Songbook sections">{sections.map((section) => <a href={`#${section.id}`}>{section.title}</a>)}</nav>
       {sections.map((section) => (
         <section aria-labelledby={section.id}>

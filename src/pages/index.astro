@@ -18,15 +18,11 @@ const bookingContexts = [
 // song (a leading "The" is ignored for sorting). Drawn title-level from the
 // band's own master song list; a small sample of a 180+ song book.
 const coversByArtist = songbook.sample;
-// Pack titles into readable compact lines; mobile wraps instead of hiding titles.
-const songRows = coversByArtist.flatMap(({artist, songs}) => {
-  const groups: string[][] = [];
-  for (const song of songs) {
-    const last = groups.at(-1);
-    if (last && [...last, song].join(" · ").length <= 44) last.push(song);
-    else groups.push([song]);
-  }
-  return groups.map((songs) => ({artist, songs}));
+// One row per artist: two examples, with a third when the titles are short.
+const songRows = coversByArtist.map(({artist, songs}) => {
+  const examples = songs.slice(0, 2);
+  if (songs[2] && [...examples, songs[2]].join(" · ").length <= 55) examples.push(songs[2]);
+  return {artist, songs: examples};
 });
 
 // Real original titles from the "Our Songs" section of the master list,
@@ -229,14 +225,14 @@ const musicGroupSchema = {
         your event, just ask.
       </p>
       <details class="songbook-panel">
-        <summary>Browse the songbook <span>({coversByArtist.reduce((count, artist) => count + artist.songs.length, 0)} songs · {coversByArtist.length} artists)</span></summary>
+        <summary>Browse the songbook <span>({songRows.length} artists · selected songs)</span></summary>
         <ul class="repertoire songbook-rows">
           {songRows.map((row) => (
             <li><span class="repertoire-artist">{row.artist}</span><span class="repertoire-songs">{row.songs.join(" · ")}</span></li>
           ))}
         </ul>
       </details>
-
+      <p><a href="/songbook">See the full song list &rarr;</a></p>
 
       <a class="back-to-top" href="#top">Back to top ↑</a>
 

@@ -50,3 +50,9 @@ Songbook validation: build and diff checks passed. Chromium at 390px and 1280px 
 Bud requested no artist disclosures, compact multi-song rows inside the overall collapsible songbook, a full reference page and section back-to-top links. `/songbook` now lists 184 deduplicated entries from the August master TOC: 137 covers, 41 originals, five holiday entries and one specialty song. Covers are title-only because the source does not consistently identify artists. The future-suggestions section is excluded. `src/data/songbook.json` holds metadata only. Homepage links to the full reference; both pages have section return links. This supersedes nested artist disclosures. Release pending in PR #5.
 
 Validation: four-page Astro build and diff checks passed. Browser checks at 390/1280px verify the overall disclosure opens with Enter, no nested disclosures remain, all 184 reference entries render, all reference anchors resolve, seven homepage back links exist, back-to-top navigation works, and neither page overflows horizontally.
+
+## Artist examples and owner additions — 2026-09-12
+
+Bud requested exactly one homepage row per artist: roughly two examples, with a third for short titles and natural wrapping. Added owner-supplied With or Without You, One and Acrobat (U2); Into the Mystic (Van Morrison); Falling Slowly and Song of Good Hope (Glen Hansard & Markéta Irglová). Newly requested examples are prioritized. The full reference now contains 189 unique entries (Into the Mystic was already present); these additions are authorized by Bud beyond the August document. A second full-list link follows the collapsible section. Supersedes earlier row/count notes; release pending in PR #5.
+
+Latest verification: build and diff checks pass. At 390/1280px, browser checks confirm exactly 44 artist rows, two full-list links, 189 reference entries, working back-to-top anchors and no horizontal overflow.

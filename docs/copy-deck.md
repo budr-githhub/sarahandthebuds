@@ -253,8 +253,8 @@ Photos have no visible captions, as requested by Bud. Descriptive alt text remai
 
 This is just a taste of our songbook—there are many more songs available. See the full song list → `/songbook`. Sarah & the Buds also take requests; if you have a song in mind for your event, just ask.
 
-Control: Browse the songbook (70 songs · 44 artists). Artist rows are directly visible when expanded. Multiple titles share compact rows where they fit; mobile wraps without clipping.
+Control: Browse the songbook (44 artists · selected songs). One row per artist shows two examples, or three short titles, and wraps naturally. See the full song list appears above and below the disclosure.
 
-Reference page: Our songbook. 184 selections from our August 2026 songbook, including covers, originals and seasonal favorites. Have a favorite in mind? Ask us about it.
+Reference page: Our songbook. 189 selections from our songbook, including covers, originals and seasonal favorites. Have a favorite in mind? Ask us about it.
 
 Sections: Covers, Our originals, Holiday songs, Specialty songs. Each section and each homepage section has a Back to top ↑ link. Complete titles are maintained in `src/data/songbook.json`.
