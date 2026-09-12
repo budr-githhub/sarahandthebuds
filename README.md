@@ -10,7 +10,7 @@ Run `pnpm build` to generate `dist/`; `pnpm preview` serves the production build
 ## Editing
 
 - Band copy, repertoire, photo gallery and booking: `src/pages/index.astro`.
-- Shows: `src/pages/shows.astro` (links to the existing calendar until performer assignments are confirmed).
+- Shows: `src/pages/shows.astro`, rendering the combined calendar from `src/data/events.json`.
 - Shared design: `src/styles/global.css` and `src/components/`.
 - Photos: `public/images/music/`. Only images used by this site are included.
 
@@ -18,7 +18,7 @@ Use a branch and pull request for changes. Review and build before merging to `m
 
 ## Cloudflare Pages setup
 
-Follow [Domain & Hosting Notes](docs/domain-and-hosting.md) for the exact setup, domain connection, verification and rollback sequence. Production uses `main`, root directory blank, `pnpm build`, output `dist`. Merge the initial PR before the first production build.
+Follow [Domain & Hosting Notes](docs/domain-and-hosting.md) for the exact setup, domain connection, verification and rollback sequence. Production uses `main`, root directory blank, `pnpm build`, output `dist`. The initial site and calendar are deployed.
 
 ## Documentation and collaboration
 
@@ -26,7 +26,7 @@ Start with the [dashboard](docs/dashboard.md) and [document index](docs/README.m
 
 GitHub `main` is the accepted source of truth. Temporary working copies are not canonical. Source is at repository root, unlike Plan & Adapt's `site/` folder. Hosting status is recorded in the dashboard; do not infer deployment from a successful local build.
 
-See [migration notes](docs/migration.md) for the remaining coordinated changes on Plan & Adapt.
+See [migration notes](docs/migration.md) for the completed separation and ongoing ownership.
 
 ## Editing shows
 

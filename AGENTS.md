@@ -4,7 +4,7 @@ Shared guidance for Codex, Claude Code, and other coding agents. Adapted from Pl
 
 ## Project context and stack
 
-Sarah & the Buds is an independent Astro static site for the full band and Sarah & Bud acoustic duo. Source lives at the repository root (`src/`, `public/`, `package.json`), unlike Plan & Adapt's `site/` subdirectory. Use pnpm; Node must satisfy `package.json`. Cloudflare Pages is the intended host; IONOS remains the registrar. Read [dashboard](docs/dashboard.md) for verified current status.
+Sarah & the Buds is an independent Astro static site for the full band and Sarah & Bud acoustic duo. Source lives at the repository root (`src/`, `public/`, `package.json`), unlike Plan & Adapt's `site/` subdirectory. Use pnpm; Node must satisfy `package.json`. Cloudflare Pages is the live host; IONOS remains the registrar. Read [dashboard](docs/dashboard.md) for verified current status.
 
 ## Hard constraints
 
