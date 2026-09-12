@@ -53,3 +53,7 @@ Append dated entries using Date, Decision, Reason, Alternatives considered, and 
 **Date:** 2026-09-12
 
 **Decision and outcome:** Bud approved both releases. Band PR #2 deployed at `c5577d2`; Plan & Adapt PR #23 deployed afterward at `b606ba5`. Live contents and redirects verified. Earlier pending-domain, unimplemented-cleanup and performer-tagging prerequisites are historical and superseded. See the dashboard for the completed sequence and maintenance ownership. No new dependency, sync service or DNS change was needed for the calendar release.
+
+## Apply supplied S&B visual identity
+
+Bud supplied Sarah-and-the-Buds-Style-Guide.docx version 1.0 (September 2026) and requested it be retained as project memory and applied to the site. It replaces the inherited green/cream serif design with Stage Black/Warm White and Avenir Next/Montserrat. Preserve the original logo as artwork, keep existing events and natural photos, and use uppercase AM/PM. Source document and text transcription are archived in docs; release remains subject to review.

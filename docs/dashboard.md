@@ -1,5 +1,9 @@
 # Sarah & the Buds Project Dashboard
 
+## Style guide application
+
+Owner: Codex. Branch: `feat/brand-style-guide`. Status: prepared for review, not yet released. Bud supplied visual identity v1.0; its original and text transcription are stored in this repository. The site now uses the guide’s monochrome palette, sans-serif typography, original S&B logo and uppercase AM/PM. Event data is unchanged.
+
 ## Completed release — September 12, 2026
 
 Owner: Codex; releases approved by Bud. Status: deployed and verified.

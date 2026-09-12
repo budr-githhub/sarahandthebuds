@@ -80,7 +80,7 @@ function formatDate(dateStr: string): string {
 function formatTimeRange(event: EventItem): string {
   const to12h = (t: string) => {
     const [h, min] = t.split(":").map(Number);
-    const period = h >= 12 ? "p.m." : "a.m.";
+    const period = h >= 12 ? "PM" : "AM";
     const hour12 = h % 12 === 0 ? 12 : h % 12;
     return min === 0 ? `${hour12} ${period}` : `${hour12}:${String(min).padStart(2, "0")} ${period}`;
   };
@@ -273,7 +273,7 @@ const eventSchema = upcoming.map((e) => ({
 <style>
   .event-list { list-style: none; padding: 0; margin: 0 0 var(--space-4); }
   .event-card { display: grid; grid-template-columns: minmax(150px, 1fr) 2fr; gap: var(--space-3); padding: var(--space-4); margin-block: var(--space-3); border: 1px solid var(--color-muted); border-radius: 8px; }
-  .event-date { font-family: Fraunces, Georgia, serif; font-size: 1.15rem; }
+  .event-date { font-family: inherit; font-weight: 600; text-transform: uppercase; font-size: 1.15rem; }
   .event-venue { font-weight: 700; }
   .event-time, .event-location { font-size: var(--text-small); }
   .event-card--past { border-style: dashed; }

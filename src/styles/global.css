@@ -1,10 +1,10 @@
-/* Initial palette and typography adapted from Plan & Adapt. */
+/* Sarah & the Buds identity v1.0: see docs/style-guide.md. */
 :root {
-  --color-primary:#33473e;
-  --color-background:#f7f2e9;
-  --color-text:#2b2925;
-  --color-accent:#b5623f;
-  --color-muted:#7a7266;
+  --color-primary:#F5F2EA;
+  --color-background:#111111;
+  --color-text:#F5F2EA;
+  --color-accent:#FFFFFF;
+  --color-muted:#D8D5CE;
   --space-2:8px;
   --space-3:16px;
   --space-4:24px;
@@ -20,11 +20,14 @@ body {
   margin:0;
   background:var(--color-background);
   color:var(--color-text);
-  font-family:Karla,system-ui,sans-serif;
+  font-family:"Avenir Next",Montserrat,Arial,sans-serif;
   line-height:1.65}
 
 h1,h2,h3,.site-name {
-  font-family:Fraunces,Georgia,serif;
+  font-family:inherit;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:-.025em;
   line-height:1.2}
 
 h1 {
@@ -145,7 +148,7 @@ main {
 
 .repertoire li {
   padding:10px 0;
-  border-bottom:1px solid #d6cec1}
+  border-bottom:1px solid #D8D5CE}
 
 .repertoire-artist {
   display:block;
@@ -193,3 +196,13 @@ main {
   padding:24px 16px}
 
 }
+
+/* Original artwork is displayed without filters, distortion or overlays. */
+.brand-intro { text-align:center; }
+.brand-mark { width:220px; height:auto; margin:0 auto 40px; }
+.brand-intro h1 { font-weight:500; letter-spacing:.12em; font-size:clamp(1.6rem,4vw,2.6rem); }
+.site-name { font-weight:500; letter-spacing:.08em; font-size:1.1rem; }
+.event-card { background:#2A2A2A; }
+.music-gallery img { aspect-ratio:auto; object-fit:contain; }
+.skip-link { color:#111111; }
+@media(max-width:640px) { h1 { font-size:2rem; overflow-wrap:normal; } .brand-intro h1 { font-size:1.6rem; } }
