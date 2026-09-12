@@ -1,5 +1,12 @@
 # Sarah & the Buds Project Dashboard
 
+## Current release — September 12, 2026
+
+Bud approved publication. [PR #5](https://github.com/budr-githhub/sarahandthebuds/pull/5) merged as `b99f8f14fa54306b6f864a4cdce9365f35decd2f`; Cloudflare reported a successful production deployment. Fresh production responses verified the band-only hero and its image asset, full songbook with 146 cover/holiday entries, request-only originals, and corrected inline spacing. Earlier pending-release notes below are historical and superseded. Initial cached songbook requests returned 404 immediately after deployment; fresh requests succeeded.
+
+Live pages: [Homepage](https://sarahandthebuds.com/) and [Songbook](https://sarahandthebuds.com/songbook).
+
+
 ## Style guide application
 
 Owner: Codex. Branch: `feat/brand-style-guide`. Status: merged in PR #4 (`4276d44`). Bud supplied visual identity v1.0; its original and text transcription are stored in this repository. The site now uses the guide’s monochrome palette, sans-serif typography, original S&B logo and uppercase AM/PM. Event data is unchanged.

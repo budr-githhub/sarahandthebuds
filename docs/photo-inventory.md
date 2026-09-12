@@ -1,5 +1,12 @@
 # Approved photo additions
 
+## Current release — September 12, 2026
+
+Bud approved publication. [PR #5](https://github.com/budr-githhub/sarahandthebuds/pull/5) merged as `b99f8f14fa54306b6f864a4cdce9365f35decd2f`; Cloudflare reported a successful production deployment. Fresh production responses verified the band-only hero and its image asset, full songbook with 146 cover/holiday entries, request-only originals, and corrected inline spacing. Earlier pending-release notes below are historical and superseded. Initial cached songbook requests returned 404 immediately after deployment; fresh requests succeeded.
+
+Live pages: [Homepage](https://sarahandthebuds.com/) and [Songbook](https://sarahandthebuds.com/songbook).
+
+
 Bud approved seven additions on September 12, 2026. All existing hero and gallery photos remain. Photo 10 is selected instead of photo 11. Natural color, faces and full compositions are preserved; these are locally corrected exports, not generated images. Original masters and review package remain outside the website.
 
 | Photo | Source | Website asset | Subject (internal reference only) |
