@@ -2,7 +2,7 @@
 
 ## Style guide application
 
-Owner: Codex. Branch: `feat/brand-style-guide`. Status: prepared for review, not yet released. Bud supplied visual identity v1.0; its original and text transcription are stored in this repository. The site now uses the guide’s monochrome palette, sans-serif typography, original S&B logo and uppercase AM/PM. Event data is unchanged.
+Owner: Codex. Branch: `feat/brand-style-guide`. Status: merged in PR #4 (`4276d44`). Bud supplied visual identity v1.0; its original and text transcription are stored in this repository. The site now uses the guide’s monochrome palette, sans-serif typography, original S&B logo and uppercase AM/PM. Event data is unchanged.
 
 ## Completed release — September 12, 2026
 
@@ -22,3 +22,9 @@ Validation: both builds passed; layouts checked at 390px/1280px; calendar tested
 Remaining optional content: solo listening links and specific band video embeds. Performer fields remain unknown where not supplied; do not guess them. Existing domain email records were preserved, but email delivery was not tested.
 
 See [hosting](domain-and-hosting.md), [migration](migration.md), [copy deck](copy-deck.md), and [decisions](decision-log.md).
+
+## Photo additions — September 12, 2026
+
+Owner: Codex. Branch: `feat/approved-photo-gallery`. Status: prepared for review; not deployed. Seven approved additions preserve the existing hero and six gallery photos. Photo 10 replaces photo 11 in the selection. See [photo inventory](photo-inventory.md). Release awaits Bud’s preview approval.
+
+Validation: `pnpm --config.verify-deps-before-run=false run build` passed. This disables pnpm's dependency freshness preflight for the shared local dependency directory; it runs the normal Astro build. Chromium checks at 390px and 1280px found no horizontal overflow or broken images; counts verified two new introduction portraits, five new gallery photos and six existing gallery photos. Desktop screenshot reviewed. No production deployment performed.

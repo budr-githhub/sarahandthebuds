@@ -1,0 +1,15 @@
+# Approved photo additions
+
+Bud approved seven additions on September 12, 2026. All existing hero and gallery photos remain. Photo 10 is selected instead of photo 11. Natural color, faces and full compositions are preserved; these are locally corrected exports, not generated images. Original masters and review package remain outside the website.
+
+| Photo | Source | Website asset | Caption |
+|---|---|---|---|
+| 4 | IMG_0561.jpeg | `/images/music/sarah-and-the-buds-band-portrait-in-barn.webp` | Sarah & the Buds · Full band |
+| 2 | 4108980485246028742.jpg | `/images/music/sarah-and-bud-portrait-with-guitar-and-microphone.webp` | Sarah & Bud · Acoustic duo |
+| 1 | 4060722748875675015.jpg | `/images/music/sarah-and-bud-performing-beside-wine-barrels.webp` | Sarah & Bud live |
+| 6 | IMG_5066.JPG | `/images/music/sarah-and-the-buds-performing-in-wine-barrel-room.webp` | The full band live |
+| 10 | IMG_7346.jpeg | `/images/music/sarah-and-the-buds-georgetown-underground-portrait.webp` | At Georgetown Underground |
+| 13 | IMG_7205.jpeg | `/images/music/sarah-and-the-buds-outdoor-crowd-selfie.webp` | Good times together |
+| 15 | IMG_1118.jpeg | `/images/music/sarah-and-the-buds-georgetown-storefront-with-show-sign.webp` | A past show at Georgetown Underground |
+
+Two portraits appear under The band and the duo. Five photos follow the existing six-photo gallery. The storefront sign is historical, not an upcoming show announcement. All additions have intrinsic dimensions, alt text and lazy loading.

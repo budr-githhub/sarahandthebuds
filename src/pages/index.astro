@@ -75,6 +75,61 @@ const originals = [
   "When You Loved Me",
 ];
 
+const introductions = [
+  {
+    "src": "/images/music/sarah-and-the-buds-band-portrait-in-barn.webp",
+    "alt": "The four members of Sarah & the Buds smiling together in a wooden barn.",
+    "caption": "Sarah & the Buds \u00b7 Full band",
+    "width": 1920,
+    "height": 1268
+  },
+  {
+    "src": "/images/music/sarah-and-bud-portrait-with-guitar-and-microphone.webp",
+    "alt": "Sarah & Bud smiling with an acoustic guitar and microphone.",
+    "caption": "Sarah & Bud \u00b7 Acoustic duo",
+    "width": 1536,
+    "height": 1864
+  }
+];
+
+const newPhotos = [
+  {
+    "src": "/images/music/sarah-and-bud-performing-beside-wine-barrels.webp",
+    "alt": "Sarah & Bud performing beside wine barrels.",
+    "caption": "Sarah & Bud live",
+    "width": 1440,
+    "height": 1440
+  },
+  {
+    "src": "/images/music/sarah-and-the-buds-performing-in-wine-barrel-room.webp",
+    "alt": "Sarah & the Buds performing with vocals, guitar, drums and bass in a wine-barrel room.",
+    "caption": "The full band live",
+    "width": 1920,
+    "height": 1440
+  },
+  {
+    "src": "/images/music/sarah-and-the-buds-georgetown-underground-portrait.webp",
+    "alt": "The four members of Sarah & the Buds holding Georgetown Underground stickers.",
+    "caption": "At Georgetown Underground",
+    "width": 1636,
+    "height": 1920
+  },
+  {
+    "src": "/images/music/sarah-and-the-buds-outdoor-crowd-selfie.webp",
+    "alt": "Sarah & the Buds taking an outdoor group selfie with a crowd.",
+    "caption": "Good times together",
+    "width": 1920,
+    "height": 1440
+  },
+  {
+    "src": "/images/music/sarah-and-the-buds-georgetown-storefront-with-show-sign.webp",
+    "alt": "Sarah & the Buds outside Georgetown Underground beside a chalkboard show sign.",
+    "caption": "A past show at Georgetown Underground",
+    "width": 1920,
+    "height": 1440
+  }
+];
+
 const gallery = [
   { src: "/images/music/facebook/sarah-and-buds-cover-band.jpg", alt: "Sarah & the Buds performing together as a full band." },
   { src: "/images/music/facebook/sarah-and-buds-stage-performance.jpg", alt: "Sarah & the Buds performing on an indoor stage." },
@@ -158,6 +213,15 @@ const musicGroupSchema = {
         > is the acoustic duo.
       </p>
 
+      <div class="introduction-photos">
+        {introductions.map((photo) => (
+          <figure>
+            <img src={photo.src} alt={photo.alt} width={photo.width} height={photo.height} loading="lazy" decoding="async" />
+            <figcaption>{photo.caption}</figcaption>
+          </figure>
+        ))}
+      </div>
+
       <h2 id="where-we-play" tabindex="-1">Where they play</h2>
       <p>Sarah &amp; the Buds and Sarah &amp; Bud are available for:</p>
       <ul class="booking-contexts">
@@ -181,6 +245,14 @@ const musicGroupSchema = {
             </div>
           ))
         }
+      </div>
+      <div class="music-gallery added-photos">
+        {newPhotos.map((photo) => (
+          <figure>
+            <img src={photo.src} alt={photo.alt} width={photo.width} height={photo.height} loading="lazy" decoding="async" />
+            <figcaption>{photo.caption}</figcaption>
+          </figure>
+        ))}
       </div>
     </section>
 
@@ -241,6 +313,23 @@ const musicGroupSchema = {
 </BaseLayout>
 
 <style>
+  .introduction-photos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    margin-block: 24px 32px;
+    align-items: start;
+  }
+  .added-photos { margin-top: 24px; align-items: start; }
+  .introduction-photos figure, .added-photos figure { margin: 0; min-width: 0; }
+  .introduction-photos img, .added-photos img {
+    display: block; width: 100%; height: auto; border-radius: 8px;
+  }
+  figcaption { padding-top: 10px; font-size: var(--text-small); color: var(--color-text); }
+  @media (max-width: 600px) {
+    .introduction-photos { grid-template-columns: 1fr; }
+  }
+
   .music-actions {
     display: flex;
     flex-wrap: wrap;

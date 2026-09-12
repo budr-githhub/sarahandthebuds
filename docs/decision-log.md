@@ -57,3 +57,15 @@ Append dated entries using Date, Decision, Reason, Alternatives considered, and 
 ## Apply supplied S&B visual identity
 
 Bud supplied Sarah-and-the-Buds-Style-Guide.docx version 1.0 (September 2026) and requested it be retained as project memory and applied to the site. It replaces the inherited green/cream serif design with Stage Black/Warm White and Avenir Next/Montserrat. Preserve the original logo as artwork, keep existing events and natural photos, and use uppercase AM/PM. Source document and text transcription are archived in docs; release remains subject to review.
+
+## Add approved natural photography
+
+**Date:** 2026-09-12
+
+**Decision:** Add seven prepared photos while keeping existing images. Use photo 10 instead of photo 11. Two introduction portraits distinguish the full band and acoustic duo; five gallery additions show performances, community and a past venue appearance.
+
+**Reason:** Bud approved these selections and requested additions to the existing site.
+
+**Alternatives considered:** Replacing existing photos or displaying all 15; neither matches the selected scope.
+
+**Impact:** WebP assets and descriptive captions added; no dependency, calendar or DNS change. Release pending review.

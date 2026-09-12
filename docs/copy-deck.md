@@ -244,3 +244,15 @@ Source: `src/components/SiteHeader.astro` and `SiteFooter.astro`.
 ## Style-guide presentation
 
 Headings display uppercase through CSS; names retain their correct ampersands in source. Show times use uppercase AM/PM, a preceding space, and an en dash. The homepage uses the supplied S&B microphone artwork with the full band name nearby.
+
+## Approved photo captions
+
+- Sarah & the Buds · Full band
+- Sarah & Bud · Acoustic duo
+- Sarah & Bud live
+- The full band live
+- At Georgetown Underground
+- Good times together
+- A past show at Georgetown Underground
+
+See [photo inventory](photo-inventory.md) for source and placement.
