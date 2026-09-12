@@ -3,19 +3,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import songbook from "../data/songbook.json";
 const sections = [
   {id: "covers", title: "Covers", songs: songbook.covers},
-  {id: "originals", title: "Our originals", songs: songbook.originals},
   {id: "holiday", title: "Holiday songs", songs: songbook.holiday},
-  {id: "specialty", title: "Specialty songs", songs: songbook.specialty},
 ];
 const total = sections.reduce((n, section) => n + section.songs.length, 0);
 ---
-<BaseLayout title="Songbook | Sarah & the Buds" description="Explore the Sarah & the Buds songbook: covers, originals, holiday songs and specialty selections.">
+<BaseLayout title="Songbook | Sarah & the Buds" description="Explore the Sarah & the Buds songbook: covers and holiday favorites, with original songs available by request.">
   <div class="page-container" id="top" tabindex="-1">
     <div class="page-content text-container">
       <a href="/#songbook">← Back to the band</a>
       <h1>Our songbook</h1>
-      <p>{total} selections from our songbook, including covers, originals and seasonal favorites. Have a favorite in mind? <a href="mailto:booksarahandbud@gmail.com?subject=Song%20request">Ask us about it.</a></p>
-      <nav aria-label="Songbook sections">{sections.map((section) => <a href={`#${section.id}`}>{section.title}</a>)}</nav>
+      <p>{total} covers and seasonal selections from our songbook. Original songs are available by request. Have a favorite in mind? <a href="mailto:booksarahandbud@gmail.com?subject=Song%20request">Ask us about it.</a></p>
+      <nav aria-label="Songbook sections">{sections.map((section) => <a href={`#${section.id}`}>{section.title}</a>)}<a href="#originals">Originals</a></nav>
       {sections.map((section) => (
         <section aria-labelledby={section.id}>
           <h2 id={section.id} tabindex="-1">{section.title} <span>({section.songs.length})</span></h2>
@@ -23,6 +21,11 @@ const total = sections.reduce((n, section) => n + section.songs.length, 0);
           <a class="back-to-top" href="#top">Back to top ↑</a>
         </section>
       ))}
+      <section aria-labelledby="originals">
+        <h2 id="originals" tabindex="-1">Originals</h2>
+        <p>Original songs available by request. <a href="mailto:booksarahandbud@gmail.com?subject=Original%20song%20request">Ask us about our originals.</a></p>
+        <a class="back-to-top" href="#top">Back to top ↑</a>
+      </section>
       <a href="/">← Sarah &amp; the Buds</a>
     </div>
   </div>

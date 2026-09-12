@@ -25,24 +25,6 @@ const songRows = coversByArtist.map(({artist, songs}) => {
   return {artist, songs: examples};
 });
 
-// Real original titles from the "Our Songs" section of the master list,
-// alphabetized.
-const originals = [
-  "All the Real Girls",
-  "Bloom",
-  "Down to the River",
-  "Drive You Crazy",
-  "Going to Memphis",
-  "Home",
-  "Hope and Peace",
-  "Met My Muse",
-  "Met You in Nashville (Sha La La)",
-  "Promised Land",
-  "Saint Margaret's Hope",
-  "This Country",
-  "Under a Falling Moon",
-  "When You Loved Me",
-];
 
 const introductions = [
   {
@@ -237,21 +219,14 @@ const musicGroupSchema = {
       <a class="back-to-top" href="#top">Back to top ↑</a>
 
       <h2 id="originals" tabindex="-1">Originals</h2>
-      <p>
-        The band writes and performs its own songs, more than forty of them,
-        as a real part of the act, not an afterthought. A few:
-      </p>
-      <ul class="repertoire repertoire--originals">
-        {originals.map((o) => <li>{o}</li>)}
-      </ul>
+      <p>Original songs available by request. <a href="mailto:booksarahandbud@gmail.com?subject=Original%20song%20request">Ask us about our originals.</a></p>
 
       <a class="back-to-top" href="#top">Back to top ↑</a>
 
       <h2 id="holidays" tabindex="-1">Holidays</h2>
       <p>
         For December bookings, the set makes room for Christmas favorites,
-        from "Feliz Navidad" to "Fairytale of New York," alongside Bud's
-        original holiday song, "Merry Mary."
+        from "Feliz Navidad" to "Fairytale of New York," with original songs available by request.
       </p>
 
       <a class="back-to-top" href="#top">Back to top ↑</a>

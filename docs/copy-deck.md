@@ -258,3 +258,7 @@ Control: Browse the songbook (44 artists · selected songs). One row per artist 
 Reference page: Our songbook. 189 selections from our songbook, including covers, originals and seasonal favorites. Have a favorite in mind? Ask us about it.
 
 Sections: Covers, Our originals, Holiday songs, Specialty songs. Each section and each homepage section has a Back to top ↑ link. Complete titles are maintained in `src/data/songbook.json`.
+
+## Original songs by request — 2026-09-12
+
+Bud requested removal of the specialty section and no named originals yet. Both public pages now say “Original songs available by request” with a contact link. Removed original/specialty arrays from public songbook metadata and removed Merry Mary from the holiday listing and homepage copy. The source document remains unchanged. The reference displays 146 covers/seasonal entries (142 covers, four holiday selections), plus the request-only originals section. This supersedes earlier public counts and original-title lists. PR #5 remains pending release.
