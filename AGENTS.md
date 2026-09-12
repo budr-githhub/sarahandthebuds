@@ -27,6 +27,8 @@ Prefer simple, accessible, fast, static solutions with minimal JavaScript and no
 
 ## Documentation conventions
 
+Bud’s standing preference: after every push, verify that GitHub documentation matches the pushed changes and actual status. Update the dashboard, relevant copy/inventories and decision records as needed; push any missing documentation promptly. After a merge or deployment, reconcile released status and verified results instead of leaving stale “pending” notes. Keep current-state documents concise; retain history in the decision log. Do not claim documentation is updated on GitHub until its changes have been pushed, and distinguish branch-only documentation from merged main.
+
 - Durable shared rules: this file. Claude-specific guidance: [CLAUDE.md](CLAUDE.md), which imports this file.
 - Changing status and task ownership: [dashboard](docs/dashboard.md).
 - Dated choices and reasons: [decision log](docs/decision-log.md).
