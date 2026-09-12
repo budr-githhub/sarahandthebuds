@@ -77,10 +77,10 @@ const originals = [
 
 const introductions = [
   {
-    "src": "/images/music/sarah-and-the-buds-band-portrait-in-barn.webp",
-    "alt": "The four members of Sarah & the Buds smiling together in a wooden barn.",
-    "width": 1920,
-    "height": 1268
+    "src": "/images/music/sarah-and-the-buds-georgetown-underground-portrait.webp",
+    "alt": "The four members of Sarah & the Buds holding Georgetown Underground stickers.",
+    "width": 1636,
+    "height": 1920
   },
   {
     "src": "/images/music/sarah-and-bud-portrait-with-guitar-and-microphone.webp",
@@ -104,10 +104,10 @@ const newPhotos = [
     "height": 1440
   },
   {
-    "src": "/images/music/sarah-and-the-buds-georgetown-underground-portrait.webp",
-    "alt": "The four members of Sarah & the Buds holding Georgetown Underground stickers.",
-    "width": 1636,
-    "height": 1920
+    "src": "/images/music/sarah-and-the-buds-band-portrait-in-barn.webp",
+    "alt": "The four members of Sarah & the Buds smiling together in a wooden barn.",
+    "width": 1920,
+    "height": 1268
   },
   {
     "src": "/images/music/sarah-and-the-buds-outdoor-crowd-selfie.webp",
@@ -231,20 +231,14 @@ const musicGroupSchema = {
 
     <section aria-labelledby="photos">
       <h2 id="photos" tabindex="-1">Photos</h2>
-      <div class="music-gallery">
-        {
-          gallery.map((img) => (
-            <div class="image-frame">
-              <img src={img.src} alt={img.alt} loading="lazy" />
-            </div>
-          ))
-        }
-      </div>
-      <div class="music-gallery added-photos">
-        {newPhotos.map((photo) => (
-          <figure>
-            <img src={photo.src} alt={photo.alt} width={photo.width} height={photo.height} loading="lazy" decoding="async" />
-          </figure>
+      <div class="photo-gallery">
+        {[...gallery, ...newPhotos].map((photo) => (
+          <div class="image-frame">
+            <img src={photo.src} alt={photo.alt}
+              width={"width" in photo ? photo.width : undefined}
+              height={"height" in photo ? photo.height : undefined}
+              loading="lazy" decoding="async" />
+          </div>
         ))}
       </div>
     </section>
@@ -313,13 +307,18 @@ const musicGroupSchema = {
     margin-block: 24px 32px;
     align-items: start;
   }
-  .added-photos { margin-top: 24px; align-items: start; }
-  .introduction-photos figure, .added-photos figure { margin: 0; min-width: 0; }
-  .introduction-photos img, .added-photos img {
-    display: block; width: 100%; height: auto; border-radius: 8px;
+  .introduction-photos figure { margin: 0; min-width: 0; }
+  .introduction-photos img {
+    display: block; width: 100%; height: auto; aspect-ratio: 4 / 5;
+    object-fit: cover; object-position: center; border-radius: 8px;
   }
+  .photo-gallery { columns: 3; column-gap: 16px; }
+  .photo-gallery .image-frame { break-inside: avoid; margin-bottom: 16px; }
+  .photo-gallery img { display: block; width: 100%; height: auto; }
+  @media (max-width: 900px) { .photo-gallery { columns: 2; } }
   @media (max-width: 600px) {
     .introduction-photos { grid-template-columns: 1fr; }
+    .photo-gallery { columns: 1; }
   }
 
   .music-actions {

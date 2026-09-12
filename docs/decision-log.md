@@ -73,3 +73,7 @@ Bud supplied Sarah-and-the-Buds-Style-Guide.docx version 1.0 (September 2026) an
 ## Hero and caption revision — 2026-09-12
 
 Bud requested pictures without visible captions and a band-only version of photo 4 at the top. Move the former hero into the gallery; preserve the original barn portrait in the introduction. A dark-background AI-edited hero is prepared for likeness review. Accessible alt text remains. This supersedes the earlier visible-caption plan; release remains pending.
+
+## Symmetric portraits and continuous gallery — 2026-09-12
+
+Bud requested matching band/duo image dimensions and removal of empty gallery spaces. Photo 10 now pairs with the duo in matching 4:5 frames, retaining all four band members. The original barn portrait moves into the gallery. All 12 gallery photos flow in responsive columns (three desktop, two tablet, one phone) at natural aspect ratios, eliminating separate grids and tall-row gaps. No captions; hero unchanged. Supersedes earlier placement notes.

@@ -17,3 +17,7 @@ Two portraits appear under The band and the duo. Five photos follow the existing
 ## Hero and caption revision
 
 Bud requested no visible photo captions and a band-only version of photo 4 as the hero. The new `sarah-and-the-buds-band-only-hero.webp` is an AI-edited adaptation of the prepared barn portrait, with a dark background; it is not an untouched photographic cutout. Likeness requires Bud’s preview review. The original barn image remains in the introduction. The former `sarah-and-buds-georgetown-underground.webp` hero moves to the gallery, bringing that original-image group to seven. All visible captions are removed; alt descriptions remain.
+
+## Symmetric portraits and continuous gallery — 2026-09-12
+
+Bud requested matching band/duo image dimensions and removal of empty gallery spaces. Photo 10 now pairs with the duo in matching 4:5 frames, retaining all four band members. The original barn portrait moves into the gallery. All 12 gallery photos flow in responsive columns (three desktop, two tablet, one phone) at natural aspect ratios, eliminating separate grids and tall-row gaps. No captions; hero unchanged. Supersedes earlier placement notes.
