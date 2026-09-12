@@ -17,43 +17,296 @@ const bookingContexts = [
 // song (a leading "The" is ignored for sorting). Drawn title-level from the
 // band's own master song list; a small sample of a 180+ song book.
 const coversByArtist = [
-  { artist: "The Band", songs: ["Up on Cripple Creek"] },
-  { artist: "The Beatles", songs: ["Blackbird", "Hey Jude"] },
-  { artist: "Bob Dylan", songs: ["Like a Rolling Stone"] },
-  { artist: "Boston", songs: ["Peace of Mind"] },
-  { artist: "boygenius", songs: ["Not Strong Enough"] },
-  { artist: "Chappell Roan", songs: ["Pink Pony Club"] },
-  { artist: "Coldplay", songs: ["Yellow"] },
-  { artist: "Counting Crows", songs: ["Accidentally in Love"] },
-  { artist: "The Cranberries", songs: ["Zombie"] },
-  { artist: "Dolly Parton", songs: ["Jolene"] },
-  { artist: "Ella Langley", songs: ["Choosin' Texas"] },
-  { artist: "Elle King & Tyler Childers", songs: ["Jersey Giant"] },
-  { artist: "First Aid Kit", songs: ["Emmylou"] },
-  { artist: "Fleetwood Mac", songs: ["Landslide"] },
-  { artist: "Glen Hansard & Markéta Irglová", songs: ["Low Rising"] },
-  { artist: "Gracie Abrams", songs: ["That's So True"] },
-  { artist: "Green Day", songs: ["Basket Case"] },
-  { artist: "Guns N' Roses / Sheryl Crow", songs: ["Sweet Child o' Mine"] },
-  { artist: "Jimmy Eat World", songs: ["The Middle"] },
-  { artist: "John Denver", songs: ["Take Me Home, Country Roads"] },
-  { artist: "Kacey Musgraves", songs: ["The Architect"] },
-  { artist: "Nancy Sinatra", songs: ["These Boots Are Made for Walkin'"] },
-  { artist: "Neil Diamond", songs: ["Sweet Caroline"] },
-  { artist: "Nelly Furtado", songs: ["I'm Like a Bird"] },
-  { artist: "Noah Kahan", songs: ["Stick Season"] },
-  { artist: "Oasis", songs: ["Champagne Supernova"] },
-  { artist: "Patsy Cline", songs: ["Crazy"] },
-  { artist: "Paul Simon", songs: ["Graceland"] },
-  { artist: "The Rolling Stones", songs: ["Paint It Black"] },
-  { artist: "Shania Twain", songs: ["Whose Bed Have Your Boots Been Under?"] },
-  { artist: "Stealers Wheel", songs: ["Stuck in the Middle with You"] },
-  { artist: "TLC", songs: ["No Scrubs"] },
-  { artist: "Tom Petty", songs: ["Free Fallin'", "I Won't Back Down"] },
-  { artist: "Townes Van Zandt", songs: ["Pancho and Lefty"] },
-  { artist: "Tracy Chapman", songs: ["Fast Car"] },
-  { artist: "Van Morrison", songs: ["Brown Eyed Girl"] },
-  { artist: "Willie Nelson", songs: ["Always on My Mind"] },
+  {
+    "artist": "The Band",
+    "songs": [
+      "It Makes No Difference",
+      "Up on Cripple Creek",
+      "The Weight"
+    ]
+  },
+  {
+    "artist": "The Beatles",
+    "songs": [
+      "Across the Universe",
+      "All You Need Is Love",
+      "Blackbird",
+      "Hey Jude",
+      "If I Fell",
+      "Let It Be",
+      "Till There Was You"
+    ]
+  },
+  {
+    "artist": "Bob Dylan",
+    "songs": [
+      "Blowin’ in the Wind",
+      "Don’t Think Twice, It’s All Right",
+      "Like a Rolling Stone",
+      "The Times They Are A-Changin’"
+    ]
+  },
+  {
+    "artist": "Boston",
+    "songs": [
+      "Peace of Mind"
+    ]
+  },
+  {
+    "artist": "boygenius",
+    "songs": [
+      "Not Strong Enough"
+    ]
+  },
+  {
+    "artist": "Chappell Roan",
+    "songs": [
+      "Pink Pony Club"
+    ]
+  },
+  {
+    "artist": "Coldplay",
+    "songs": [
+      "Yellow"
+    ]
+  },
+  {
+    "artist": "Counting Crows",
+    "songs": [
+      "A Long December",
+      "Accidentally in Love",
+      "Anna Begins"
+    ]
+  },
+  {
+    "artist": "The Cranberries",
+    "songs": [
+      "Zombie"
+    ]
+  },
+  {
+    "artist": "Crowded House",
+    "songs": [
+      "Don’t Dream It’s Over",
+      "Weather with You"
+    ]
+  },
+  {
+    "artist": "Dolly Parton",
+    "songs": [
+      "Jolene"
+    ]
+  },
+  {
+    "artist": "Ella Langley",
+    "songs": [
+      "Choosin' Texas"
+    ]
+  },
+  {
+    "artist": "Elle King & Tyler Childers",
+    "songs": [
+      "Jersey Giant"
+    ]
+  },
+  {
+    "artist": "First Aid Kit",
+    "songs": [
+      "Emmylou"
+    ]
+  },
+  {
+    "artist": "Fleetwood Mac",
+    "songs": [
+      "Landslide"
+    ]
+  },
+  {
+    "artist": "Glen Hansard & Markéta Irglová",
+    "songs": [
+      "Low Rising"
+    ]
+  },
+  {
+    "artist": "Gracie Abrams",
+    "songs": [
+      "That's So True"
+    ]
+  },
+  {
+    "artist": "Green Day",
+    "songs": [
+      "Basket Case",
+      "Boulevard of Broken Dreams",
+      "Give Me Novacaine"
+    ]
+  },
+  {
+    "artist": "Guns N' Roses / Sheryl Crow",
+    "songs": [
+      "Sweet Child o' Mine"
+    ]
+  },
+  {
+    "artist": "Jimmy Eat World",
+    "songs": [
+      "The Middle"
+    ]
+  },
+  {
+    "artist": "John Denver",
+    "songs": [
+      "Take Me Home, Country Roads"
+    ]
+  },
+  {
+    "artist": "Kacey Musgraves",
+    "songs": [
+      "The Architect",
+      "Biscuits"
+    ]
+  },
+  {
+    "artist": "Kaitlin Butts",
+    "songs": [
+      "Marfa Lights",
+      "You Ain’t Got to Die (to Be Dead to Me)"
+    ]
+  },
+  {
+    "artist": "Miranda Lambert",
+    "songs": [
+      "Armadillo",
+      "In His Arms"
+    ]
+  },
+  {
+    "artist": "Muscadine Bloodline",
+    "songs": [
+      "Goose Chase",
+      "Pieces"
+    ]
+  },
+  {
+    "artist": "Nancy Sinatra",
+    "songs": [
+      "These Boots Are Made for Walkin'"
+    ]
+  },
+  {
+    "artist": "Neil Diamond",
+    "songs": [
+      "Sweet Caroline"
+    ]
+  },
+  {
+    "artist": "Neil Young",
+    "songs": [
+      "Harvest Moon",
+      "Lotta Love"
+    ]
+  },
+  {
+    "artist": "Nelly Furtado",
+    "songs": [
+      "I'm Like a Bird"
+    ]
+  },
+  {
+    "artist": "Noah Kahan",
+    "songs": [
+      "Stick Season"
+    ]
+  },
+  {
+    "artist": "Oasis",
+    "songs": [
+      "Champagne Supernova"
+    ]
+  },
+  {
+    "artist": "Patsy Cline",
+    "songs": [
+      "Crazy"
+    ]
+  },
+  {
+    "artist": "Paul Simon",
+    "songs": [
+      "Graceland"
+    ]
+  },
+  {
+    "artist": "The Rolling Stones",
+    "songs": [
+      "Paint It Black"
+    ]
+  },
+  {
+    "artist": "Shania Twain",
+    "songs": [
+      "Whose Bed Have Your Boots Been Under?"
+    ]
+  },
+  {
+    "artist": "Sixpence None the Richer",
+    "songs": [
+      "Kiss Me",
+      "There She Goes"
+    ]
+  },
+  {
+    "artist": "Stealers Wheel",
+    "songs": [
+      "Stuck in the Middle with You"
+    ]
+  },
+  {
+    "artist": "TLC",
+    "songs": [
+      "No Scrubs"
+    ]
+  },
+  {
+    "artist": "Tom Petty",
+    "songs": [
+      "Free Fallin'",
+      "I Won't Back Down",
+      "Wildflowers"
+    ]
+  },
+  {
+    "artist": "Townes Van Zandt",
+    "songs": [
+      "Pancho and Lefty"
+    ]
+  },
+  {
+    "artist": "Tracy Chapman",
+    "songs": [
+      "Fast Car",
+      "Give Me One Reason"
+    ]
+  },
+  {
+    "artist": "U2",
+    "songs": [
+      "Every Breaking Wave",
+      "Song for Someone"
+    ]
+  },
+  {
+    "artist": "Van Morrison",
+    "songs": [
+      "Brown Eyed Girl"
+    ]
+  },
+  {
+    "artist": "Willie Nelson",
+    "songs": [
+      "Always on My Mind"
+    ]
+  }
 ];
 
 // Real original titles from the "Our Songs" section of the master list,
@@ -246,20 +499,27 @@ const musicGroupSchema = {
     <div class="page-content text-container">
       <h2 id="songbook" tabindex="-1">A taste of the songbook</h2>
       <p>
-        A small sample from a book of more than 180 songs, organized by artist.
+        Explore selections from our songbook, organized by artist. Expand an artist to see more songs.
         Sarah &amp; the Buds also take requests; if you have a song in mind for
         your event, just ask.
       </p>
-      <ul class="repertoire">
-        {
-          coversByArtist.map((a) => (
+      <details class="songbook-panel">
+        <summary>Browse the songbook <span>({coversByArtist.reduce((count, artist) => count + artist.songs.length, 0)} songs · {coversByArtist.length} artists)</span></summary>
+        <ul class="repertoire">
+          {coversByArtist.map((entry) => (
             <li>
-              <span class="repertoire-artist">{a.artist}</span>
-              <span class="repertoire-songs">{a.songs.join(" · ")}</span>
+              {entry.songs.length > 1 ? (
+                <details class="artist-songs">
+                  <summary>{entry.artist} <span>({entry.songs.length} songs)</span></summary>
+                  <ul>{entry.songs.map((song) => <li>{song}</li>)}</ul>
+                </details>
+              ) : (
+                <><span class="repertoire-artist">{entry.artist}</span><span class="repertoire-songs">{entry.songs[0]}</span></>
+              )}
             </li>
-          ))
-        }
-      </ul>
+          ))}
+        </ul>
+      </details>
 
       <h2 id="originals" tabindex="-1">Originals</h2>
       <p>
@@ -300,6 +560,15 @@ const musicGroupSchema = {
 </BaseLayout>
 
 <style>
+  .songbook-panel { margin-block: 24px; border-block: 1px solid var(--color-muted); }
+  .songbook-panel summary { cursor: pointer; padding-block: 14px; font-weight: 600; }
+  .songbook-panel summary span { font-size: var(--text-small); font-weight: 400; }
+  .songbook-panel summary:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+  .artist-songs { width: 100%; }
+  .artist-songs summary { padding-block: 8px; min-height: 44px; box-sizing: border-box; }
+  .artist-songs ul { padding-left: 24px; margin-block: 0 12px; }
+  .artist-songs li { display: list-item; border: 0; padding: 4px 0; }
+
   .introduction-photos {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));

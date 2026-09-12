@@ -38,3 +38,9 @@ Revised validation: Astro build and git diff --check passed; Chromium at 390px/1
 Bud requested matching band/duo image dimensions and removal of empty gallery spaces. Photo 10 now pairs with the duo in matching 4:5 frames, retaining all four band members. The original barn portrait moves into the gallery. All 12 gallery photos flow in responsive columns (three desktop, two tablet, one phone) at natural aspect ratios, eliminating separate grids and tall-row gaps. No captions; hero unchanged. Supersedes earlier placement notes.
 
 Latest validation: build and diff checks passed. Chromium at 390/768/1280px confirms 12 gallery images, no broken images or horizontal overflow, and equal portrait dimensions at every size. Desktop portrait and gallery screenshots visually reviewed.
+
+## Expanded collapsible songbook — 2026-09-12
+
+Bud requested more songs from artists with multiple entries. Expanded to 70 songs / 44 artists using the August master song list. Whole-songbook and multi-song artist disclosures use native details/summary without JavaScript. See [source inventory](songbook-source.md). Prepared in PR #5; not released.
+
+Songbook validation: build and diff checks passed. Chromium at 390px and 1280px confirmed initially collapsed state, Enter to open the songbook, Space to expand the Beatles' seven titles, click to collapse, and no horizontal overflow.

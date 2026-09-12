@@ -248,3 +248,9 @@ Headings display uppercase through CSS; names retain their correct ampersands in
 ## Photo presentation
 
 Photos have no visible captions, as requested by Bud. Descriptive alt text remains for accessibility. The band-only adaptation of the barn portrait is the hero; the former Georgetown hero is now in the Photos gallery.
+
+## Expanded songbook presentation
+
+Explore selections from our songbook, organized by artist. Expand an artist to see more songs. Sarah & the Buds also take requests; if you have some in mind for your event, just ask.
+
+Control: Browse the songbook (dynamic song and artist counts). Artist disclosures show song counts. See [current artist/title list](songbook-source.md), which supersedes earlier sample selections.
