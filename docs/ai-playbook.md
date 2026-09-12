@@ -14,7 +14,7 @@ Codex and Claude Code can implement assigned changes; the other can review when 
 6. Bud approves release. Once connected to Cloudflare, `main` merges can deploy, including documentation-only changes. A successful local build is not proof of live deployment.
 7. After a confirmed deployment or DNS change, record the observed commit, URL, date and result in the dashboard and hosting notes; add a dated decision where appropriate.
 
-For a cross-site task, inspect both repositories' current instructions and PRs, use one PR per repository, and link their dependencies. Do not remove Plan & Adapt's band details before the new domain is verified. Resolve mixed-calendar performer assignments before moving events or adding redirects.
+For a cross-site task, inspect both repositories' current instructions and PRs, use one PR per repository, and link their dependencies. Do not remove Plan & Adapt's band details before the new domain is verified. The combined calendar may move without performer tags under the September 12 decision; never invent assignments. Verify the band calendar live before activating Plan & Adapt redirects.
 
 ## Handoff template
 

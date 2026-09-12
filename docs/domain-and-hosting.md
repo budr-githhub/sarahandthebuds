@@ -1,5 +1,21 @@
 # Domain & Hosting Notes
 
+## Calendar consolidation — September 12, 2026
+
+Owner: Codex. Status: implemented locally, awaiting review and release. Band branch `feat/band-calendar` (base `1a17f24`); Plan & Adapt branch `feat/music-separation` (base `1601ae4`).
+
+1. Handoff and current repositories reviewed — complete.
+2. Band calendar implemented and locally tested — complete. Seven events preserved in `src/data/events.json`; optional performers remain unknown.
+3. Release band calendar and verify `/shows` live — pending Bud review. The existing band homepage/domain already works; that alone does not prove the new calendar is deployed.
+4. Plan & Adapt Music cleanup and old-calendar redirect prepared — complete locally, held behind step 3.
+5. Release Plan & Adapt and verify the live redirect — pending step 3 and Bud review.
+6. Record deployed commits and final smoke checks — pending release.
+
+Validation: both Astro builds pass; browser checks at 390px and 1280px; calendar classification checked September 12, September 19 after the show, December 17 after all shows, and July 1 before all shows. Redirect tests cover both slash variants and query preservation; preview noindex remains. No new dependencies or DNS changes. Solo copy is a factual introduction/contact link; recordings have not been supplied.
+
+The setup notes below preserve the initial preparation history. Their pending deployment/domain statements are superseded by the current dashboard.
+
+
 Last checked: September 12, 2026. This document owns detailed configuration and verification. Planned values are not proof of a completed setup.
 
 ## Current state

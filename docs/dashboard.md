@@ -1,41 +1,24 @@
 # Sarah & the Buds Project Dashboard
 
-Last checked: September 12, 2026. This is the changing status and coordination record; details belong in the linked documents.
+## Calendar consolidation — September 12, 2026
 
-## Project health
+Review links: [Band PR #2](https://github.com/budr-githhub/sarahandthebuds/pull/2) → [Plan & Adapt draft PR #23](https://github.com/budr-githhub/planandadapt/pull/23). Release in this order.
 
-- Website: initial implementation built and tested locally; not verified live.
-- Repository: [budr-githhub/sarahandthebuds](https://github.com/budr-githhub/sarahandthebuds), with initial work on `setup/band-site` in [PR #1](https://github.com/budr-githhub/sarahandthebuds/pull/1).
-- Accepted source: `main`; PR #1 was open and unmerged when checked. Refresh GitHub before acting.
-- Cloudflare project, assigned pages.dev address, domain connection and DNS: pending verification. No deployment or DNS change was performed in these preparation tasks.
-- Existing Plan & Adapt website: unchanged by this work.
+Owner: Codex. Status: implemented locally, awaiting review and release. Band branch `feat/band-calendar` (base `1a17f24`); Plan & Adapt branch `feat/music-separation` (base `1601ae4`).
 
-## Current task and handoff
+1. Handoff and current repositories reviewed — complete.
+2. Band calendar implemented and locally tested — complete. Seven events preserved in `src/data/events.json`; optional performers remain unknown.
+3. Release band calendar and verify `/shows` live — pending Bud review. The existing band homepage/domain already works; that alone does not prove the new calendar is deployed.
+4. Plan & Adapt Music cleanup and old-calendar redirect prepared — complete locally, held behind step 3.
+5. Release Plan & Adapt and verify the live redirect — pending step 3 and Bud review.
+6. Record deployed commits and final smoke checks — pending release.
 
-- Owner: Codex. Next owner: Bud for review and Cloudflare setup; Claude review can be requested against PR #1.
-- Status: ready for review; documentation included in the same initial PR.
-- Initial base: `4df54aeaac5c455075eb5b6873a8fa5e443e50d6`.
-- Site implementation reviewed locally: `5331553ecfc7ef6f9e3ecf219c278cbb978f73fe`. Documentation follow-up is in PR #1; use its current head SHA for a new review.
-- Scope: independent Astro band site, referenced photos, songbook, booking/social links, interim Shows page, and shared documentation conventions.
-- Acceptance: root-level build passes; links/images resolve; mobile/desktop have no horizontal overflow; clear Cloudflare instructions and agent handoff; original site remains intact.
-- Validation already completed on the implementation: frozen-lockfile install; `pnpm build`; generated internal links and image alt text; Chrome at 390px and 1440px (no overflow or missing images); Shows page loads. Live headers, HTTPS and custom-domain routing remain untested.
-- Documentation follow-up: relative document links and referenced paths checked; whitespace check passed. No runtime files changed; the implementation build and browser results above remain applicable.
+Validation: both Astro builds pass; browser checks at 390px and 1280px; calendar classification checked September 12, September 19 after the show, December 17 after all shows, and July 1 before all shows. Redirect tests cover both slash variants and query preservation; preview noindex remains. No new dependencies or DNS changes. Solo copy is a factual introduction/contact link; recordings have not been supplied.
 
-## Next five tasks
+## Verified hosting
 
-1. Review and merge PR #1 after Bud's release decision.
-2. Create the Cloudflare Pages project using [hosting instructions](domain-and-hosting.md), then record actual project URL and deployed commit.
-3. Connect the IONOS domain through Cloudflare and verify HTTPS, www redirect, canonical URLs and preview noindex headers.
-4. Confirm calendar performer assignments; migrate band/duo events without misclassifying solo performances.
-5. Update Plan & Adapt's Music page in its own PR: band introduction/link, Midway Music Melodeon, and solo work. Confirm solo copy/listening links and specific videos before adding them.
+Initial site released at `1a17f24` after GitHub reconnection. User screenshots show apex and www active with SSL; live HTTPS checks confirmed apex 200 and www 301 to apex, preserving path/query. Registrar remains IONOS, nameservers dax.ns.cloudflare.com and samara.ns.cloudflare.com. Mail records were preserved; email delivery is not tested.
 
-## Open decisions
+## Documents
 
-- Calendar act for each event; whether Plan & Adapt retains a solo calendar.
-- Solo description/listening links, maintained in Plan & Adapt.
-- Specific band videos to embed; channel link already exists.
-- Final visual approval of the initial band presentation.
-
-## Project documents
-
-See [document index](README.md), [decisions](decision-log.md), [hosting](domain-and-hosting.md), [copy deck](copy-deck.md), [migration](migration.md), and [AI playbook](ai-playbook.md).
+See [migration](migration.md), [hosting](domain-and-hosting.md), [copy deck](copy-deck.md), and [decisions](decision-log.md).
