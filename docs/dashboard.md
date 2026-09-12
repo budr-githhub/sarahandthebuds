@@ -2,6 +2,8 @@
 
 ## Calendar consolidation — September 12, 2026
 
+Review links: [Band PR #2](https://github.com/budr-githhub/sarahandthebuds/pull/2) → [Plan & Adapt draft PR #23](https://github.com/budr-githhub/planandadapt/pull/23). Release in this order.
+
 Owner: Codex. Status: implemented locally, awaiting review and release. Band branch `feat/band-calendar` (base `1a17f24`); Plan & Adapt branch `feat/music-separation` (base `1601ae4`).
 
 1. Handoff and current repositories reviewed — complete.
