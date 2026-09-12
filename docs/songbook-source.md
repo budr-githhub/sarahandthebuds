@@ -1,5 +1,12 @@
 # Songbook selections
 
+## Current release — September 12, 2026
+
+Bud approved publication. [PR #5](https://github.com/budr-githhub/sarahandthebuds/pull/5) merged as `b99f8f14fa54306b6f864a4cdce9365f35decd2f`; Cloudflare reported a successful production deployment. Fresh production responses verified the band-only hero and its image asset, full songbook with 146 cover/holiday entries, request-only originals, and corrected inline spacing. Earlier pending-release notes below are historical and superseded. Initial cached songbook requests returned 404 immediately after deployment; fresh requests succeeded.
+
+Live pages: [Homepage](https://sarahandthebuds.com/) and [Songbook](https://sarahandthebuds.com/songbook).
+
+
 Source: Sarah & the Buds Master Song List.docx, August 2026, supplied by Bud and retained outside git in Documents/Plan & Adapt - Source Files. Only artist/title metadata is published; no lyrics, chords or performance notes. Suggested future additions are excluded. Standard punctuation and title spelling normalized.
 
 70 songs across 44 artists. Native details/summary controls collapse the entire songbook and expand multi-song artists; single-song entries remain directly readable once the songbook opens.

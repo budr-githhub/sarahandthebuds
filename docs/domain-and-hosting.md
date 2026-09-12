@@ -53,3 +53,10 @@ PR #2 deployed the real calendar. Live `/shows` contained all seven event cards 
 Use a reviewed branch/PR, run `pnpm build`, merge only with release authorization, and verify the Cloudflare check plus actual production content. Keep the deployed commit in the dashboard. For a bad release, restore a known-good Pages deployment and reconcile Git through a corrective PR. Restoring the old pre-calendar `/shows` after Plan & Adapt redirects are live would create a loop: coordinate that rollback across both sites. Do not modify Plan & Adapt DNS as part of band rollback.
 
 No database or new hosting service was added. IONOS domain renewal remains separate. Recheck provider pricing before adding services.
+
+## Current release — September 12, 2026
+
+Bud approved publication. [PR #5](https://github.com/budr-githhub/sarahandthebuds/pull/5) merged as `b99f8f14fa54306b6f864a4cdce9365f35decd2f`; Cloudflare reported a successful production deployment. Fresh production responses verified the band-only hero and its image asset, full songbook with 146 cover/holiday entries, request-only originals, and corrected inline spacing. Earlier pending-release notes below are historical and superseded. Initial cached songbook requests returned 404 immediately after deployment; fresh requests succeeded.
+
+Live pages: [Homepage](https://sarahandthebuds.com/) and [Songbook](https://sarahandthebuds.com/songbook).
+
