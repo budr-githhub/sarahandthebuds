@@ -14,7 +14,7 @@ Append dated entries using Date, Decision, Reason, Alternatives considered, and 
 
 **Impact:** Initial implementation is in PR #1. Static hosting requires no database or Pages Functions. Source, photos and contact links were adapted from Plan & Adapt. Production deployment and domain verification remain pending.
 
-## Interim show calendar
+## Interim show calendar (superseded)
 
 **Date:** 2026-09-12
 
@@ -47,3 +47,9 @@ Append dated entries using Date, Decision, Reason, Alternatives considered, and 
 **Reason:** Bud selected the band as the source of truth. This supersedes the interim calendar backlink and the earlier performer-tagging prerequisite for moving the combined list.
 
 **Impact:** Publish and verify band `/shows` first, then release the Plan & Adapt Music cleanup and permanent redirect. Implementation is prepared on separate branches; no release is implied by this record. Plan & Adapt retains radio and solo work. A simple solo introduction/contact link is used until listening links are supplied.
+
+## Separation and calendar release completed
+
+**Date:** 2026-09-12
+
+**Decision and outcome:** Bud approved both releases. Band PR #2 deployed at `c5577d2`; Plan & Adapt PR #23 deployed afterward at `b606ba5`. Live contents and redirects verified. Earlier pending-domain, unimplemented-cleanup and performer-tagging prerequisites are historical and superseded. See the dashboard for the completed sequence and maintenance ownership. No new dependency, sync service or DNS change was needed for the calendar release.

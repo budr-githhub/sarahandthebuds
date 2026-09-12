@@ -1,24 +1,20 @@
 # Sarah & the Buds Project Dashboard
 
-## Calendar consolidation — September 12, 2026
+## Completed release — September 12, 2026
 
-Review links: [Band PR #2](https://github.com/budr-githhub/sarahandthebuds/pull/2) → [Plan & Adapt draft PR #23](https://github.com/budr-githhub/planandadapt/pull/23). Release in this order.
+Owner: Codex; releases approved by Bud. Status: deployed and verified.
 
-Owner: Codex. Status: implemented locally, awaiting review and release. Band branch `feat/band-calendar` (base `1a17f24`); Plan & Adapt branch `feat/music-separation` (base `1601ae4`).
+1. Repository/handoff review — complete.
+2. Combined band calendar — complete; seven original events preserved in band `src/data/events.json`.
+3. Band release — complete: [PR #2](https://github.com/budr-githhub/sarahandthebuds/pull/2), commit `c5577d2f48be025863ef3ec835dece2c9c2022ab`; Cloudflare success, live calendar checked at 16:45 UTC.
+4. Plan & Adapt Music cleanup — complete: band introduction/photo, Midway Music Melodeon artwork/WRFL link, and solo introduction/contact link.
+5. Plan & Adapt release — complete: [PR #23](https://github.com/budr-githhub/planandadapt/pull/23), commit `b606ba5678d07b4c5ed8352a547b1d93db23ef2f`; Cloudflare success, live Music page and redirects checked at 16:47 UTC.
+6. Documentation — reconciled with the released implementation. These are the functional release commits; subsequent documentation commits do not change website behavior.
 
-1. Handoff and current repositories reviewed — complete.
-2. Band calendar implemented and locally tested — complete. Seven events preserved in `src/data/events.json`; optional performers remain unknown.
-3. Release band calendar and verify `/shows` live — pending Bud review. The existing band homepage/domain already works; that alone does not prove the new calendar is deployed.
-4. Plan & Adapt Music cleanup and old-calendar redirect prepared — complete locally, held behind step 3.
-5. Release Plan & Adapt and verify the live redirect — pending step 3 and Bud review.
-6. Record deployed commits and final smoke checks — pending release.
+Both `/music/events` and `/music/events/` on Plan & Adapt return 301 to `https://sarahandthebuds.com/shows`, preserving query strings. The band calendar has no backlink to the old calendar, so there is no redirect loop. Both www band URLs and apex use valid HTTPS; www redirects to apex with path/query preserved.
 
-Validation: both Astro builds pass; browser checks at 390px and 1280px; calendar classification checked September 12, September 19 after the show, December 17 after all shows, and July 1 before all shows. Redirect tests cover both slash variants and query preservation; preview noindex remains. No new dependencies or DNS changes. Solo copy is a factual introduction/contact link; recordings have not been supplied.
+Validation: both builds passed; layouts checked at 390px/1280px; calendar tested before, during and after the event schedule; original event data compared exactly; JSON-LD and seasonal Eastern offsets checked. Production contents and redirects verified after deployment.
 
-## Verified hosting
+Remaining optional content: solo listening links and specific band video embeds. Performer fields remain unknown where not supplied; do not guess them. Existing domain email records were preserved, but email delivery was not tested.
 
-Initial site released at `1a17f24` after GitHub reconnection. User screenshots show apex and www active with SSL; live HTTPS checks confirmed apex 200 and www 301 to apex, preserving path/query. Registrar remains IONOS, nameservers dax.ns.cloudflare.com and samara.ns.cloudflare.com. Mail records were preserved; email delivery is not tested.
-
-## Documents
-
-See [migration](migration.md), [hosting](domain-and-hosting.md), [copy deck](copy-deck.md), and [decisions](decision-log.md).
+See [hosting](domain-and-hosting.md), [migration](migration.md), [copy deck](copy-deck.md), and [decisions](decision-log.md).
