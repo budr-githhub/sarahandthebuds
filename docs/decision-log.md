@@ -93,3 +93,7 @@ Bud requested exactly one homepage row per artist: roughly two examples, with a 
 ## Original songs by request — 2026-09-12
 
 Bud requested removal of the specialty section and no named originals yet. Both public pages now say “Original songs available by request” with a contact link. Removed original/specialty arrays from public songbook metadata and removed Merry Mary from the holiday listing and homepage copy. The source document remains unchanged. The reference displays 146 covers/seasonal entries (142 covers, four holiday selections), plus the request-only originals section. This supersedes earlier public counts and original-title lists. PR #5 remains pending release.
+
+## Inline spacing correction — 2026-09-12
+
+Reviewed rendered paragraph/heading text on the homepage, songbook and shows pages. Astro removed source newline whitespace on both sides of the homepage inline full-song-list link. Explicit spaces now separate the surrounding sentences and link. Other reviewed prose boundaries render correctly. No wording changes.
