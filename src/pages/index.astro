@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import songbook from "../data/songbook.json";
 
 // Migrated from Plan & Adapt; see docs/migration.md.
 const bookingContexts = [
@@ -16,298 +17,17 @@ const bookingContexts = [
 // Sample repertoire, organized by artist and alphabetized by artist then
 // song (a leading "The" is ignored for sorting). Drawn title-level from the
 // band's own master song list; a small sample of a 180+ song book.
-const coversByArtist = [
-  {
-    "artist": "The Band",
-    "songs": [
-      "It Makes No Difference",
-      "Up on Cripple Creek",
-      "The Weight"
-    ]
-  },
-  {
-    "artist": "The Beatles",
-    "songs": [
-      "Across the Universe",
-      "All You Need Is Love",
-      "Blackbird",
-      "Hey Jude",
-      "If I Fell",
-      "Let It Be",
-      "Till There Was You"
-    ]
-  },
-  {
-    "artist": "Bob Dylan",
-    "songs": [
-      "Blowin’ in the Wind",
-      "Don’t Think Twice, It’s All Right",
-      "Like a Rolling Stone",
-      "The Times They Are A-Changin’"
-    ]
-  },
-  {
-    "artist": "Boston",
-    "songs": [
-      "Peace of Mind"
-    ]
-  },
-  {
-    "artist": "boygenius",
-    "songs": [
-      "Not Strong Enough"
-    ]
-  },
-  {
-    "artist": "Chappell Roan",
-    "songs": [
-      "Pink Pony Club"
-    ]
-  },
-  {
-    "artist": "Coldplay",
-    "songs": [
-      "Yellow"
-    ]
-  },
-  {
-    "artist": "Counting Crows",
-    "songs": [
-      "A Long December",
-      "Accidentally in Love",
-      "Anna Begins"
-    ]
-  },
-  {
-    "artist": "The Cranberries",
-    "songs": [
-      "Zombie"
-    ]
-  },
-  {
-    "artist": "Crowded House",
-    "songs": [
-      "Don’t Dream It’s Over",
-      "Weather with You"
-    ]
-  },
-  {
-    "artist": "Dolly Parton",
-    "songs": [
-      "Jolene"
-    ]
-  },
-  {
-    "artist": "Ella Langley",
-    "songs": [
-      "Choosin' Texas"
-    ]
-  },
-  {
-    "artist": "Elle King & Tyler Childers",
-    "songs": [
-      "Jersey Giant"
-    ]
-  },
-  {
-    "artist": "First Aid Kit",
-    "songs": [
-      "Emmylou"
-    ]
-  },
-  {
-    "artist": "Fleetwood Mac",
-    "songs": [
-      "Landslide"
-    ]
-  },
-  {
-    "artist": "Glen Hansard & Markéta Irglová",
-    "songs": [
-      "Low Rising"
-    ]
-  },
-  {
-    "artist": "Gracie Abrams",
-    "songs": [
-      "That's So True"
-    ]
-  },
-  {
-    "artist": "Green Day",
-    "songs": [
-      "Basket Case",
-      "Boulevard of Broken Dreams",
-      "Give Me Novacaine"
-    ]
-  },
-  {
-    "artist": "Guns N' Roses / Sheryl Crow",
-    "songs": [
-      "Sweet Child o' Mine"
-    ]
-  },
-  {
-    "artist": "Jimmy Eat World",
-    "songs": [
-      "The Middle"
-    ]
-  },
-  {
-    "artist": "John Denver",
-    "songs": [
-      "Take Me Home, Country Roads"
-    ]
-  },
-  {
-    "artist": "Kacey Musgraves",
-    "songs": [
-      "The Architect",
-      "Biscuits"
-    ]
-  },
-  {
-    "artist": "Kaitlin Butts",
-    "songs": [
-      "Marfa Lights",
-      "You Ain’t Got to Die (to Be Dead to Me)"
-    ]
-  },
-  {
-    "artist": "Miranda Lambert",
-    "songs": [
-      "Armadillo",
-      "In His Arms"
-    ]
-  },
-  {
-    "artist": "Muscadine Bloodline",
-    "songs": [
-      "Goose Chase",
-      "Pieces"
-    ]
-  },
-  {
-    "artist": "Nancy Sinatra",
-    "songs": [
-      "These Boots Are Made for Walkin'"
-    ]
-  },
-  {
-    "artist": "Neil Diamond",
-    "songs": [
-      "Sweet Caroline"
-    ]
-  },
-  {
-    "artist": "Neil Young",
-    "songs": [
-      "Harvest Moon",
-      "Lotta Love"
-    ]
-  },
-  {
-    "artist": "Nelly Furtado",
-    "songs": [
-      "I'm Like a Bird"
-    ]
-  },
-  {
-    "artist": "Noah Kahan",
-    "songs": [
-      "Stick Season"
-    ]
-  },
-  {
-    "artist": "Oasis",
-    "songs": [
-      "Champagne Supernova"
-    ]
-  },
-  {
-    "artist": "Patsy Cline",
-    "songs": [
-      "Crazy"
-    ]
-  },
-  {
-    "artist": "Paul Simon",
-    "songs": [
-      "Graceland"
-    ]
-  },
-  {
-    "artist": "The Rolling Stones",
-    "songs": [
-      "Paint It Black"
-    ]
-  },
-  {
-    "artist": "Shania Twain",
-    "songs": [
-      "Whose Bed Have Your Boots Been Under?"
-    ]
-  },
-  {
-    "artist": "Sixpence None the Richer",
-    "songs": [
-      "Kiss Me",
-      "There She Goes"
-    ]
-  },
-  {
-    "artist": "Stealers Wheel",
-    "songs": [
-      "Stuck in the Middle with You"
-    ]
-  },
-  {
-    "artist": "TLC",
-    "songs": [
-      "No Scrubs"
-    ]
-  },
-  {
-    "artist": "Tom Petty",
-    "songs": [
-      "Free Fallin'",
-      "I Won't Back Down",
-      "Wildflowers"
-    ]
-  },
-  {
-    "artist": "Townes Van Zandt",
-    "songs": [
-      "Pancho and Lefty"
-    ]
-  },
-  {
-    "artist": "Tracy Chapman",
-    "songs": [
-      "Fast Car",
-      "Give Me One Reason"
-    ]
-  },
-  {
-    "artist": "U2",
-    "songs": [
-      "Every Breaking Wave",
-      "Song for Someone"
-    ]
-  },
-  {
-    "artist": "Van Morrison",
-    "songs": [
-      "Brown Eyed Girl"
-    ]
-  },
-  {
-    "artist": "Willie Nelson",
-    "songs": [
-      "Always on My Mind"
-    ]
+const coversByArtist = songbook.sample;
+// Pack titles into readable compact lines; mobile wraps instead of hiding titles.
+const songRows = coversByArtist.flatMap(({artist, songs}) => {
+  const groups: string[][] = [];
+  for (const song of songs) {
+    const last = groups.at(-1);
+    if (last && [...last, song].join(" · ").length <= 44) last.push(song);
+    else groups.push([song]);
   }
-];
+  return groups.map((songs) => ({artist, songs}));
+});
 
 // Real original titles from the "Our Songs" section of the master list,
 // alphabetized.
@@ -403,7 +123,7 @@ const musicGroupSchema = {
   ogImageAlt="Sarah & the Buds performing together as a full band."
   structuredData={musicGroupSchema}
 >
-  <div class="page-container music-page">
+  <div class="page-container music-page" id="top" tabindex="-1">
     <div class="page-content text-container">
       <div class="brand-intro"><img class="brand-mark" src="/images/brand/sb-mark.png" alt="S&B microphone mark" width="1124" height="797" /><h1>Sarah &amp; the Buds</h1></div>
       <p class="lede">
@@ -469,6 +189,8 @@ const musicGroupSchema = {
         ))}
       </div>
 
+      <a class="back-to-top" href="#top">Back to top ↑</a>
+
       <h2 id="where-we-play" tabindex="-1">Where they play</h2>
       <p>Sarah &amp; the Buds and Sarah &amp; Bud are available for:</p>
       <ul class="booking-contexts">
@@ -480,6 +202,7 @@ const musicGroupSchema = {
           >booksarahandbud@gmail.com</a
         >.
       </p>
+      <a class="back-to-top" href="#top">Back to top ↑</a>
     </div>
 
     <section aria-labelledby="photos">
@@ -494,32 +217,28 @@ const musicGroupSchema = {
           </div>
         ))}
       </div>
+      <a class="back-to-top" href="#top">Back to top ↑</a>
     </section>
 
     <div class="page-content text-container">
       <h2 id="songbook" tabindex="-1">A taste of the songbook</h2>
       <p>
-        Explore selections from our songbook, organized by artist. Expand an artist to see more songs.
+        This is just a taste of our songbook—there are many more songs available.
+        <a href="/songbook">See the full song list &rarr;</a>
         Sarah &amp; the Buds also take requests; if you have a song in mind for
         your event, just ask.
       </p>
       <details class="songbook-panel">
         <summary>Browse the songbook <span>({coversByArtist.reduce((count, artist) => count + artist.songs.length, 0)} songs · {coversByArtist.length} artists)</span></summary>
-        <ul class="repertoire">
-          {coversByArtist.map((entry) => (
-            <li>
-              {entry.songs.length > 1 ? (
-                <details class="artist-songs">
-                  <summary>{entry.artist} <span>({entry.songs.length} songs)</span></summary>
-                  <ul>{entry.songs.map((song) => <li>{song}</li>)}</ul>
-                </details>
-              ) : (
-                <><span class="repertoire-artist">{entry.artist}</span><span class="repertoire-songs">{entry.songs[0]}</span></>
-              )}
-            </li>
+        <ul class="repertoire songbook-rows">
+          {songRows.map((row) => (
+            <li><span class="repertoire-artist">{row.artist}</span><span class="repertoire-songs">{row.songs.join(" · ")}</span></li>
           ))}
         </ul>
       </details>
+
+
+      <a class="back-to-top" href="#top">Back to top ↑</a>
 
       <h2 id="originals" tabindex="-1">Originals</h2>
       <p>
@@ -530,12 +249,16 @@ const musicGroupSchema = {
         {originals.map((o) => <li>{o}</li>)}
       </ul>
 
+      <a class="back-to-top" href="#top">Back to top ↑</a>
+
       <h2 id="holidays" tabindex="-1">Holidays</h2>
       <p>
         For December bookings, the set makes room for Christmas favorites,
         from "Feliz Navidad" to "Fairytale of New York," alongside Bud's
         original holiday song, "Merry Mary."
       </p>
+
+      <a class="back-to-top" href="#top">Back to top ↑</a>
 
       <h2 id="follow-along" tabindex="-1">Follow along</h2>
       <p>
@@ -555,19 +278,21 @@ const musicGroupSchema = {
           >Email Sarah &amp; Bud booking</a
         >
       </p>
+      <a class="back-to-top" href="#top">Back to top ↑</a>
     </div>
   </div>
 </BaseLayout>
 
 <style>
+  .songbook-rows li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 12px; padding-block: 8px; }
+  .songbook-rows .repertoire-artist { flex-shrink: 0; }
+  .back-to-top { display: inline-block; padding-block: 12px; font-size: var(--text-small); }
+  @media (max-width: 600px) { .songbook-rows li { display: block; } }
+
   .songbook-panel { margin-block: 24px; border-block: 1px solid var(--color-muted); }
   .songbook-panel summary { cursor: pointer; padding-block: 14px; font-weight: 600; }
   .songbook-panel summary span { font-size: var(--text-small); font-weight: 400; }
   .songbook-panel summary:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
-  .artist-songs { width: 100%; }
-  .artist-songs summary { padding-block: 8px; min-height: 44px; box-sizing: border-box; }
-  .artist-songs ul { padding-left: 24px; margin-block: 0 12px; }
-  .artist-songs li { display: list-item; border: 0; padding: 4px 0; }
 
   .introduction-photos {
     display: grid;

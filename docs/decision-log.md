@@ -81,3 +81,7 @@ Bud requested matching band/duo image dimensions and removal of empty gallery sp
 ## Expanded collapsible songbook — 2026-09-12
 
 Bud requested more songs from artists with multiple entries. Expanded to 70 songs / 44 artists using the August master song list. Whole-songbook and multi-song artist disclosures use native details/summary without JavaScript. See [source inventory](songbook-source.md). Prepared in PR #5; not released.
+
+## Full songbook reference and compact rows — 2026-09-12
+
+Bud requested no artist disclosures, compact multi-song rows inside the overall collapsible songbook, a full reference page and section back-to-top links. `/songbook` now lists 184 deduplicated entries from the August master TOC: 137 covers, 41 originals, five holiday entries and one specialty song. Covers are title-only because the source does not consistently identify artists. The future-suggestions section is excluded. `src/data/songbook.json` holds metadata only. Homepage links to the full reference; both pages have section return links. This supersedes nested artist disclosures. Release pending in PR #5.

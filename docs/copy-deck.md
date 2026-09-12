@@ -249,8 +249,12 @@ Headings display uppercase through CSS; names retain their correct ampersands in
 
 Photos have no visible captions, as requested by Bud. Descriptive alt text remains for accessibility. The band-only adaptation of the barn portrait is the hero; the former Georgetown hero is now in the Photos gallery.
 
-## Expanded songbook presentation
+## Songbook presentation
 
-Explore selections from our songbook, organized by artist. Expand an artist to see more songs. Sarah & the Buds also take requests; if you have some in mind for your event, just ask.
+This is just a taste of our songbook—there are many more songs available. See the full song list → `/songbook`. Sarah & the Buds also take requests; if you have a song in mind for your event, just ask.
 
-Control: Browse the songbook (dynamic song and artist counts). Artist disclosures show song counts. See [current artist/title list](songbook-source.md), which supersedes earlier sample selections.
+Control: Browse the songbook (70 songs · 44 artists). Artist rows are directly visible when expanded. Multiple titles share compact rows where they fit; mobile wraps without clipping.
+
+Reference page: Our songbook. 184 selections from our August 2026 songbook, including covers, originals and seasonal favorites. Have a favorite in mind? Ask us about it.
+
+Sections: Covers, Our originals, Holiday songs, Specialty songs. Each section and each homepage section has a Back to top ↑ link. Complete titles are maintained in `src/data/songbook.json`.

@@ -1,0 +1,39 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import songbook from "../data/songbook.json";
+const sections = [
+  {id: "covers", title: "Covers", songs: songbook.covers},
+  {id: "originals", title: "Our originals", songs: songbook.originals},
+  {id: "holiday", title: "Holiday songs", songs: songbook.holiday},
+  {id: "specialty", title: "Specialty songs", songs: songbook.specialty},
+];
+const total = sections.reduce((n, section) => n + section.songs.length, 0);
+---
+<BaseLayout title="Songbook | Sarah & the Buds" description="Explore the Sarah & the Buds songbook: covers, originals, holiday songs and specialty selections.">
+  <div class="page-container" id="top" tabindex="-1">
+    <div class="page-content text-container">
+      <a href="/#songbook">← Back to the band</a>
+      <h1>Our songbook</h1>
+      <p>{total} selections from our {songbook.sourceVersion} songbook, including covers, originals and seasonal favorites. Have a favorite in mind? <a href="mailto:booksarahandbud@gmail.com?subject=Song%20request">Ask us about it.</a></p>
+      <nav aria-label="Songbook sections">{sections.map((section) => <a href={`#${section.id}`}>{section.title}</a>)}</nav>
+      {sections.map((section) => (
+        <section aria-labelledby={section.id}>
+          <h2 id={section.id} tabindex="-1">{section.title} <span>({section.songs.length})</span></h2>
+          <ul>{section.songs.map((song) => <li>{song}</li>)}</ul>
+          <a class="back-to-top" href="#top">Back to top ↑</a>
+        </section>
+      ))}
+      <a href="/">← Sarah &amp; the Buds</a>
+    </div>
+  </div>
+</BaseLayout>
+<style>
+  nav { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-block: 24px; }
+  nav a, .back-to-top { display: inline-block; padding-block: 12px; }
+  section { margin-block: 32px; }
+  h2 span { font-size: var(--text-small); font-weight: 400; }
+  h2 { scroll-margin-top: 32px; }
+  ul { columns: 2; column-gap: 32px; padding-left: 20px; }
+  li { break-inside: avoid; padding-block: 6px; }
+  @media(max-width:600px) { ul { columns: 1; } }
+</style>

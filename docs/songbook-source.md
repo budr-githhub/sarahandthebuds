@@ -48,3 +48,7 @@ Source: Sarah & the Buds Master Song List.docx, August 2026, supplied by Bud and
 - U2: Every Breaking Wave; Song for Someone
 - Van Morrison: Brown Eyed Girl
 - Willie Nelson: Always on My Mind
+
+## Complete reference
+
+`src/data/songbook.json` is the current metadata inventory. The full `/songbook` reference transcribes every entry in the August table of contents before “Consider adding audience favorites,” deduplicating Song for Someone and Emmylou. Counts: 137 covers, 41 originals, 5 holiday, 1 specialty = 184. Holiday includes the source entry A Very Willie Christmas. Full reference uses titles without inferred artist attribution. Source spellings are lightly normalized for known cover titles; no lyrics or chords are published. Homepage retains 70 selected songs in compact rows inside a single disclosure.
