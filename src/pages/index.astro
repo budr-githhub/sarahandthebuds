@@ -79,14 +79,12 @@ const introductions = [
   {
     "src": "/images/music/sarah-and-the-buds-band-portrait-in-barn.webp",
     "alt": "The four members of Sarah & the Buds smiling together in a wooden barn.",
-    "caption": "Sarah & the Buds \u00b7 Full band",
     "width": 1920,
     "height": 1268
   },
   {
     "src": "/images/music/sarah-and-bud-portrait-with-guitar-and-microphone.webp",
     "alt": "Sarah & Bud smiling with an acoustic guitar and microphone.",
-    "caption": "Sarah & Bud \u00b7 Acoustic duo",
     "width": 1536,
     "height": 1864
   }
@@ -96,41 +94,37 @@ const newPhotos = [
   {
     "src": "/images/music/sarah-and-bud-performing-beside-wine-barrels.webp",
     "alt": "Sarah & Bud performing beside wine barrels.",
-    "caption": "Sarah & Bud live",
     "width": 1440,
     "height": 1440
   },
   {
     "src": "/images/music/sarah-and-the-buds-performing-in-wine-barrel-room.webp",
     "alt": "Sarah & the Buds performing with vocals, guitar, drums and bass in a wine-barrel room.",
-    "caption": "The full band live",
     "width": 1920,
     "height": 1440
   },
   {
     "src": "/images/music/sarah-and-the-buds-georgetown-underground-portrait.webp",
     "alt": "The four members of Sarah & the Buds holding Georgetown Underground stickers.",
-    "caption": "At Georgetown Underground",
     "width": 1636,
     "height": 1920
   },
   {
     "src": "/images/music/sarah-and-the-buds-outdoor-crowd-selfie.webp",
     "alt": "Sarah & the Buds taking an outdoor group selfie with a crowd.",
-    "caption": "Good times together",
     "width": 1920,
     "height": 1440
   },
   {
     "src": "/images/music/sarah-and-the-buds-georgetown-storefront-with-show-sign.webp",
     "alt": "Sarah & the Buds outside Georgetown Underground beside a chalkboard show sign.",
-    "caption": "A past show at Georgetown Underground",
     "width": 1920,
     "height": 1440
   }
 ];
 
 const gallery = [
+  { src: "/images/music/sarah-and-buds-georgetown-underground.webp", alt: "Sarah & the Buds outside Georgetown Underground with a chalkboard sign from a past show." },
   { src: "/images/music/facebook/sarah-and-buds-cover-band.jpg", alt: "Sarah & the Buds performing together as a full band." },
   { src: "/images/music/facebook/sarah-and-buds-stage-performance.jpg", alt: "Sarah & the Buds performing on an indoor stage." },
   { src: "/images/music/facebook/sarah-and-buds-porch-performance.jpg", alt: "Sarah & Bud playing an acoustic set on a porch." },
@@ -191,8 +185,9 @@ const musicGroupSchema = {
     <div class="music-hero">
       <div class="image-frame">
         <img
-          src="/images/music/sarah-and-buds-georgetown-underground.webp"
-          alt="Sarah & the Buds outside Georgetown Underground, a record shop and venue, with a chalkboard sign reading Sarah and the Buds."
+          src="/images/music/sarah-and-the-buds-band-only-hero.webp"
+          width="1542" height="1020" fetchpriority="high"
+          alt="The four members of Sarah & the Buds smiling together against a dark background."
         />
       </div>
     </div>
@@ -217,7 +212,6 @@ const musicGroupSchema = {
         {introductions.map((photo) => (
           <figure>
             <img src={photo.src} alt={photo.alt} width={photo.width} height={photo.height} loading="lazy" decoding="async" />
-            <figcaption>{photo.caption}</figcaption>
           </figure>
         ))}
       </div>
@@ -250,7 +244,6 @@ const musicGroupSchema = {
         {newPhotos.map((photo) => (
           <figure>
             <img src={photo.src} alt={photo.alt} width={photo.width} height={photo.height} loading="lazy" decoding="async" />
-            <figcaption>{photo.caption}</figcaption>
           </figure>
         ))}
       </div>
@@ -325,7 +318,6 @@ const musicGroupSchema = {
   .introduction-photos img, .added-photos img {
     display: block; width: 100%; height: auto; border-radius: 8px;
   }
-  figcaption { padding-top: 10px; font-size: var(--text-small); color: var(--color-text); }
   @media (max-width: 600px) {
     .introduction-photos { grid-template-columns: 1fr; }
   }

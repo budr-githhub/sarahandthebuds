@@ -69,3 +69,7 @@ Bud supplied Sarah-and-the-Buds-Style-Guide.docx version 1.0 (September 2026) an
 **Alternatives considered:** Replacing existing photos or displaying all 15; neither matches the selected scope.
 
 **Impact:** WebP assets and descriptive captions added; no dependency, calendar or DNS change. Release pending review.
+
+## Hero and caption revision — 2026-09-12
+
+Bud requested pictures without visible captions and a band-only version of photo 4 at the top. Move the former hero into the gallery; preserve the original barn portrait in the introduction. A dark-background AI-edited hero is prepared for likeness review. Accessible alt text remains. This supersedes the earlier visible-caption plan; release remains pending.

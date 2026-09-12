@@ -28,3 +28,7 @@ See [hosting](domain-and-hosting.md), [migration](migration.md), [copy deck](cop
 Owner: Codex. Branch: `feat/approved-photo-gallery`. Status: prepared for review; not deployed. Seven approved additions preserve the existing hero and six gallery photos. Photo 10 replaces photo 11 in the selection. See [photo inventory](photo-inventory.md). Release awaits Bud’s preview approval.
 
 Validation: `pnpm --config.verify-deps-before-run=false run build` passed. This disables pnpm's dependency freshness preflight for the shared local dependency directory; it runs the normal Astro build. Chromium checks at 390px and 1280px found no horizontal overflow or broken images; counts verified two new introduction portraits, five new gallery photos and six existing gallery photos. Desktop screenshot reviewed. No production deployment performed.
+
+PR #5 revision: captions removed; band-only AI-edited barn portrait used as hero, with Bud’s likeness review pending. Former hero moved to gallery. No release performed.
+
+Revised validation: Astro build and git diff --check passed; Chromium at 390px/1280px reported no broken images or overflow, with two introduction photos, five added gallery photos and seven preserved gallery images including the former hero. No visible figcaptions remain.
