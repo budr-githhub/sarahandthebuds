@@ -18,15 +18,12 @@ Use a branch and pull request for changes. Review and build before merging to `m
 
 ## Cloudflare Pages setup
 
-1. Workers & Pages → Create application → Pages → Import an existing Git repository.
-2. Select `budr-githhub/sarahandthebuds`.
-3. Production branch: `main`; framework: Astro; root directory: leave blank.
-4. Build command: `pnpm build`; build output directory: `dist`.
-5. Set `NODE_VERSION` to `22` if the build environment needs an explicit version.
-6. After the initial pull request is reviewed and merged, deploy and inspect the assigned pages.dev URL.
-7. Add sarahandthebuds.com as a Cloudflare zone on Free, review existing email/DNS records, then use the nameservers assigned specifically to this domain at IONOS.
-8. In Pages → Custom domains, add sarahandthebuds.com and www.sarahandthebuds.com. Configure www to redirect to the apex and verify HTTPS.
+Follow [Domain & Hosting Notes](docs/domain-and-hosting.md) for the exact setup, domain connection, verification and rollback sequence. Production uses `main`, root directory blank, `pnpm build`, output `dist`. Merge the initial PR before the first production build.
 
-This is a static site with no Pages Functions, database, paid media storage, or form service. Booking uses the existing email address. Preview-host noindex headers are in `public/_headers`; verify them after deployment. Domain registration/renewal remains at IONOS.
+## Documentation and collaboration
+
+Start with the [dashboard](docs/dashboard.md) and [document index](docs/README.md). Shared rules live in [AGENTS.md](AGENTS.md); [CLAUDE.md](CLAUDE.md) imports them. The [AI playbook](docs/ai-playbook.md) defines task ownership and handoff. Keep the [copy deck](docs/copy-deck.md) synchronized with visible source text and record choices in the [decision log](docs/decision-log.md).
+
+GitHub `main` is the accepted source of truth. Temporary working copies are not canonical. Source is at repository root, unlike Plan & Adapt's `site/` folder. Hosting status is recorded in the dashboard; do not infer deployment from a successful local build.
 
 See [migration notes](docs/migration.md) for the remaining coordinated changes on Plan & Adapt.

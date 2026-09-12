@@ -1,6 +1,6 @@
 # Band site separation — September 12, 2026
 
-Status: initial implementation for review; not deployed; no DNS changes.
+Status at initial preparation: implementation for review; no deployment or DNS changes performed. See [dashboard](dashboard.md) for current status and [hosting notes](domain-and-hosting.md) for the release procedure.
 
 ## Source and scope
 
