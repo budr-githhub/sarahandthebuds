@@ -9,7 +9,8 @@ Run `pnpm build` to generate `dist/`; `pnpm preview` serves the production build
 
 ## Editing
 
-- Band copy, repertoire, photo gallery and booking: `src/pages/index.astro`.
+- Band copy, photo gallery and booking: `src/pages/index.astro`.
+- Songbook metadata: `src/data/songbook.json`; full reference: `src/pages/songbook.astro`.
 - Shows: `src/pages/shows.astro`, rendering the combined calendar from `src/data/events.json`.
 - Shared design: `src/styles/global.css` and `src/components/`.
 - Photos: `public/images/music/`. Only images used by this site are included.

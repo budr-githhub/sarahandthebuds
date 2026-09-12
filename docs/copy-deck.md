@@ -1,264 +1,567 @@
-# Copy Deck
+# Current copy deck
 
-Reviewable mirror of the initial implementation at `5331553`. Generated from the verified production build on September 12, 2026; not evidence of a live deployment. Update this document and matching source together. Do not regenerate over owner edits.
+Rendered text mirror for the released PR #5 source. Link targets and layouts remain authoritative in the corresponding Astro pages. Data inventories: `src/data/events.json` and `src/data/songbook.json`. Historical copy has been replaced here; see the decision log for prior decisions.
 
-## Home — `/`
+## Homepage
 
-Source: `src/pages/index.astro`
+Sarah & the BudsSkip to contentSarah & the Buds
 
-### Sarah & the Buds
+AboutMusicShowsBooking
+
+Sarah & the Buds
 
 Sarah & the Buds is a full band built for singing along. Sarah & Bud is the acoustic duo version of the same thing, for smaller rooms and porches.
 
+Upcoming showsBook the band
+
 On this page
 
-- [Band & duo](#band-and-duo)
+Band & duo
 
-- [Where we play](#where-we-play)
+Where we play
 
-- [Photos](#photos)
+Photos
 
-- [Songbook](#songbook)
+Songbook
 
-- [Originals](#originals)
+Originals
 
-- [Holidays](#holidays)
+Holidays
 
-- [Follow along](#follow-along)
-
-Image: Sarah & the Buds outside Georgetown Underground, a record shop and venue, with a chalkboard sign reading Sarah and the Buds. — `/images/music/sarah-and-buds-georgetown-underground.webp`
+Follow along
 
 The set list is familiar and fun: rock, country, Americana, folk, and pop you already know, played so people can sing along. Woven through it are the band's own originals, which are as much a part of a night as the covers.
 
-#### The band and the duo
+The band and the duo
 
 Sarah & the Buds is the full-band experience, with more sound and more energy for a bigger room or event. Sarah & Bud is the acoustic duo.
 
-#### Where they play
+Back to top ↑
+
+Where they play
 
 Sarah & the Buds and Sarah & Bud are available for:
 
-- Private parties
+Private parties
 
-- Corporate events
+Corporate events
 
-- Wineries & breweries
+Wineries & breweries
 
-- Festivals
+Festivals
 
-- Weddings
+Weddings
 
-- Porch concerts
+Porch concerts
 
-- Restaurants
+Restaurants
 
-- Holiday parties
+Holiday parties
 
-Booking pricing is available on request. To check a date or ask about a show, email [booksarahandbud@gmail.com](mailto:booksarahandbud@gmail.com?subject=Booking%20inquiry).
+Booking pricing is available on request. To check a date or ask about a show, email booksarahandbud@gmail.com.
 
-#### Photos
+Back to top ↑
 
-Image: Sarah & the Buds performing together as a full band. — `/images/music/facebook/sarah-and-buds-cover-band.jpg`
+Photos
 
-Image: Sarah & the Buds performing on an indoor stage. — `/images/music/facebook/sarah-and-buds-stage-performance.jpg`
+Back to top ↑
 
-Image: Sarah & Bud playing an acoustic set on a porch. — `/images/music/facebook/sarah-and-buds-porch-performance.jpg`
+A taste of the songbook
 
-Image: Sarah singing during a porch performance. — `/images/music/facebook/sarah-singing-porch.jpg`
+This is just a taste of our songbook—there are many more songs available. See the full song list → Sarah & the Buds also take requests; if you have a song in mind for your event, just ask.
 
-Image: Bud playing bass at an outdoor show. — `/images/music/facebook/bud-bass-porch.jpg`
+Browse the songbook (44 artists · selected songs)
 
-Image: A crowd gathered for an outdoor porch concert. — `/images/music/facebook/porchfest-crowd.jpg`
+The BandIt Makes No Difference · Up on Cripple Creek
 
-#### A taste of the songbook
+The BeatlesAcross the Universe · All You Need Is Love · Blackbird
 
-A small sample from a book of more than 180 songs, organized by artist. Sarah & the Buds also take requests; if you have a song in mind for your event, just ask.
+Bob DylanBlowin’ in the Wind · Don’t Think Twice, It’s All Right
 
-- The Band Up on Cripple Creek
+BostonPeace of Mind
 
-- The Beatles Blackbird · Hey Jude
+boygeniusNot Strong Enough
 
-- Bob Dylan Like a Rolling Stone
+Chappell RoanPink Pony Club
 
-- Boston Peace of Mind
+ColdplayYellow
 
-- boygenius Not Strong Enough
+Counting CrowsA Long December · Accidentally in Love · Anna Begins
 
-- Chappell Roan Pink Pony Club
+The CranberriesZombie
 
-- Coldplay Yellow
+Crowded HouseDon’t Dream It’s Over · Weather with You
 
-- Counting Crows Accidentally in Love
+Dolly PartonJolene
 
-- The Cranberries Zombie
+Ella LangleyChoosin' Texas
 
-- Dolly Parton Jolene
+Elle King & Tyler ChildersJersey Giant
 
-- Ella Langley Choosin' Texas
+First Aid KitEmmylou
 
-- Elle King & Tyler Childers Jersey Giant
+Fleetwood MacLandslide
 
-- First Aid Kit Emmylou
+Glen Hansard & Markéta IrglováFalling Slowly · Song of Good Hope · Low Rising
 
-- Fleetwood Mac Landslide
+Gracie AbramsThat's So True
 
-- Glen Hansard & Markéta Irglová Low Rising
+Green DayBasket Case · Boulevard of Broken Dreams
 
-- Gracie Abrams That's So True
+Guns N' Roses / Sheryl CrowSweet Child o' Mine
 
-- Green Day Basket Case
+Jimmy Eat WorldThe Middle
 
-- Guns N' Roses / Sheryl Crow Sweet Child o' Mine
+John DenverTake Me Home, Country Roads
 
-- Jimmy Eat World The Middle
+Kacey MusgravesThe Architect · Biscuits
 
-- John Denver Take Me Home, Country Roads
+Kaitlin ButtsMarfa Lights · You Ain’t Got to Die (to Be Dead to Me)
 
-- Kacey Musgraves The Architect
+Miranda LambertArmadillo · In His Arms
 
-- Nancy Sinatra These Boots Are Made for Walkin'
+Muscadine BloodlineGoose Chase · Pieces
 
-- Neil Diamond Sweet Caroline
+Nancy SinatraThese Boots Are Made for Walkin'
 
-- Nelly Furtado I'm Like a Bird
+Neil DiamondSweet Caroline
 
-- Noah Kahan Stick Season
+Neil YoungHarvest Moon · Lotta Love
 
-- Oasis Champagne Supernova
+Nelly FurtadoI'm Like a Bird
 
-- Patsy Cline Crazy
+Noah KahanStick Season
 
-- Paul Simon Graceland
+OasisChampagne Supernova
 
-- The Rolling Stones Paint It Black
+Patsy ClineCrazy
 
-- Shania Twain Whose Bed Have Your Boots Been Under?
+Paul SimonGraceland
 
-- Stealers Wheel Stuck in the Middle with You
+The Rolling StonesPaint It Black
 
-- TLC No Scrubs
+Shania TwainWhose Bed Have Your Boots Been Under?
 
-- Tom Petty Free Fallin' · I Won't Back Down
+Sixpence None the RicherKiss Me · There She Goes
 
-- Townes Van Zandt Pancho and Lefty
+Stealers WheelStuck in the Middle with You
 
-- Tracy Chapman Fast Car
+TLCNo Scrubs
 
-- Van Morrison Brown Eyed Girl
+Tom PettyFree Fallin' · I Won't Back Down · Wildflowers
 
-- Willie Nelson Always on My Mind
+Townes Van ZandtPancho and Lefty
 
-#### Originals
+Tracy ChapmanFast Car · Give Me One Reason
 
-The band writes and performs its own songs, more than forty of them, as a real part of the act, not an afterthought. A few:
+U2With or Without You · One · Acrobat
 
-- All the Real Girls
+Van MorrisonInto the Mystic · Brown Eyed Girl
 
-- Bloom
+Willie NelsonAlways on My Mind
 
-- Down to the River
+See the full song list →
 
-- Drive You Crazy
+Back to top ↑
 
-- Going to Memphis
+Originals
 
-- Home
+Original songs available by request. Ask us about our originals.
 
-- Hope and Peace
+Back to top ↑
 
-- Met My Muse
+Holidays
 
-- Met You in Nashville (Sha La La)
+For December bookings, the set makes room for Christmas favorites, from "Feliz Navidad" to "Fairytale of New York," with original songs available by request.
 
-- Promised Land
+Back to top ↑
 
-- Saint Margaret's Hope
+Follow along
 
-- This Country
+See and hear more on Instagram, YouTube, and Facebook.
 
-- Under a Falling Moon
+See upcoming shows →
 
-- When You Loved Me
+Email Sarah & Bud booking
 
-#### Holidays
+Back to top ↑
 
-For December bookings, the set makes room for Christmas favorites, from "Feliz Navidad" to "Fairytale of New York," alongside Bud's original holiday song, "Merry Mary."
+Sarah & the Buds · Sarah & Bud
 
-#### Follow along
+booksarahandbud@gmail.com
 
-See and hear more on [Instagram](https://www.instagram.com/sarah.and.bud/), [YouTube](https://www.youtube.com/@sarahandbud), and [Facebook](https://www.facebook.com/sarahandbud).
+Bud’s radio show and solo work at Plan & Adapt →
 
-[See upcoming shows →](/shows)
+## Songbook
 
-[Email Sarah & Bud booking](mailto:booksarahandbud@gmail.com?subject=Booking%20inquiry)
+Songbook | Sarah & the Buds · Sarah & the BudsSkip to contentSarah & the Buds
 
-## Shows — `/shows`
+AboutMusicShowsBooking
 
-Source: `src/pages/shows.astro`; dates and names: `src/data/events.json`.
+← Back to the band
 
-### Upcoming Shows
+Our songbook
+
+146 covers and seasonal selections from our songbook. Original songs are available by request. Have a favorite in mind? Ask us about it.
+
+CoversHoliday songsOriginals
+
+Covers (142)
+
+(Lover) You Don’t Treat Me No Good
+
+867-5309 / Jenny
+
+A Life Where We Work Out
+
+A Long December
+
+Accidentally in Love
+
+Acrobat
+
+Across the Universe
+
+Alcohol
+
+All I Have to Do
+
+All Over Now
+
+All Star
+
+All You Need Is Love
+
+Always on My Mind
+
+Anna Begins
+
+Armadillo
+
+Automobile
+
+Bad Habits
+
+Basket Case
+
+Be Not So Fearful
+
+Biscuits
+
+Bitin’ List
+
+Blackbird
+
+Blowin’ in the Wind
+
+Boulevard of Broken Dreams
+
+Brown Eyed Girl
+
+Bruises
+
+C.R.E.A.M.
+
+Calling Baton Rouge
+
+Champagne Supernova
+
+Choosin’ Texas
+
+Coconut
+
+Complicated
+
+Crazy
+
+Crimson and Clover
+
+Danny’s Song
+
+Doctor My Eyes
+
+Don’t Dream It’s Over
+
+Don’t Get Me Wrong
+
+Don’t Speak
+
+Don’t Think Twice, It’s All Right
+
+Emmylou
+
+Every Breaking Wave
+
+Every Morning
+
+Fake Flowers
+
+Falling Slowly
+
+Fast Car
+
+For What It’s Worth
+
+Forever Young
+
+Found Out About You
+
+Free Fallin’
+
+Friday I’m in Love
+
+Give Me Novacaine
+
+Give Me One Reason
+
+Go Your Own Way
+
+Gone Gone Gone (Done Moved On)
+
+Goose Chase
+
+Graceland
+
+Hallelujah
+
+Harvest Moon
+
+Head over Feet
+
+Here
+
+Hey Jude
+
+I Belong to You
+
+I Only Miss You
+
+I Won’t Back Down
+
+If I Fell
+
+In His Arms
+
+Into the Mystic
+
+Is This Love
+
+It Makes No Difference
+
+I’m Like a Bird
+
+Jackson
+
+Jersey Giant
+
+Jolene
+
+July
+
+Jumper
+
+King of the Road
+
+Kiss Me
+
+L.A. Freeway
+
+Landslide
+
+Last Time
+
+Let Her Go
+
+Let It Be
+
+Like a Rolling Stone
+
+Little Talks
+
+Losing My Religion
+
+Lotta Love
+
+Low Rising
+
+Mad World
+
+Malibu
+
+Marfa Lights
+
+Message to My Girl
+
+No Scrubs
+
+Not Strong Enough
+
+Oh, Tonight
+
+On a Train Back to Boston
+
+One
+
+One Headlight
+
+Overkill
+
+Paint It Black
+
+Pancho and Lefty
+
+Peace of Mind
+
+Peaceful Easy Feeling
+
+Pieces
+
+Pink Pony Club
+
+Shake It Off
+
+She Likes Girls
+
+Ship to Wreck
+
+Song for Someone
+
+Song of Good Hope
+
+Speak Too Soon
+
+Stand by Me
+
+Stick Season
+
+Stop Draggin’ My Heart Around
+
+Stuck in the Middle with You
+
+Sweet Caroline
+
+Sweet Child o’ Mine
+
+Sweet Home Alabama
+
+Take Me Home, Country Roads
+
+That’s So True
+
+The Architect
+
+The Bees
+
+The Middle
+
+The Times They Are A-Changin’
+
+The Tree
+
+The Weight
+
+There Is a Light That Never Goes Out
+
+There She Goes
+
+These Boots Are Made for Walkin’
+
+Till There Was You
+
+Up on Cripple Creek
+
+Weather with You
+
+What a Wonderful World
+
+When You’re Gone
+
+Whiskey in Your Water
+
+Whose Bed Have Your Boots Been Under?
+
+Wildflowers
+
+With or Without You
+
+Wonderful Tonight
+
+Yellow
+
+You Ain’t Got to Die (to Be Dead to Me)
+
+Zombie
+
+Back to top ↑
+
+Holiday songs (4)
+
+A Very Willie Christmas
+
+Fairytale of New York
+
+Feliz Navidad
+
+Have Yourself a Merry Little Christmas
+
+Back to top ↑
+
+Originals
+
+Original songs available by request. Ask us about our originals.
+
+Back to top ↑← Sarah & the Buds
+
+Sarah & the Buds · Sarah & Bud
+
+booksarahandbud@gmail.com
+
+Bud’s radio show and solo work at Plan & Adapt →
+
+## Shows
+
+Shows · Sarah & the BudsSkip to contentSarah & the Buds
+
+AboutMusicShowsBooking
+
+Upcoming Shows
 
 Live music, upcoming dates, and past performances.
 
 This page lists Sarah & Bud, Sarah & the Buds, and Bud's solo shows. All times are Eastern. Shows move to Past once they're over.
 
-Sections: Upcoming; Past. Event cards display the original date, venue name and time. Optional details appear only when supplied.
+Upcoming
 
-Empty states: “No upcoming shows listed right now; check back soon.” / “No past shows listed yet.”
+Sat, September 19, 2026Ghost Fox Winery1 PM–3 PM
 
-### Have a date in mind?
+Sun, September 20, 2026Midway Fall Festival3 PM–5 PM
+
+Sat, October 3, 2026Wildside Winery1 PM–4 PM
+
+Fri, October 23, 2026Shaker Village4:30 PM–6:30 PM
+
+Wed, December 16, 2026Georgetown Underground6 PM–8 PM
+
+No upcoming shows listed right now; check back soon.
+
+Past
+
+Sat, August 22, 2026Kenwick Porch Fest4:15 PM–5:15 PM
+
+Sat, August 1, 2026Georgetown Underground1 PM–3 PM
+
+No past shows listed yet.
+
+Have a date in mind?
 
 Ask about a full-band or acoustic-duo booking.
 
-Email Sarah & Bud booking → `mailto:booksarahandbud@gmail.com?subject=Booking%20inquiry`
+Email Sarah & Bud booking
 
-← Back to the band → `/`
+← Back to the band
 
-## Not found — `/404`
+Sarah & the Buds · Sarah & Bud
 
-Source: `src/pages/404.astro`
+booksarahandbud@gmail.com
 
-### Page not found
-
-[Return to Sarah & the Buds →](/)
-
-## Homepage action buttons
-
-- Upcoming shows → `/shows`
-- Book the band → `mailto:booksarahandbud@gmail.com?subject=Booking%20inquiry`
-
-## Shared navigation and footer
-
-Source: `src/components/SiteHeader.astro` and `SiteFooter.astro`.
-
-- Wordmark: Sarah & the Buds → `/`
-- About → `/#band-and-duo`
-- Music → `/#songbook`
-- Shows → `/shows`
-- Booking → `mailto:booksarahandbud@gmail.com?subject=Booking%20inquiry`
-- Footer: Sarah & the Buds · Sarah & Bud
-- Booking email: booksarahandbud@gmail.com
-- Bud’s radio show and solo work at Plan & Adapt → `https://planandadapt.com/music`
-- Accessibility link: Skip to content → `#main`
-
-## Style-guide presentation
-
-Headings display uppercase through CSS; names retain their correct ampersands in source. Show times use uppercase AM/PM, a preceding space, and an en dash. The homepage uses the supplied S&B microphone artwork with the full band name nearby.
-
-## Photo presentation
-
-Photos have no visible captions, as requested by Bud. Descriptive alt text remains for accessibility. The band-only adaptation of the barn portrait is the hero; the former Georgetown hero is now in the Photos gallery.
-
-## Songbook presentation
-
-This is just a taste of our songbook—there are many more songs available. See the full song list → `/songbook`. Sarah & the Buds also take requests; if you have a song in mind for your event, just ask.
-
-Control: Browse the songbook (44 artists · selected songs). One row per artist shows two examples, or three short titles, and wraps naturally. See the full song list appears above and below the disclosure.
-
-Reference page: Our songbook. 189 selections from our songbook, including covers, originals and seasonal favorites. Have a favorite in mind? Ask us about it.
-
-Sections: Covers, Our originals, Holiday songs, Specialty songs. Each section and each homepage section has a Back to top ↑ link. Complete titles are maintained in `src/data/songbook.json`.
-
-## Original songs by request — 2026-09-12
-
-Bud requested removal of the specialty section and no named originals yet. Both public pages now say “Original songs available by request” with a contact link. Removed original/specialty arrays from public songbook metadata and removed Merry Mary from the holiday listing and homepage copy. The source document remains unchanged. The reference displays 146 covers/seasonal entries (142 covers, four holiday selections), plus the request-only originals section. This supersedes earlier public counts and original-title lists. PR #5 remains pending release.
+Bud’s radio show and solo work at Plan & Adapt →
