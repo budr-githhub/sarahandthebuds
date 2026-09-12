@@ -1,13 +1,284 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
+import eventData from "../data/events.json";
+
+interface EventItem {
+  /** "YYYY-MM-DD" */
+  start: string;
+  /** "YYYY-MM-DD", only for multi-day events */
+  end?: string;
+  /** "HH:MM", 24-hour, America/New_York wall-clock time */
+  startTime?: string;
+  endTime?: string;
+  name: string;
+  location?: string;
+  performers?: string;
+  url?: string;
+  admission?: string;
+  notes?: string;
+}
+
+// Single maintained calendar; preserve unknown optional fields.
+const events: EventItem[] = eventData;
+
+// All date/time comparisons happen as America/New_York wall-clock strings
+// ("YYYY-MM-DDTHH:MM"), compared lexicographically — this avoids needing
+// real UTC-offset math just to answer "is this event over yet?" The same
+// nowInNY() logic is duplicated in the client <script> below (plain JS,
+// no shared module) so the page can self-correct client-side between
+// builds without a build-time/runtime discrepancy.
+function nowInNY(): string {
+  const parts = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "America/New_York",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    hourCycle: "h23",
+  }).formatToParts(new Date());
+  const get = (type: string) => parts.find((p) => p.type === type)?.value ?? "00";
+  return `${get("year")}-${get("month")}-${get("day")}T${get("hour")}:${get("minute")}`;
+}
+
+function effectiveEnd(event: EventItem): string {
+  const date = event.end ?? event.start;
+  const time = event.endTime ?? event.startTime ?? "23:59";
+  return `${date}T${time}`;
+}
+
+// Real ISO 8601 datetime (with correct America/New_York UTC offset for that
+// specific date, accounting for daylight saving) — used for <time datetime>
+// and Event structured data, where an actual instant is expected rather
+// than a bare wall-clock string.
+function toISOWithOffset(date: string, time: string): string {
+  const naive = new Date(`${date}T${time}:00Z`);
+  const offsetLabel = new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/New_York",
+    timeZoneName: "shortOffset",
+  })
+    .formatToParts(naive)
+    .find((p) => p.type === "timeZoneName")?.value ?? "GMT-5";
+  const match = offsetLabel.match(/GMT([+-]\d+)/);
+  const offsetHours = match ? parseInt(match[1], 10) : -5;
+  const sign = offsetHours <= 0 ? "-" : "+";
+  const abs = Math.abs(offsetHours).toString().padStart(2, "0");
+  return `${date}T${time}:00${sign}${abs}:00`;
+}
+
+function formatDate(dateStr: string): string {
+  const [y, m, d] = dateStr.split("-").map(Number);
+  return new Date(Date.UTC(y, m - 1, d)).toLocaleDateString("en-US", {
+    timeZone: "UTC",
+    weekday: "short",
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+  });
+}
+
+function formatTimeRange(event: EventItem): string {
+  const to12h = (t: string) => {
+    const [h, min] = t.split(":").map(Number);
+    const period = h >= 12 ? "p.m." : "a.m.";
+    const hour12 = h % 12 === 0 ? 12 : h % 12;
+    return min === 0 ? `${hour12} ${period}` : `${hour12}:${String(min).padStart(2, "0")} ${period}`;
+  };
+  if (event.startTime && event.endTime) {
+    return `${to12h(event.startTime)}–${to12h(event.endTime)}`;
+  }
+  if (event.startTime) return to12h(event.startTime);
+  return "";
+}
+
+const sorted = [...events].sort((a, b) => effectiveEnd(a).localeCompare(effectiveEnd(b)));
+const now = nowInNY();
+const upcoming = sorted.filter((e) => effectiveEnd(e) >= now);
+const past = sorted.filter((e) => effectiveEnd(e) < now).reverse();
+
+const eventSchema = upcoming.map((e) => ({
+  "@context": "https://schema.org",
+  "@type": "Event",
+  name: e.name,
+  startDate: toISOWithOffset(e.start, e.startTime ?? "00:00"),
+  endDate: toISOWithOffset(e.end ?? e.start, e.endTime ?? e.startTime ?? "23:59"),
+  location: {
+    "@type": "Place",
+    name: e.location ?? e.name,
+  },
+  ...(e.performers ? { performer: { "@type": "PerformingGroup", name: e.performers } } : {}),
+  ...(e.url ? { url: e.url } : {}),
+}));
 ---
-<BaseLayout title="Shows" description="Find upcoming Sarah & Bud and Sarah & the Buds performances and ask about booking.">
-  <div class="page-container"><div class="page-content text-container">
-    <h1>See us live</h1>
-    <p class="lede">Find the next show, or bring live music to your event.</p>
-    <p><a class="button button-primary" href="https://planandadapt.com/music/events">View the current show schedule →</a></p>
-    <p>Our current calendar is available on Bud’s Plan &amp; Adapt website.</p>
-    <h2>Have a date in mind?</h2>
-    <p>For full-band or acoustic-duo bookings, email <a href="mailto:booksarahandbud@gmail.com?subject=Booking%20inquiry">booksarahandbud@gmail.com</a>.</p>
-  </div></div>
+
+<BaseLayout
+  title="Shows"
+  description="Upcoming performances from Sarah & the Buds, Sarah & Bud, and Bud Ratliff."
+  structuredData={eventSchema}
+>
+  <div class="page-container">
+    <div class="page-content text-container">
+      <h1>Upcoming Shows</h1>
+      <p class="lede">Live music, upcoming dates, and past performances.</p>
+
+      <p>
+        This page lists Sarah &amp; Bud, Sarah &amp; the Buds, and Bud's
+        solo shows. All times are Eastern. Shows move to Past once they're over.
+      </p>
+
+      <h2>Upcoming</h2>
+      <ul class="event-list" id="upcoming-events">
+        {
+          upcoming.map((e) => (
+            <li
+              class="event-card"
+              data-event-end={effectiveEnd(e)}
+              data-event-name={e.name}
+            >
+              <div class="event-date">
+                <time datetime={toISOWithOffset(e.start, e.startTime ?? "00:00")}>
+                  {formatDate(e.start)}
+                </time>
+              </div>
+              <div class="event-details">
+                <div class="event-venue">
+                  {e.name}
+                  {e.location && <span class="event-location"> · {e.location}</span>}
+                </div>
+                {formatTimeRange(e) && <div class="event-time">{formatTimeRange(e)}</div>}
+                {e.admission && <div class="event-time">{e.admission}</div>}
+                {e.notes && <div class="event-time">{e.notes}</div>}
+                {e.url && (
+                  <div class="event-time">
+                    <a href={e.url}>Event details &rarr;</a>
+                  </div>
+                )}
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+      <p class="placeholder-note" id="no-upcoming" style={upcoming.length ? "display:none" : ""}>
+        No upcoming shows listed right now; check back soon.
+      </p>
+
+      <h2>Past</h2>
+      <ul class="event-list" id="past-events">
+        {
+          past.map((e) => (
+            <li
+              class="event-card event-card--past"
+              data-event-end={effectiveEnd(e)}
+              data-event-name={e.name}
+            >
+              <div class="event-date">
+                <time datetime={toISOWithOffset(e.start, e.startTime ?? "00:00")}>
+                  {formatDate(e.start)}
+                </time>
+              </div>
+              <div class="event-details">
+                <div class="event-venue">{e.name}</div>
+                {formatTimeRange(e) && <div class="event-time">{formatTimeRange(e)}</div>}
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+      <p class="placeholder-note" id="no-past" style={past.length ? "display:none" : ""}>
+        No past shows listed yet.
+      </p>
+
+      <h2>Have a date in mind?</h2>
+      <p>Ask about a full-band or acoustic-duo booking.</p>
+      <p>
+        <a class="button button-primary" href="mailto:booksarahandbud@gmail.com?subject=Booking%20inquiry"
+          >Email Sarah &amp; Bud booking</a
+        >
+      </p>
+
+      <p><a href="/">&larr; Back to the band</a></p>
+    </div>
+  </div>
+
+  <script>
+    // Self-corrects Upcoming/Past between builds: re-evaluates each event's
+    // America/New_York wall-clock end time against the visitor's current
+    // moment, and moves any card that's drifted into the wrong section.
+    // Progressive enhancement only — the build-time split above is already
+    // correct as of the last deploy; this just keeps a long-lived deploy
+    // from showing a stale classification.
+    (function () {
+      function nowInNY() {
+        var parts = new Intl.DateTimeFormat("en-CA", {
+          timeZone: "America/New_York",
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit",
+          hour: "2-digit",
+          minute: "2-digit",
+          hourCycle: "h23",
+        }).formatToParts(new Date());
+        var get = function (type) {
+          for (var i = 0; i < parts.length; i++) {
+            if (parts[i].type === type) return parts[i].value;
+          }
+          return "00";
+        };
+        return (
+          get("year") + "-" + get("month") + "-" + get("day") + "T" + get("hour") + ":" + get("minute")
+        );
+      }
+
+      var upcomingList = document.getElementById("upcoming-events");
+      var pastList = document.getElementById("past-events");
+      var noUpcoming = document.getElementById("no-upcoming");
+      var noPast = document.getElementById("no-past");
+      if (!upcomingList || !pastList) return;
+
+      var now = nowInNY();
+      var moved = false;
+
+      Array.prototype.slice.call(upcomingList.querySelectorAll("[data-event-end]")).forEach(function (card) {
+        if (card.getAttribute("data-event-end") < now) {
+          card.classList.add("event-card--past");
+          pastList.insertBefore(card, pastList.firstChild);
+          moved = true;
+        }
+      });
+
+      Array.prototype.slice.call(pastList.querySelectorAll("[data-event-end]")).forEach(function (card) {
+        if (card.getAttribute("data-event-end") >= now) {
+          card.classList.remove("event-card--past");
+          upcomingList.appendChild(card);
+          moved = true;
+        }
+      });
+
+      if (moved) {
+        [upcomingList, pastList].forEach(function (list) {
+          var cards = Array.prototype.slice.call(list.children);
+          cards.sort(function (a, b) {
+            var order = a.getAttribute("data-event-end").localeCompare(b.getAttribute("data-event-end"));
+            return list === pastList ? -order : order;
+          });
+          cards.forEach(function (card) { list.appendChild(card); });
+        });
+        if (noUpcoming) noUpcoming.style.display = upcomingList.children.length ? "none" : "";
+        if (noPast) noPast.style.display = pastList.children.length ? "none" : "";
+      }
+    })();
+  </script>
 </BaseLayout>
+
+<style>
+  .event-list { list-style: none; padding: 0; margin: 0 0 var(--space-4); }
+  .event-card { display: grid; grid-template-columns: minmax(150px, 1fr) 2fr; gap: var(--space-3); padding: var(--space-4); margin-block: var(--space-3); border: 1px solid var(--color-muted); border-radius: 8px; }
+  .event-date { font-family: Fraunces, Georgia, serif; font-size: 1.15rem; }
+  .event-venue { font-weight: 700; }
+  .event-time, .event-location { font-size: var(--text-small); }
+  .event-card--past { border-style: dashed; }
+  .placeholder-note { font-style: italic; }
+  @media (max-width: 640px) {
+    .event-card { grid-template-columns: 1fr; gap: 4px; padding: var(--space-3); }
+  }
+</style>

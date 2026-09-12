@@ -194,19 +194,25 @@ See and hear more on [Instagram](https://www.instagram.com/sarah.and.bud/), [You
 
 ## Shows — `/shows`
 
-Source: `src/pages/shows.astro`
+Source: `src/pages/shows.astro`; dates and names: `src/data/events.json`.
 
-### See us live
+### Upcoming Shows
 
-Find the next show, or bring live music to your event.
+Live music, upcoming dates, and past performances.
 
-[View the current show schedule →](https://planandadapt.com/music/events)
+This page lists Sarah & Bud, Sarah & the Buds, and Bud's solo shows. All times are Eastern. Shows move to Past once they're over.
 
-Our current calendar is available on Bud’s Plan & Adapt website.
+Sections: Upcoming; Past. Event cards display the original date, venue name and time. Optional details appear only when supplied.
 
-#### Have a date in mind?
+Empty states: “No upcoming shows listed right now; check back soon.” / “No past shows listed yet.”
 
-For full-band or acoustic-duo bookings, email [booksarahandbud@gmail.com](mailto:booksarahandbud@gmail.com?subject=Booking%20inquiry).
+### Have a date in mind?
+
+Ask about a full-band or acoustic-duo booking.
+
+Email Sarah & Bud booking → `mailto:booksarahandbud@gmail.com?subject=Booking%20inquiry`
+
+← Back to the band → `/`
 
 ## Not found — `/404`
 

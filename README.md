@@ -27,3 +27,7 @@ Start with the [dashboard](docs/dashboard.md) and [document index](docs/README.m
 GitHub `main` is the accepted source of truth. Temporary working copies are not canonical. Source is at repository root, unlike Plan & Adapt's `site/` folder. Hosting status is recorded in the dashboard; do not infer deployment from a successful local build.
 
 See [migration notes](docs/migration.md) for the remaining coordinated changes on Plan & Adapt.
+
+## Editing shows
+
+Edit `src/data/events.json` for the combined calendar. Dates use YYYY-MM-DD and times HH:MM in America/New_York. Preserve unknown fields as omitted. Run `pnpm build` and review before release. See [dashboard](docs/dashboard.md) for current deployment status.
