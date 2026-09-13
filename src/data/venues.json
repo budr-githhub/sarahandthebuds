@@ -1,0 +1,44 @@
+{
+  "georgetown-underground": {
+    "name": "Georgetown Underground",
+    "city": "Georgetown, KY",
+    "address": "152 E Main Street, Georgetown, KY 40324",
+    "url": null,
+    "source": "https://georgetownky.com/images/PDF/NEW%20Downtown%20Shopping%20Guide%202025%20111725.pdf"
+  },
+  "kenwick-porch-fest": {
+    "name": "Kenwick Porch Fest",
+    "city": "Lexington, KY",
+    "address": null,
+    "url": "https://www.kenwickporchfest.com/",
+    "source": "https://www.kenwickporchfest.com/faqs"
+  },
+  "ghost-fox": {
+    "name": "Ghost Fox Winery",
+    "city": "Nicholasville, KY",
+    "address": "2385 Chrisman Mill Road, Nicholasville, KY 40356",
+    "url": "https://ghostfoxwinery.com/",
+    "source": "https://ghostfoxwinery.com/"
+  },
+  "midway-fall-festival": {
+    "name": "Midway Fall Festival",
+    "city": "Downtown Midway, KY",
+    "address": null,
+    "url": "https://www.midwayfallfestival.com/",
+    "source": "https://www.midwayfallfestival.com/"
+  },
+  "wildside": {
+    "name": "Wildside Winery",
+    "city": "Versailles, KY",
+    "address": "5500 Troy Pike, Versailles, KY 40383",
+    "url": "https://www.wildsidewinery.com/",
+    "source": "https://www.wildsidewinery.com/"
+  },
+  "shaker-village": {
+    "name": "Shaker Village of Pleasant Hill",
+    "city": "Harrodsburg, KY",
+    "address": "3501 Lexington Road, Harrodsburg, KY 40330",
+    "url": "https://shakervillageky.org/",
+    "source": "https://shakervillageky.org/contact-us/"
+  }
+}

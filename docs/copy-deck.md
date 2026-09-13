@@ -565,3 +565,8 @@ Sarah & the Buds · Sarah & Bud
 booksarahandbud@gmail.com
 
 Bud’s radio show and solo work at Plan & Adapt →
+
+
+## September 13 additions — prepared, not published
+
+Press & Booking and Friends page copy is implemented for review. The canonical draft introductions are in `src/data/press.json`; Friends names and short descriptions are in `src/data/friends.json`. Press headings: Two ways to hear us; Promotional photos; Logo library; Watch & listen; Let’s talk about your event. Friends headings: Musicians; Venues; Community friends. Unknown show acts render “Performing act to be confirmed.” Contact information matches the style guide. Owner placeholders and all missing inputs are tracked in [the review checklist](press-friends-brand.md). Existing homepage and songbook copy remains unchanged.

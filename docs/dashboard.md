@@ -1,6 +1,12 @@
 # Sarah & the Buds — current status
 
-Updated September 12, 2026. Owner: Bud; implementation: Codex. Status: published and verified. No unfinished implementation or release approval remains from this handoff.
+Updated September 13, 2026. Owner: Bud; implementation: Codex. Existing site is published and verified. New Press/Friends/logo/events work is prepared for review on `feat/press-friends-brand`, not merged or published.
+
+## Current work
+
+See [implementation and owner checklist](press-friends-brand.md). Scope: Press & Booking downloads, complete traced logo set and favicon, owner-specified portrait home logo, Friends directory, and event locations/links/act labels. Base: `243db66`. Bud supplied Zoe Zamora’s Facebook link. All seven event act assignments remain unknown. Photo credits, usage, promotional copy, featured video and release review are pending.
+
+Validation: six-page Astro build passed. Phone (390px) and desktop (1280px) browser checks passed for overflow, loaded images and internal downloads; copy buttons and calendar rollover passed. Both ZIP integrity checks passed, and all seven original event records retain their dates/times/names. No DNS or hosting changes.
 
 ## Releases
 

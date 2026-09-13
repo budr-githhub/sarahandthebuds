@@ -103,3 +103,14 @@ Reviewed rendered paragraph/heading text on the homepage, songbook and shows pag
 Bud approved publication. [PR #5](https://github.com/budr-githhub/sarahandthebuds/pull/5) merged as `b99f8f14fa54306b6f864a4cdce9365f35decd2f`; Cloudflare reported a successful production deployment. Fresh production responses verified the band-only hero and its image asset, full songbook with 146 cover/holiday entries, request-only originals, and corrected inline spacing. Earlier pending-release notes below are historical and superseded. Initial cached songbook requests returned 404 immediately after deployment; fresh requests succeeded.
 
 Live pages: [Homepage](https://sarahandthebuds.com/) and [Songbook](https://sarahandthebuds.com/songbook).
+
+
+## Press, Friends, logo set and events — September 13, 2026
+
+**Decision:** Bud approved implementation of the reviewed framework, with placeholders for missing owner information. Musicians precede venues and community friends. Zoe’s preferred Facebook page was supplied during implementation. Prepare inward-facing side microphones around S&B on a portrait canvas, with no name underneath, plus full logo family.
+
+**Reason:** Give venues practical promotional materials and improve visitor show information without inventing performer assignments or relationships.
+
+**Alternatives considered:** Retyping the logo or claiming a vector original; rejected. Automatically assigning acts; rejected.
+
+**Impact:** New Press/Friends routes, static downloads, vector traces and icons, venue directory and optional act enum. Existing dates, times, photography and songbook retained. Release pending owner review; see [checklist](press-friends-brand.md).

@@ -1,0 +1,13 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import groups from "../data/friends.json";
+---
+<BaseLayout title="Friends" description="Musicians, venues and community friends around Central Kentucky.">
+ <div class="page-container resource-page" id="top">
+  <p class="eyebrow">Our music community</p><h1>Friends of the band</h1>
+  <p class="lede">Good music brings people together. Here are some of the musicians, venues and community friends we’d like you to know.</p>
+  <nav class="section-nav" aria-label="Friends sections">{groups.map(g=><a href={'#'+g.id}>{g.title}</a>)}</nav>
+  {groups.map(g=><section id={g.id}><h2>{g.title}</h2><p>{g.intro}</p><div class:list={["resource-grid", {"two-up":g.id !== "musicians"}]}>{g.entries.map(f=><article class="resource-card"><h3>{f.name}</h3><p>{f.description}</p><a href={f.url}>Visit {f.name} <span aria-hidden="true">↗</span></a></article>)}</div><p class="back-top"><a href="#top">Back to top ↑</a></p></section>)}
+  <aside class="review-note"><strong>For Bud’s review:</strong> Personal connection notes and optional permissioned photos or logos can be added here. Please confirm the preferred display name “Willcutt Guitars.”</aside>
+ </div>
+</BaseLayout>

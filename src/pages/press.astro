@@ -1,0 +1,30 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import photos from "../data/press-photos.json";
+import logos from "../data/logos.json";
+import copy from "../data/press.json";
+---
+<BaseLayout title="Press & Booking" description="Photos, logos, promotional copy and booking information for Sarah & the Buds and Sarah & Bud.">
+<div class="page-container resource-page" id="top">
+ <p class="eyebrow">For venues, promoters & media</p><h1>Press &amp; Booking</h1>
+ <p class="lede">Everything you need to introduce the band, share a show and invite people along.</p>
+ <div class="download-actions"><a class="button button-primary" href="/downloads/sarah-and-the-buds-press-kit.zip" download>Download press kit ZIP</a><a href="mailto:booksarahandbud@gmail.com">Contact booking →</a></div>
+ <aside class="review-note">Preview materials: promotional wording, photo credits and usage guidance are awaiting Bud’s confirmation.</aside>
+ <nav class="section-nav" aria-label="Press sections"><a href="#introductions">Introductions</a><a href="#photos">Photos</a><a href="#logos">Logos</a><a href="#watch">Watch &amp; listen</a><a href="#booking">Booking</a></nav>
+ <section id="introductions"><h2>Two ways to hear us</h2><div class="resource-grid two-up">
+ {[{name:'Sarah & the Buds',label:'Full band',text:copy.band,id:'band-copy'},{name:'Sarah & Bud',label:'Acoustic duo',text:copy.duo,id:'duo-copy'}].map(a=><article class="resource-card"><p class="eyebrow">{a.label}</p><h3>{a.name}</h3><p id={a.id}>{a.text}</p><button type="button" class="copy-button" data-copy={a.id}>Copy introduction</button></article>)}
+ </div><p class="back-top"><a href="#top">Back to top ↑</a></p></section>
+ <section id="photos"><h2>Promotional photos</h2><p>Choose the photo that matches the act you’re booking. JPEG downloads use the largest prepared version available.</p><div class="resource-grid two-up">{photos.map(p=><article class="resource-card photo-download"><img src={p.preview} alt={p.label} width={p.width} height={p.height} loading="lazy"/><div><a href={'/downloads/photos/'+p.file} download>Download {p.act === 'full-band' ? 'band' : 'duo'} photo ↓</a><p class="asset-detail">JPEG · {p.width} × {p.height} · {(p.bytes/1048576).toFixed(1)} MB</p><p class="asset-detail">Photo credit: awaiting confirmation</p></div></article>)}</div><p class="back-top"><a href="#top">Back to top ↑</a></p></section>
+ <section id="logos"><h2>Logo library</h2><p>Black and warm-white artwork with transparent backgrounds, plus social avatars. SVG and PDF for scalable artwork; PNG for everyday use.</p><p><a href="/downloads/sarah-and-the-buds-logo-set.zip" download>Download the complete logo set ZIP ↓</a></p><div class="resource-grid two-up">{logos.map(l=><article class="resource-card logo-download"><div class:list={['logo-preview', {'light-preview':l.color==='black' || l.color==='light'}]}><img src={'/downloads/logos/'+l.file+'.svg'} alt={l.name} width={l.width} height={l.height} loading="lazy"/></div><h3>{l.name}</h3><div class="download-actions">{['svg','png','pdf'].map(ext=><a href={'/downloads/logos/'+l.file+'.'+ext} download>{ext.toUpperCase()} ↓</a>)}</div></article>)}</div><p><a href="/favicon.svg" download>Favicon SVG</a>{' · '}<a href="/favicon.ico" download>Favicon ICO</a>{' · '}<a href="/apple-touch-icon.png" download>Apple touch icon</a></p><p class="back-top"><a href="#top">Back to top ↑</a></p></section>
+ <section id="watch"><h2>Watch &amp; listen</h2><p><a href="https://www.youtube.com/@sarahandbud">Watch Sarah &amp; Bud on YouTube ↗</a></p><p><a href="/songbook/">Explore our songbook →</a></p><div class="review-note">Featured performance video: Bud to choose the video and confirm whether it features the duo or full band.</div><p class="back-top"><a href="#top">Back to top ↑</a></p></section>
+ <section id="booking"><h2>Let’s talk about your event</h2><p>Share your date, venue, location and whether you’re interested in the full band or acoustic duo.</p><p><a href="mailto:booksarahandbud@gmail.com">booksarahandbud@gmail.com</a><br/><a href="tel:+18595190840">(859) 519-0840</a></p><p><a href="https://www.facebook.com/sarahandbud">Facebook</a>{' · '}<a href="https://www.instagram.com/sarah.and.bud/">Instagram</a></p><p>Keep the S&amp;B artwork in proportion and use the correct act name. For photo credits, usage permission or other materials, please contact booking.</p><p class="back-top"><a href="#top">Back to top ↑</a></p></section>
+ <p id="copy-status" role="status" aria-live="polite"></p>
+</div>
+<script>
+ document.querySelectorAll<HTMLButtonElement>('[data-copy]').forEach(button=>button.addEventListener('click',async()=>{
+  const text=document.getElementById(button.dataset.copy!)?.textContent || '';
+  const status=document.getElementById('copy-status');
+  try{await navigator.clipboard.writeText(text);button.textContent='Copied';if(status)status.textContent='Introduction copied.';}catch{if(status)status.textContent='Please select and copy the introduction text above.';}
+ }));
+</script>
+</BaseLayout>
