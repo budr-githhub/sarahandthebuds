@@ -43,3 +43,8 @@ Read [Claude handoff](claude-handoff.md), [style guide](style-guide.md), [photo 
 ## Shows navigation
 
 Owner-requested “Back to Music” links are published at the top and bottom of `/shows`, targeting `/#songbook` consistently with the existing Music navigation. Released in PR #14 (`793a274fa341026a949dc2d1739d5e17321ddd2b`). Live Chrome verification found both links and confirmed navigation to the existing songbook section.
+
+
+## Header navigation
+
+Press and Friends added beside About, Music, Shows and Booking in the shared header. Publication verification pending.

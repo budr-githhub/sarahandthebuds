@@ -586,3 +586,6 @@ Bud approved the full-band and acoustic-duo drafts. The exact approved text is i
 
 
 September 13: Bud requested a Music return link on Upcoming Shows. Added “← Back to Music” above the heading and at the bottom, pointing to `/#songbook`, the same destination as the site’s existing Music navigation.
+
+
+September 13: Bud requested Press and Friends in the shared top navigation. Header order: About, Music, Shows, Press, Friends, Booking. Existing footer links remain.
