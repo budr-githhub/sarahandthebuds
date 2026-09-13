@@ -9,7 +9,7 @@ import copy from "../data/press.json";
  <p class="eyebrow">For venues, promoters & media</p><h1>Press &amp; Booking</h1>
  <p class="lede">Everything you need to introduce the band, share a show and invite people along.</p>
  <div class="download-actions"><a class="button button-primary" href="/downloads/sarah-and-the-buds-press-kit.zip" download>Download press kit ZIP</a><a href="mailto:booksarahandbud@gmail.com">Contact booking →</a></div>
- <aside class="review-note"><strong>Coming soon</strong><ul><li>Expanded band and duo promotional descriptions</li><li>Featured performance videos</li></ul><p>We’re putting these materials together. Please contact booking if you need something in the meantime.</p></aside>
+ <aside class="review-note"><strong>Coming soon</strong><ul><li>Featured performance videos</li></ul><p>We’re putting these materials together. Please contact booking if you need something in the meantime.</p></aside>
  <nav class="section-nav" aria-label="Press sections"><a href="#introductions">Introductions</a><a href="#photos">Photos</a><a href="#logos">Logos</a><a href="#watch">Watch &amp; listen</a><a href="#booking">Booking</a></nav>
  <section id="introductions"><h2>Two ways to hear us</h2><div class="resource-grid two-up">
  {[{name:'Sarah & the Buds',label:'Full band',text:copy.band,id:'band-copy'},{name:'Sarah & Bud',label:'Acoustic duo',text:copy.duo,id:'duo-copy'}].map(a=><article class="resource-card"><p class="eyebrow">{a.label}</p><h3>{a.name}</h3><p id={a.id}>{a.text}</p><button type="button" class="copy-button" data-copy={a.id}>Copy introduction</button></article>)}

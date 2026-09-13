@@ -32,7 +32,7 @@ Four existing prepared JPEGs copied to `public/downloads/photos/`; source metada
 - [ ] Confirm full-band / duo / solo for Aug 1, Aug 22, Sep 19, Sep 20, Oct 3, Oct 23 and Dec 16, 2026. If solo, confirm Bud Ratliff is the appropriate public performer name.
 - [ ] Confirm exact stage/porch for Kenwick Porch Fest and Midway Fall Festival if useful. General festival locations are used until then.
 - [ ] Supply Georgetown Underground’s preferred official website/social link; address has documentary support but no official artist-facing URL was confidently identified.
-- [ ] Approve the two draft introductions in `src/data/press.json`.
+- [x] Bud approved both introductions; applied to `src/data/press.json` and regenerated downloads.
 - [x] All four photographs: Andrew Von Neida. Promotional-use permission confirmed by Bud.
 - [ ] Sarah will select the featured performance video; optional technical rider can follow later.
 - [ ] Confirm “Willcutt Guitars” (official website branding) is the intended display name for “Willcutt Music.”
