@@ -1,8 +1,8 @@
 # Press, Friends, branding and event details
 
-September 13, 2026. Owner: Bud. Implementation: Codex. Prepared and pushed in draft [PR #8](https://github.com/budr-githhub/sarahandthebuds/pull/8) on `feat/press-friends-brand`; implementation commit `2b0ec1a`. Bud approved publication September 13; release verification pending.
+September 13, 2026. Owner: Bud. Implementation: Codex. Published through [PR #8](https://github.com/budr-githhub/sarahandthebuds/pull/8), merge `c0d795eaad3179b22715b964b803e445bcb7b6c3`. Cloudflare production succeeded; live homepage, Press, Friends and Shows verified in Chrome. Bud approved publication with Coming soon notices and will ask Sarah to help complete remaining material.
 
-## Implemented for review
+## Published
 
 - `/press/`: separate full-band and duo introductions, copy buttons, four individual JPEG downloads, 16 logo/color previews with SVG/PNG/PDF downloads, complete logo and press ZIPs, booking contacts, social/video links and section return links.
 - `/friends/`: musicians, venues, community friends in Bud’s requested order. Text-first cards; no invented endorsements or borrowed logos. Zoe’s Facebook URL was supplied by Bud.
@@ -25,7 +25,7 @@ Four existing prepared JPEGs copied to `public/downloads/photos/`; source metada
 - Full band: barn portrait; Georgetown Underground portrait (photo 10, not 11); wine-barrel-room performance.
 - Duo: guitar-and-microphone portrait.
 - AI-edited homepage hero is excluded from the press kit.
-- ZIP has separate full-band/acoustic-duo folders, logos, icons, promotional copy and a read-me. Credits and promotional usage are explicitly pending; this is a review package.
+- ZIP has separate full-band/acoustic-duo folders, logos, icons, promotional copy and a read-me. Credits and promotional usage are explicitly pending; the public read-me lists these as coming soon.
 
 ## Bud’s remaining inputs
 
@@ -37,7 +37,7 @@ Four existing prepared JPEGs copied to `public/downloads/photos/`; source metada
 - [ ] Select a featured performance video; optional technical rider can follow later.
 - [ ] Confirm “Willcutt Guitars” (official website branding) is the intended display name for “Willcutt Music.”
 - [ ] Optional: personal connection descriptions and permissioned Friends photos/logos. Current short factual descriptions are sufficient if preferred.
-- [ ] Review traced logo shapes, portrait arrangement and small favicon; approve release after placeholders are resolved or explicitly accepted.
+- [x] Bud approved release with Coming soon notices September 13. Further logo refinements can follow.
 
 Bud approved the existing materials for publication with “Coming soon” notices replacing internal review notes. Expanded descriptions, photo credits/usage, featured videos and Friends stories/photos will follow with Sarah’s help. Update the ZIP read-me alongside these additions.
 
@@ -73,4 +73,4 @@ Press text: `src/data/press.json`; photo download metadata: `press-photos.json`;
 
 ## Validation
 
-Six-page production build passed. Browser checks at 390 and 1280px: no horizontal overflow or failed images, logo frames contain artwork, internal download links return successfully. Copy-to-clipboard verified. Advancing the browser clock to October 24 moves completed shows to Past and leaves December 16 upcoming. Seven event dates/times/names match base exactly. Both ZIPs pass integrity checks (59 press files, 54 logo files). External Facebook fetch unavailable; Zoe URL is owner-provided. No email delivery or production deployment tested.
+Six-page production build passed. Browser checks at 390 and 1280px: no horizontal overflow or failed images, logo frames contain artwork, internal download links return successfully. Copy-to-clipboard verified. Advancing the browser clock to October 24 moves completed shows to Past and leaves December 16 upcoming. Seven event dates/times/names match base exactly. Both ZIPs pass integrity checks (59 press files, 54 logo files). External Facebook fetch unavailable; Zoe URL is owner-provided. No email delivery tested. Production Cloudflare success and Chrome page content verified after release.

@@ -59,3 +59,8 @@ No database or new hosting service was added. IONOS domain renewal remains separ
 Bud approved publication. [PR #5](https://github.com/budr-githhub/sarahandthebuds/pull/5) merged as `b99f8f14fa54306b6f864a4cdce9365f35decd2f`; Cloudflare reported a successful production deployment. Fresh production responses verified the band-only hero and its image asset, full songbook with 146 cover/holiday entries, request-only originals, and corrected inline spacing. Earlier pending-release notes below are historical and superseded. Initial cached songbook requests returned 404 immediately after deployment; fresh requests succeeded.
 
 Live pages: [Homepage](https://sarahandthebuds.com/) and [Songbook](https://sarahandthebuds.com/songbook).
+
+
+## Press and Friends release — September 13, 2026
+
+Bud authorized publication with Coming soon notices. PR #8 merged as `c0d795eaad3179b22715b964b803e445bcb7b6c3`; Cloudflare Pages production check succeeded. Chrome returned HTTP 200 for `/`, `/press/`, `/friends/` and `/shows/`; Press/Friends contain Coming soon text and no internal preview notes. Shows retain unknown act labels. Plain automated text requests returned 403, while Chrome succeeded. Remaining materials for Bud and Sarah are tracked in [the checklist](press-friends-brand.md). No DNS changes.
