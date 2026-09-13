@@ -9,7 +9,6 @@ usage='''SARAH & THE BUDS — PRESS KIT
 
 COMING SOON
 - Expanded band and duo promotional descriptions
-- Photo credits and promotional usage guidance
 - Featured performance videos
 
 For specific promotional needs, contact booksarahandbud@gmail.com.
@@ -23,7 +22,9 @@ SVG silhouettes were traced from the supplied binary raster; these are not origi
 They retain source edge irregularities. PDF preserves scalable paths. PNG is raster.
 No font files are distributed; labels use Avenir Next/Arial as available at export.
 Photos retain the real performers. AI-edited homepage hero is excluded.
-Confirm photo credit and usage with booksarahandbud@gmail.com before external distribution.
+All four JPEG photographs: Andrew Von Neida.
+Promotional-use permission confirmed by Bud. These photos may be used to promote Sarah & the Buds and Sarah & Bud. Please credit Andrew Von Neida.
+For other uses, contact booksarahandbud@gmail.com.
 '''
 (d/'read-me.txt').write_text(usage)
 extras=['favicon.svg','favicon.ico','favicon-16.png','favicon-32.png','apple-touch-icon.png']

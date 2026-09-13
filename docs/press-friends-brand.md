@@ -25,7 +25,7 @@ Four existing prepared JPEGs copied to `public/downloads/photos/`; source metada
 - Full band: barn portrait; Georgetown Underground portrait (photo 10, not 11); wine-barrel-room performance.
 - Duo: guitar-and-microphone portrait.
 - AI-edited homepage hero is excluded from the press kit.
-- ZIP has separate full-band/acoustic-duo folders, logos, icons, promotional copy and a read-me. Credits and promotional usage are explicitly pending; the public read-me lists these as coming soon.
+- ZIP has separate full-band/acoustic-duo folders, logos, icons, promotional copy and a read-me. All four photographs are by Andrew Von Neida; Bud confirmed promotional-use permission. The page and ZIP read-me carry attribution and permission guidance.
 
 ## Bud’s remaining inputs
 
@@ -33,13 +33,13 @@ Four existing prepared JPEGs copied to `public/downloads/photos/`; source metada
 - [ ] Confirm exact stage/porch for Kenwick Porch Fest and Midway Fall Festival if useful. General festival locations are used until then.
 - [ ] Supply Georgetown Underground’s preferred official website/social link; address has documentary support but no official artist-facing URL was confidently identified.
 - [ ] Approve the two draft introductions in `src/data/press.json`.
-- [ ] Confirm photographer credits and promotional-use permission for each of the four photos.
-- [ ] Select a featured performance video; optional technical rider can follow later.
+- [x] All four photographs: Andrew Von Neida. Promotional-use permission confirmed by Bud.
+- [ ] Sarah will select the featured performance video; optional technical rider can follow later.
 - [ ] Confirm “Willcutt Guitars” (official website branding) is the intended display name for “Willcutt Music.”
 - [ ] Optional: personal connection descriptions and permissioned Friends photos/logos. Current short factual descriptions are sufficient if preferred.
 - [x] Bud approved release with Coming soon notices September 13. Further logo refinements can follow.
 
-Bud approved the existing materials for publication with “Coming soon” notices replacing internal review notes. Expanded descriptions, photo credits/usage, featured videos and Friends stories/photos will follow with Sarah’s help. Update the ZIP read-me alongside these additions.
+Bud approved the existing materials for publication with “Coming soon” notices replacing internal review notes. Expanded descriptions and Friends stories/photos will follow; Sarah will select the video. Photo credits and promotional-use permission are confirmed. Update the ZIP read-me alongside these additions.
 
 ## Verified link sources (September 13)
 

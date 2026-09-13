@@ -16,3 +16,8 @@ The 15-photo local archive contains full-size JPEGs, WebPs, comparisons, source 
 ## Press downloads — prepared September 13
 
 Four existing prepared JPEGs are copied into `public/downloads/photos`: original barn group, photo 10 Georgetown portrait, duo guitar/microphone portrait and full-band wine-barrel performance. No new photo retouching; AI hero excluded. Credits and promotional usage await Bud. See [press inventory and checklist](press-friends-brand.md).
+
+
+## Press credits confirmed — September 13, 2026
+
+Bud confirmed Andrew Von Neida as photographer for all four press JPEGs and confirmed promotional-use permission. Press photo metadata, visible credits and both ZIP read-mes now reflect this. Credit/permission is removed from Coming soon. Sarah owns featured-video selection. Revised promotional introductions are drafts for review, not substituted into the published copy yet.
