@@ -13,13 +13,16 @@ Run `pnpm build` to generate `dist/`; `pnpm preview` serves the production build
 - Songbook metadata: `src/data/songbook.json`; full reference: `src/pages/songbook.astro`.
 - Shows: `src/pages/shows.astro`, rendering the combined calendar from `src/data/events.json`.
 - Shared design: `src/styles/global.css` and `src/components/`.
-- Photos: `public/images/music/`. Only images used by this site are included.
+- Photos: `public/images/music/`; press JPEG downloads: `public/downloads/photos/`.
+- Press: `src/pages/press.astro`, `src/data/press.json`, `src/data/press-photos.json`; package downloads with `python3 scripts/build-press-kit.py`.
+- Friends: `src/pages/friends.astro`, `src/data/friends.json`.
+- Logo exports: `public/downloads/logos/`; inventory: `src/data/logos.json`.
 
 Use a branch and pull request for changes. Review and build before merging to `main`.
 
 ## Cloudflare Pages setup
 
-Follow [Domain & Hosting Notes](docs/domain-and-hosting.md) for the exact setup, domain connection, verification and rollback sequence. Production uses `main`, root directory blank, `pnpm build`, output `dist`. The initial site and calendar are deployed.
+Follow [Domain & Hosting Notes](docs/domain-and-hosting.md) for the exact setup, domain connection, verification and rollback sequence. Production uses `main`, root directory blank, `pnpm build`, output `dist`. The site, calendar, Press and Friends pages are deployed.
 
 ## Documentation and collaboration
 
@@ -31,7 +34,7 @@ See [migration notes](docs/migration.md) for the completed separation and ongoin
 
 ## Editing shows
 
-Edit `src/data/events.json` for the combined calendar. Dates use YYYY-MM-DD and times HH:MM in America/New_York. Preserve unknown fields as omitted. Run `pnpm build` and review before release. See [dashboard](docs/dashboard.md) for current deployment status.
+Edit `src/data/events.json` for the combined calendar. Dates use YYYY-MM-DD and times HH:MM in America/New_York. Set `act` to `full-band`, `duo`, `solo`, or null when unconfirmed. Maintain reusable locations and verified links in `src/data/venues.json`; preserve optional unknown fields as omitted. Run `pnpm build` and review before release. See [dashboard](docs/dashboard.md) for current deployment status.
 
 ## Visual identity
 

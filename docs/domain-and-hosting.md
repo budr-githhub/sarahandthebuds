@@ -54,19 +54,10 @@ Use a reviewed branch/PR, run `pnpm build`, merge only with release authorizatio
 
 No database or new hosting service was added. IONOS domain renewal remains separate. Recheck provider pricing before adding services.
 
-## Current release — September 12, 2026
+## Published implementation and verification
 
-Bud approved publication. [PR #5](https://github.com/budr-githhub/sarahandthebuds/pull/5) merged as `b99f8f14fa54306b6f864a4cdce9365f35decd2f`; Cloudflare reported a successful production deployment. Fresh production responses verified the band-only hero and its image asset, full songbook with 146 cover/holiday entries, request-only originals, and corrected inline spacing. Earlier pending-release notes below are historical and superseded. Initial cached songbook requests returned 404 immediately after deployment; fresh requests succeeded.
+The latest page behavior is PR #16, `328ace847ddbf96b19c3efc198f9c21bef213ff1`: Press and Friends header links. Cloudflare reported success; live Chrome verified the six-link header. Earlier releases added Press/Friends, logos/favicon, photo attribution/permission, approved introductions and Music return links; see [dashboard](dashboard.md) for the release table and [decision log](decision-log.md) for history.
 
-Live pages: [Homepage](https://sarahandthebuds.com/) and [Songbook](https://sarahandthebuds.com/songbook).
+Live pages: [Home](https://sarahandthebuds.com/), [Shows](https://sarahandthebuds.com/shows/), [Songbook](https://sarahandthebuds.com/songbook/), [Press](https://sarahandthebuds.com/press/), [Friends](https://sarahandthebuds.com/friends/). All released page changes were verified in Chrome. Plain automated text requests sometimes return 403; browser requests succeeded. Documentation-only merges may create later deployments with identical site behavior.
 
-
-## Press and Friends release — September 13, 2026
-
-Bud authorized publication with Coming soon notices. PR #8 merged as `c0d795eaad3179b22715b964b803e445bcb7b6c3`; Cloudflare Pages production check succeeded. Chrome returned HTTP 200 for `/`, `/press/`, `/friends/` and `/shows/`; Press/Friends contain Coming soon text and no internal preview notes. Shows retain unknown act labels. Plain automated text requests returned 403, while Chrome succeeded. Remaining materials for Bud and Sarah are tracked in [the checklist](press-friends-brand.md). No DNS changes.
-
-
-September 13 photo-credit release: PR #10 merged as `85a2d1e7028a67097d19a885eb1e9e7ad414820a`; Cloudflare succeeded. Live `/press/` returned 200 in Chrome with four Andrew Von Neida credits and promotional-use guidance, without the old credit placeholder. Introduction drafts remain for review; Sarah will select video.
-
-
-September 13: approved introductions published through PR #12, merge `185513b639d9c4c7b594c04f58c71f1e6ad56d71`. Cloudflare succeeded; live Chrome verification returned 200 and found both approved introductions with the expanded-description Coming soon item removed. Press downloads were regenerated. Sarah’s video selection remains pending.
+All publication and copy/photo approvals for these releases are complete. Sarah’s video and Bud’s event-act confirmations are remaining content inputs, not failed deployments. No DNS changes or email tests accompanied these releases.

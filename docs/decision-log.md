@@ -1,3 +1,5 @@
+> Historical record: dated pending/draft statements describe the state at that time. Use [dashboard](dashboard.md) for current status; introductions and photo permissions are approved and published.
+
 # Decision Log
 
 Append dated entries using Date, Decision, Reason, Alternatives considered, and Impact. Preserve previous decisions as history; explicitly mark superseded choices when needed.
@@ -136,7 +138,7 @@ September 13 photo-credit release: PR #10 merged as `85a2d1e7028a67097d19a885eb1
 
 ## Introductions approved — September 13, 2026
 
-Bud approved the full-band and acoustic-duo drafts. The exact approved text is in [approved introductions](press-introduction-drafts.md) and `src/data/press.json`; press downloads are regenerated. Expanded descriptions are removed from Coming soon. Sarah’s featured-video selection remains pending.
+Bud approved the full-band and acoustic-duo drafts. The exact approved text is in [approved introductions](approved-introductions.md) and `src/data/press.json`; press downloads are regenerated. Expanded descriptions are removed from Coming soon. Sarah’s featured-video selection remains pending.
 
 
 September 13: approved introductions published through PR #12, merge `185513b639d9c4c7b594c04f58c71f1e6ad56d71`. Cloudflare succeeded; live Chrome verification returned 200 and found both approved introductions with the expanded-description Coming soon item removed. Press downloads were regenerated. Sarah’s video selection remains pending.
@@ -152,3 +154,8 @@ September 13: Bud requested Press and Friends in the shared top navigation. Head
 
 
 Header links released September 13 through PR #16 (`328ace8`); Cloudflare succeeded and the live six-link navigation was verified in Chrome.
+
+
+## Documentation reconciliation — September 13, 2026
+
+Audited all repository Markdown against current source and completed releases through PR #16. Consolidated dashboard, handoff, copy deck, hosting and photo inventory; removed stale pending-copy/credit/logo notes. Renamed the approved-introduction document and updated references. Preserved historical decisions. Remaining inputs are Sarah’s video, Bud’s event acts/details and optional Friends material. No site behavior changes.

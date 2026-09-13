@@ -341,6 +341,6 @@ Core Asset Set
 Maintain the S&B mark, full-band lockup, duo lockup, white-on-transparent and black-on-transparent logo files, square profile image, show templates, and the current approved group photo in one shared folder. Preferred logo formats are SVG and PDF for print, plus transparent PNG for everyday digital use.
 
 
-## September 13, 2026 — owner-directed logo extension (prepared)
+## September 13, 2026 — owner-directed logo extension (published)
 
-Bud requested a portrait S&B mark with one microphone on each side, vertically centered with the lettering, round heads facing inward, and no act name beneath. Supplied S&B silhouettes are traced, not retyped. Original vector artwork is unavailable. Complete export inventory and limitations: [press/brand review](press-friends-brand.md). The appropriate act name remains elsewhere on the page or promotional piece. Existing original raster artwork is retained.
+Bud requested a portrait S&B mark with one microphone on each side, vertically centered with the lettering, round heads facing inward, and no act name beneath. Supplied S&B silhouettes are traced, not retyped. Original vector artwork is unavailable. Complete export inventory and limitations: [press/brand inventory](press-friends-brand.md). The appropriate act name remains elsewhere on the page or promotional piece. Existing original raster artwork is retained.

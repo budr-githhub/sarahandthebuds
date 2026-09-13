@@ -1,14 +1,13 @@
-> September 13: PR #8 is published as `c0d795e`, Cloudflare succeeded, and live pages were verified. Press/Friends show public Coming soon notices; Bud will ask Sarah to help finish materials. See [dashboard](dashboard.md) and [remaining inputs](press-friends-brand.md). No Claude project has been created.
+# Current handoff — September 13, 2026
 
-# Claude handoff — September 12, 2026
+Owner: Bud. Implementation: Codex. Status: published and verified. No Claude project has been created or contacted.
 
-Task: close the calendar/separation handoff and acknowledge the subsequent band-site release.
-Owner: Bud. Implementation completed by Codex. Status: published and verified.
+Read [AGENTS](../AGENTS.md), [dashboard](dashboard.md), [style guide](style-guide.md), [press/brand inventory](press-friends-brand.md), [photo inventory](photo-inventory.md), [songbook source](songbook-source.md) and [copy deck](copy-deck.md) on current GitHub main.
 
-Read AGENTS.md, dashboard.md, style-guide.md, photo-inventory.md, songbook-source.md and copy-deck.md on current GitHub main. The dashboard summarizes release commits and validation. Historical decision entries are not pending instructions.
+Completed: calendar/separation, monochrome identity, photo/gallery updates, full songbook, Press and Friends pages, logo family/favicon, event locations/links, photo credits/permission, approved introductions, Music return links and Press/Friends header navigation. The dashboard records releases and verification.
 
-Calendar ownership is in the band repository; no calendar sync job or second source is needed. Plan & Adapt radio/solo separation and redirects were completed earlier. Subsequent band changes include the supplied style guide, approved photos, responsive gallery, matching portraits, collapsible artist examples, full songbook reference and back-to-top navigation.
+Andrew Von Neida is photographer for all four press JPEGs, and Bud confirmed promotional-use permission. Both introductions are approved and published. Sarah owns featured-video selection. Bud still needs to identify event acts; never infer those from a venue. Friends stories/photos and a technical rider are optional.
 
-The public reference has 146 cover/holiday entries. Originals are available by request without names; no specialty section. Keep one row per artist on the homepage and no photo captions. Use the original logo artwork, natural photography and the current monochrome style guide.
+The band repository owns the combined calendar. Plan & Adapt retains radio and solo introductions and redirects old calendars here; do not reintroduce synchronization or a second calendar source. Keep one artist row per homepage songbook entry, originals by request without titles, no specialty section, and no gallery captions. Accessible alt text and press download credits remain.
 
-No additional implementation is requested by this handoff. Close stale calendar/separation tasks as completed where you maintain their records, referencing the dashboard’s merged PRs. Do not restore earlier synchronization plans, artist accordions, original-title lists or photo captions. Do not change production or DNS without a new user request. Optional videos and solo listening links are not blockers.
+Historical decision entries are not current tasks. No release remains blocked on copy or photo approval. Follow new user requests for additional work; no DNS changes are needed. Keep documentation current after pushes and verified releases.
