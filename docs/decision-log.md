@@ -143,3 +143,6 @@ September 13: approved introductions published through PR #12, merge `185513b639
 
 
 September 13: Bud requested a Music return link on Upcoming Shows. Added “← Back to Music” above the heading and at the bottom, pointing to `/#songbook`, the same destination as the site’s existing Music navigation.
+
+
+Shows navigation published September 13 via PR #14 (`793a274`). Live Chrome verified two Back to Music links and successful navigation to `/#songbook`.
