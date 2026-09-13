@@ -140,3 +140,6 @@ Bud approved the full-band and acoustic-duo drafts. The exact approved text is i
 
 
 September 13: approved introductions published through PR #12, merge `185513b639d9c4c7b594c04f58c71f1e6ad56d71`. Cloudflare succeeded; live Chrome verification returned 200 and found both approved introductions with the expanded-description Coming soon item removed. Press downloads were regenerated. Sarah’s video selection remains pending.
+
+
+September 13: Bud requested a Music return link on Upcoming Shows. Added “← Back to Music” above the heading and at the bottom, pointing to `/#songbook`, the same destination as the site’s existing Music navigation.

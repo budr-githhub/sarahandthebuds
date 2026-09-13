@@ -38,3 +38,8 @@ Four-page Astro build and diff checks passed before release. Browser checks at 3
 Specific band video embeds and Plan & Adapt solo listening links remain optional, not handoff blockers. Do not invent performer assignments, songs, dates or biographies. No DNS/email changes are needed; email delivery was not tested.
 
 Read [Claude handoff](claude-handoff.md), [style guide](style-guide.md), [photo inventory](photo-inventory.md), [songbook source](songbook-source.md), [copy deck](copy-deck.md) and [hosting](domain-and-hosting.md). Decision-log entries preserve historical changes; this dashboard is current status.
+
+
+## Shows navigation
+
+Owner-requested “Back to Music” links are prepared at the top and bottom of `/shows`, targeting `/#songbook` consistently with the existing Music navigation. Publication verification pending.
