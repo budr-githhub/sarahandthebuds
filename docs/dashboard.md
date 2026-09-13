@@ -1,12 +1,16 @@
 # Sarah & the Buds — current status
 
-Updated September 13, 2026. Owner: Bud; implementation: Codex. Existing site is published and verified. New Press/Friends/logo/events work is approved for publication on `feat/press-friends-brand`, release verification pending.
+Updated September 13, 2026. Owner: Bud; implementation: Codex. Status: published and verified.
 
-## Current work
+## Latest release
 
-See [implementation and owner checklist](press-friends-brand.md). Scope: Press & Booking downloads, complete traced logo set and favicon, owner-specified portrait home logo, Friends directory, and event locations/links/act labels. Base: `243db66`. Implementation: `2b0ec1a`; pushed in draft [PR #8](https://github.com/budr-githhub/sarahandthebuds/pull/8). Documentation is on the review branch, not main. Bud supplied Zoe Zamora’s Facebook link. All seven event act assignments remain unknown. Bud authorized publication September 13 with public “Coming soon” notices for expanded promotional descriptions, photo credits/usage and featured videos. Bud will ask Sarah to help. Event act assignments remain unconfirmed.
+[PR #8](https://github.com/budr-githhub/sarahandthebuds/pull/8) merged as `c0d795eaad3179b22715b964b803e445bcb7b6c3`. Cloudflare production succeeded. Chrome verified HTTP 200 on homepage, Press, Friends and Shows; Press/Friends display “Coming soon” without internal preview notes.
 
-Validation: six-page Astro build passed. Phone (390px) and desktop (1280px) browser checks passed for overflow, loaded images and internal downloads; copy buttons and calendar rollover passed. Both ZIP integrity checks passed, and all seven original event records retain their dates/times/names. No DNS or hosting changes.
+Live additions: Press & Booking with photo/logo downloads and ZIPs; 16 logo/color variants and favicon; inward-facing microphone homepage logo; Friends directory with all 12 requested entries; event locations, venue links and unknown act labels. Original dates/times remain unchanged.
+
+Bud authorized publication with “Coming soon” descriptions, photo credits/usage guidance, featured videos and Friends stories/photos. Bud will ask Sarah to help. All seven event act assignments remain unconfirmed. See [remaining-input checklist](press-friends-brand.md). No release approval remains pending.
+
+Validation: six-page build, previous 390/1280px browser/download/copy/calendar checks, and production Chrome verification. Plain automated text requests returned 403; browser requests succeeded. No DNS changes or email delivery tests.
 
 ## Releases
 

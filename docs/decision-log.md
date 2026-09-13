@@ -119,3 +119,8 @@ Live pages: [Homepage](https://sarahandthebuds.com/) and [Songbook](https://sara
 ## Publication approval — September 13, 2026
 
 Bud requested publication of the prepared work, replacing preview-material notes with a public “Coming soon” list. Bud will ask Sarah to help complete descriptions, credits/usage and featured videos. Internal review language is removed from pages and ZIP read-me. Event assignments remain unknown.
+
+
+## Press and Friends release — September 13, 2026
+
+Bud authorized publication with Coming soon notices. PR #8 merged as `c0d795eaad3179b22715b964b803e445bcb7b6c3`; Cloudflare Pages production check succeeded. Chrome returned HTTP 200 for `/`, `/press/`, `/friends/` and `/shows/`; Press/Friends contain Coming soon text and no internal preview notes. Shows retain unknown act labels. Plain automated text requests returned 403, while Chrome succeeded. Remaining materials for Bud and Sarah are tracked in [the checklist](press-friends-brand.md). No DNS changes.
