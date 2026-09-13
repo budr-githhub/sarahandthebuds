@@ -64,3 +64,6 @@ Live pages: [Homepage](https://sarahandthebuds.com/) and [Songbook](https://sara
 ## Press and Friends release — September 13, 2026
 
 Bud authorized publication with Coming soon notices. PR #8 merged as `c0d795eaad3179b22715b964b803e445bcb7b6c3`; Cloudflare Pages production check succeeded. Chrome returned HTTP 200 for `/`, `/press/`, `/friends/` and `/shows/`; Press/Friends contain Coming soon text and no internal preview notes. Shows retain unknown act labels. Plain automated text requests returned 403, while Chrome succeeded. Remaining materials for Bud and Sarah are tracked in [the checklist](press-friends-brand.md). No DNS changes.
+
+
+September 13 photo-credit release: PR #10 merged as `85a2d1e7028a67097d19a885eb1e9e7ad414820a`; Cloudflare succeeded. Live `/press/` returned 200 in Chrome with four Andrew Von Neida credits and promotional-use guidance, without the old credit placeholder. Introduction drafts remain for review; Sarah will select video.
