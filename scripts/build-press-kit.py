@@ -8,7 +8,6 @@ text='SARAH & THE BUDS — PRESS MATERIALS\n\nFull band\n'+copy['band']+'\n\nAco
 usage='''SARAH & THE BUDS — PRESS KIT
 
 COMING SOON
-- Expanded band and duo promotional descriptions
 - Featured performance videos
 
 For specific promotional needs, contact booksarahandbud@gmail.com.

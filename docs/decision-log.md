@@ -132,3 +132,8 @@ Bud confirmed Andrew Von Neida as photographer for all four press JPEGs and conf
 
 
 September 13 photo-credit release: PR #10 merged as `85a2d1e7028a67097d19a885eb1e9e7ad414820a`; Cloudflare succeeded. Live `/press/` returned 200 in Chrome with four Andrew Von Neida credits and promotional-use guidance, without the old credit placeholder. Introduction drafts remain for review; Sarah will select video.
+
+
+## Introductions approved — September 13, 2026
+
+Bud approved the full-band and acoustic-duo drafts. The exact approved text is in [approved introductions](press-introduction-drafts.md) and `src/data/press.json`; press downloads are regenerated. Expanded descriptions are removed from Coming soon. Sarah’s featured-video selection remains pending.

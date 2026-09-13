@@ -578,3 +578,8 @@ September 13 publication approval: replace internal owner-preview notes with “
 ## Press credits confirmed — September 13, 2026
 
 Bud confirmed Andrew Von Neida as photographer for all four press JPEGs and confirmed promotional-use permission. Press photo metadata, visible credits and both ZIP read-mes now reflect this. Credit/permission is removed from Coming soon. Sarah owns featured-video selection. Revised promotional introductions are drafts for review, not substituted into the published copy yet.
+
+
+## Introductions approved — September 13, 2026
+
+Bud approved the full-band and acoustic-duo drafts. The exact approved text is in [approved introductions](press-introduction-drafts.md) and `src/data/press.json`; press downloads are regenerated. Expanded descriptions are removed from Coming soon. Sarah’s featured-video selection remains pending.

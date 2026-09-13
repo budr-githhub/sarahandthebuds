@@ -1,6 +1,6 @@
-# Promotional introduction drafts
+# Approved promotional introductions
 
-For Bud and Sarah’s review; not published. September 13, 2026.
+Approved by Bud September 13, 2026. Applied to the press page and downloadable copy.
 
 ## Sarah & the Buds — full band
 
@@ -10,4 +10,4 @@ Sarah & the Buds bring familiar songs and a welcoming, sing-along spirit to venu
 
 Sarah & Bud offer an acoustic take on the songs you know and love. Playing around Central Kentucky, the duo draws from rock, country, Americana, folk and pop for intimate performances at wineries, restaurants, porch concerts and private celebrations. Their broad songbook leaves room for familiar favorites, a few discoveries and requests from the room.
 
-After approval, update src/data/press.json and regenerate both ZIPs. Sarah will supply the featured-video selection. All four press photographs are credited to Andrew Von Neida; Bud confirmed promotional-use permission.
+Source: src/data/press.json; both ZIPs regenerated. Sarah will supply the featured-video selection. All four press photographs are credited to Andrew Von Neida; Bud confirmed promotional-use permission.
