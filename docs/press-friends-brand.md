@@ -1,6 +1,6 @@
 # Press, Friends, branding and event details
 
-September 13, 2026. Owner: Bud. Implementation: Codex. Prepared on `feat/press-friends-brand`; not merged or published.
+September 13, 2026. Owner: Bud. Implementation: Codex. Prepared and pushed in draft [PR #8](https://github.com/budr-githhub/sarahandthebuds/pull/8) on `feat/press-friends-brand`; implementation commit `2b0ec1a`. Not merged or published.
 
 ## Implemented for review
 
