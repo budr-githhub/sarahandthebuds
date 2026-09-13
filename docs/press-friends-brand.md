@@ -1,6 +1,6 @@
 # Press, Friends, branding and event details
 
-September 13, 2026. Owner: Bud. Implementation: Codex. Published through [PR #8](https://github.com/budr-githhub/sarahandthebuds/pull/8), merge `c0d795eaad3179b22715b964b803e445bcb7b6c3`. Cloudflare production succeeded; live homepage, Press, Friends and Shows verified in Chrome. Bud approved publication with Coming soon notices and will ask Sarah to help complete remaining material.
+September 13, 2026. Owner: Bud. Implementation: Codex. Published through [PR #8](https://github.com/budr-githhub/sarahandthebuds/pull/8), merge `c0d795eaad3179b22715b964b803e445bcb7b6c3`. Cloudflare production succeeded; live homepage, Press, Friends and Shows verified in Chrome. Credits/permission and introductions are now approved and published; Sarah will select featured video(s). See the dashboard for subsequent releases.
 
 ## Published
 
@@ -8,7 +8,7 @@ September 13, 2026. Owner: Bud. Implementation: Codex. Published through [PR #8]
 - `/friends/`: musicians, venues, community friends in Bud’s requested order. Text-first cards; no invented endorsements or borrowed logos. Zoe’s Facebook URL was supplied by Bud.
 - Homepage: portrait S&B with microphones aligned to the lettering’s vertical center, round heads inward, no act name inside the logo. Existing page heading remains separate. Photography and songbook retained.
 - Events: reusable venue directory; location, venue link where verified, directions where address is known, and act labels. All seven `act` values are null pending Bud. Original dates/times/names preserved. Existing optional event URLs and performer text remain supported. Eastern time and client-side Upcoming/Past movement remain.
-- Footer resource links; sitemap includes both new pages; compact S&B favicon and Apple icon.
+- Header and footer link to Press and Friends; sitemap includes both pages. Shows has top/bottom Back to Music links to `/#songbook`. Compact S&B favicon and Apple icon are published.
 
 ## Logo production
 
@@ -39,7 +39,7 @@ Four existing prepared JPEGs copied to `public/downloads/photos/`; source metada
 - [ ] Optional: personal connection descriptions and permissioned Friends photos/logos. Current short factual descriptions are sufficient if preferred.
 - [x] Bud approved release with Coming soon notices September 13. Further logo refinements can follow.
 
-Bud approved the existing materials for publication with “Coming soon” notices replacing internal review notes. Expanded descriptions and Friends stories/photos will follow; Sarah will select the video. Photo credits and promotional-use permission are confirmed. Update the ZIP read-me alongside these additions.
+Bud approved the existing materials for publication with “Coming soon” notices replacing internal review notes. Introductions are approved and published. Friends stories/photos may follow; Sarah will select the video. Photo credits and promotional-use permission are confirmed. Update the ZIP read-me alongside these additions.
 
 ## Verified link sources (September 13)
 
@@ -74,6 +74,3 @@ Press text: `src/data/press.json`; photo download metadata: `press-photos.json`;
 ## Validation
 
 Six-page production build passed. Browser checks at 390 and 1280px: no horizontal overflow or failed images, logo frames contain artwork, internal download links return successfully. Copy-to-clipboard verified. Advancing the browser clock to October 24 moves completed shows to Past and leaves December 16 upcoming. Seven event dates/times/names match base exactly. Both ZIPs pass integrity checks (59 press files, 54 logo files). External Facebook fetch unavailable; Zoe URL is owner-provided. No email delivery tested. Production Cloudflare success and Chrome page content verified after release.
-
-
-September 13 photo-credit release: PR #10 merged as `85a2d1e7028a67097d19a885eb1e9e7ad414820a`; Cloudflare succeeded. Live `/press/` returned 200 in Chrome with four Andrew Von Neida credits and promotional-use guidance, without the old credit placeholder. Introduction drafts remain for review; Sarah will select video.

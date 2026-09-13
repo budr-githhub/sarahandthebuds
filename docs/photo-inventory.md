@@ -13,11 +13,10 @@ All assets are in `public/images/music/`; source references are in `src/pages/in
 The 15-photo local archive contains full-size JPEGs, WebPs, comparisons, source hashes and descriptive filename mapping. Raw originals remain unchanged outside GitHub. Only selected site assets are committed. The hero is AI-edited; other new photos were processed locally without generative face changes. Follow the supplied style guide.
 
 
-## Press downloads — prepared September 13
+## Published press downloads
 
-Four existing prepared JPEGs are copied into `public/downloads/photos`: original barn group, photo 10 Georgetown portrait, duo guitar/microphone portrait and full-band wine-barrel performance. No new photo retouching; AI hero excluded. Credits and promotional usage await Bud. See [press inventory and checklist](press-friends-brand.md).
+Four JPEGs in `public/downloads/photos/`: original barn group portrait, photo 10 Georgetown Underground portrait, duo guitar/microphone portrait, and full-band wine-barrel performance. Existing prepared edits are reused; AI hero excluded. Photo 11 remains excluded.
 
+**Photographer for all four: Andrew Von Neida.** Bud confirmed promotional-use permission. Attribution and permission guidance appear on `/press/`, in photo metadata and both downloadable ZIP read-mes. This confirmation applies to these four press photos, not automatically to every historical gallery image.
 
-## Press credits confirmed — September 13, 2026
-
-Bud confirmed Andrew Von Neida as photographer for all four press JPEGs and confirmed promotional-use permission. Press photo metadata, visible credits and both ZIP read-mes now reflect this. Credit/permission is removed from Coming soon. Sarah owns featured-video selection. Revised promotional introductions are drafts for review, not substituted into the published copy yet.
+See [press inventory](press-friends-brand.md) for formats and maintenance. Introductions are approved and published; Sarah will choose the featured video.
