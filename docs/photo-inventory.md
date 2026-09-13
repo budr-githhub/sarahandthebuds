@@ -11,3 +11,8 @@ Released in PR #5 (`b99f8f1`). Bud approved selection and publication.
 All assets are in `public/images/music/`; source references are in `src/pages/index.astro`. No visible captions; natural aspect ratios in responsive gallery columns, descriptive alt text and lazy loading. The former hero and storefront photo are distinct poses. Show signs are historical, not event-calendar data.
 
 The 15-photo local archive contains full-size JPEGs, WebPs, comparisons, source hashes and descriptive filename mapping. Raw originals remain unchanged outside GitHub. Only selected site assets are committed. The hero is AI-edited; other new photos were processed locally without generative face changes. Follow the supplied style guide.
+
+
+## Press downloads — prepared September 13
+
+Four existing prepared JPEGs are copied into `public/downloads/photos`: original barn group, photo 10 Georgetown portrait, duo guitar/microphone portrait and full-band wine-barrel performance. No new photo retouching; AI hero excluded. Credits and promotional usage await Bud. See [press inventory and checklist](press-friends-brand.md).

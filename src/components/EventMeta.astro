@@ -1,0 +1,14 @@
+---
+interface Props {event: {act?: "full-band" | "duo" | "solo" | null; performers?: string}; venue?: {city: string; address: string | null; url: string | null};}
+const {event, venue} = Astro.props;
+const labels = {"full-band":"Full band · Sarah & the Buds",duo:"Acoustic duo · Sarah & Bud",solo:"Solo · Bud Ratliff"};
+---
+<div class="event-meta">
+ <p class="act-label">{event.act ? labels[event.act] : event.performers || "Performing act to be confirmed"}</p>
+ {venue && <p>{venue.address || venue.city}</p>}
+ <div class="event-links">
+  {venue?.url && <a href={venue.url}>Venue website ↗</a>}
+  {venue?.address && <a href={'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(venue.address)}>Directions ↗</a>}
+ </div>
+</div>
+<style>.event-meta{margin-top:12px;font-size:.9rem}.event-meta p{margin-bottom:6px}.act-label{font-weight:600}.event-links{display:flex;gap:16px;flex-wrap:wrap}</style>

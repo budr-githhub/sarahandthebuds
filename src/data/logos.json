@@ -1,0 +1,114 @@
+[
+  {
+    "name": "Sb Primary \u00b7 black",
+    "file": "sb-primary-black",
+    "width": 1000,
+    "height": 1000,
+    "color": "black"
+  },
+  {
+    "name": "Sb Primary \u00b7 warm white",
+    "file": "sb-primary-warm-white",
+    "width": 1000,
+    "height": 1000,
+    "color": "warm-white"
+  },
+  {
+    "name": "Sb Portrait \u00b7 black",
+    "file": "sb-portrait-black",
+    "width": 1000,
+    "height": 1250,
+    "color": "black"
+  },
+  {
+    "name": "Sb Portrait \u00b7 warm white",
+    "file": "sb-portrait-warm-white",
+    "width": 1000,
+    "height": 1250,
+    "color": "warm-white"
+  },
+  {
+    "name": "Sb Compact \u00b7 black",
+    "file": "sb-compact-black",
+    "width": 1000,
+    "height": 1000,
+    "color": "black"
+  },
+  {
+    "name": "Sb Compact \u00b7 warm white",
+    "file": "sb-compact-warm-white",
+    "width": 1000,
+    "height": 1000,
+    "color": "warm-white"
+  },
+  {
+    "name": "Full Band Horizontal \u00b7 black",
+    "file": "full-band-horizontal-black",
+    "width": 1600,
+    "height": 600,
+    "color": "black"
+  },
+  {
+    "name": "Full Band Horizontal \u00b7 warm white",
+    "file": "full-band-horizontal-warm-white",
+    "width": 1600,
+    "height": 600,
+    "color": "warm-white"
+  },
+  {
+    "name": "Full Band Stacked \u00b7 black",
+    "file": "full-band-stacked-black",
+    "width": 1000,
+    "height": 1250,
+    "color": "black"
+  },
+  {
+    "name": "Full Band Stacked \u00b7 warm white",
+    "file": "full-band-stacked-warm-white",
+    "width": 1000,
+    "height": 1250,
+    "color": "warm-white"
+  },
+  {
+    "name": "Acoustic Duo Horizontal \u00b7 black",
+    "file": "acoustic-duo-horizontal-black",
+    "width": 1600,
+    "height": 600,
+    "color": "black"
+  },
+  {
+    "name": "Acoustic Duo Horizontal \u00b7 warm white",
+    "file": "acoustic-duo-horizontal-warm-white",
+    "width": 1600,
+    "height": 600,
+    "color": "warm-white"
+  },
+  {
+    "name": "Acoustic Duo Stacked \u00b7 black",
+    "file": "acoustic-duo-stacked-black",
+    "width": 1000,
+    "height": 1250,
+    "color": "black"
+  },
+  {
+    "name": "Acoustic Duo Stacked \u00b7 warm white",
+    "file": "acoustic-duo-stacked-warm-white",
+    "width": 1000,
+    "height": 1250,
+    "color": "warm-white"
+  },
+  {
+    "name": "Social avatar \u00b7 dark",
+    "file": "sb-social-dark",
+    "width": 1080,
+    "height": 1080,
+    "color": "dark"
+  },
+  {
+    "name": "Social avatar \u00b7 light",
+    "file": "sb-social-light",
+    "width": 1080,
+    "height": 1080,
+    "color": "light"
+  }
+]

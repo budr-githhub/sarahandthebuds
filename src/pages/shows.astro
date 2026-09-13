@@ -1,6 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import eventData from "../data/events.json";
+import venues from "../data/venues.json";
+import EventMeta from "../components/EventMeta.astro";
 
 interface EventItem {
   /** "YYYY-MM-DD" */
@@ -11,12 +13,17 @@ interface EventItem {
   startTime?: string;
   endTime?: string;
   name: string;
+  venueId?: string;
+  act?: "full-band" | "duo" | "solo" | null;
   location?: string;
   performers?: string;
   url?: string;
   admission?: string;
   notes?: string;
 }
+
+const actNames = {"full-band":"Sarah & the Buds",duo:"Sarah & Bud",solo:"Bud Ratliff"};
+const venueFor = (e: EventItem) => venues[e.venueId as keyof typeof venues];
 
 // Single maintained calendar; preserve unknown optional fields.
 const events: EventItem[] = eventData;
@@ -104,9 +111,10 @@ const eventSchema = upcoming.map((e) => ({
   endDate: toISOWithOffset(e.end ?? e.start, e.endTime ?? e.startTime ?? "23:59"),
   location: {
     "@type": "Place",
-    name: e.location ?? e.name,
+    name: venueFor(e)?.name ?? e.name,
+    ...(venueFor(e)?.address ? {address: venueFor(e).address} : {}),
   },
-  ...(e.performers ? { performer: { "@type": "PerformingGroup", name: e.performers } } : {}),
+  ...((e.act || e.performers) ? { performer: { "@type": e.act === "solo" ? "Person" : "PerformingGroup", name: e.act ? actNames[e.act] : e.performers } } : {}),
   ...(e.url ? { url: e.url } : {}),
 }));
 ---
@@ -146,6 +154,7 @@ const eventSchema = upcoming.map((e) => ({
                   {e.location && <span class="event-location"> · {e.location}</span>}
                 </div>
                 {formatTimeRange(e) && <div class="event-time">{formatTimeRange(e)}</div>}
+                <EventMeta event={e} venue={venueFor(e)} />
                 {e.admission && <div class="event-time">{e.admission}</div>}
                 {e.notes && <div class="event-time">{e.notes}</div>}
                 {e.url && (
@@ -179,6 +188,7 @@ const eventSchema = upcoming.map((e) => ({
               <div class="event-details">
                 <div class="event-venue">{e.name}</div>
                 {formatTimeRange(e) && <div class="event-time">{formatTimeRange(e)}</div>}
+                <EventMeta event={e} venue={venueFor(e)} />
               </div>
             </li>
           ))

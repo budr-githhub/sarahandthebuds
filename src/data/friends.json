@@ -1,0 +1,83 @@
+[
+  {
+    "title": "Musicians",
+    "id": "musicians",
+    "intro": "Music makers from our Central Kentucky community.",
+    "entries": [
+      {
+        "name": "Bryce Ernest Taylor",
+        "url": "https://www.brycetaylormusic.com/",
+        "description": "Singer-songwriter"
+      },
+      {
+        "name": "Jason Kyle Smith",
+        "url": "https://jasonkylesmith.bandcamp.com/",
+        "description": "Singer-songwriter"
+      },
+      {
+        "name": "Mo Bell",
+        "url": "https://mobellmusic.com/home",
+        "description": "Blues, R&B and rock"
+      },
+      {
+        "name": "Mela B",
+        "url": "https://melabmusic.com/",
+        "description": "Singer-songwriter"
+      },
+      {
+        "name": "Zoe Zamora",
+        "url": "https://www.facebook.com/ZoeZamoraMusic/about",
+        "description": "Music and updates"
+      },
+      {
+        "name": "Reb Butler",
+        "url": "https://music.apple.com/us/artist/reb-butler/1422069885",
+        "description": "Songs and releases"
+      }
+    ]
+  },
+  {
+    "title": "Venues",
+    "id": "venues",
+    "intro": "Places to gather and enjoy live music.",
+    "entries": [
+      {
+        "name": "Wildside Winery",
+        "url": "https://www.wildsidewinery.com/",
+        "description": "Versailles, Kentucky"
+      },
+      {
+        "name": "Ghost Fox Winery",
+        "url": "https://ghostfoxwinery.com/",
+        "description": "Nicholasville, Kentucky"
+      },
+      {
+        "name": "Equus Run Vineyards",
+        "url": "https://www.equusrunvineyards.com/",
+        "description": "Midway, Kentucky"
+      },
+      {
+        "name": "Kenwick Table",
+        "url": "https://www.kenwicktable.com/",
+        "description": "Lexington, Kentucky"
+      }
+    ]
+  },
+  {
+    "title": "Community friends",
+    "id": "community",
+    "intro": "More people and places that make our music community special.",
+    "entries": [
+      {
+        "name": "WRFL 88.1 FM",
+        "url": "https://wrfl.fm/",
+        "description": "Lexington community radio"
+      },
+      {
+        "name": "Willcutt Guitars",
+        "url": "https://willcuttguitars.com/",
+        "description": "Guitars and music gear in Lexington"
+      }
+    ]
+  }
+]

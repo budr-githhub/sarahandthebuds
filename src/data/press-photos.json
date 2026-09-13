@@ -1,0 +1,42 @@
+[
+  {
+    "file": "sarah-and-the-buds-band-portrait-in-barn.jpg",
+    "preview": "/images/music/sarah-and-the-buds-band-portrait-in-barn.webp",
+    "act": "full-band",
+    "label": "Band portrait in the barn",
+    "width": 2100,
+    "height": 1387,
+    "bytes": 1064424,
+    "credit": null
+  },
+  {
+    "file": "sarah-and-the-buds-georgetown-underground-portrait.jpg",
+    "preview": "/images/music/sarah-and-the-buds-georgetown-underground-portrait.webp",
+    "act": "full-band",
+    "label": "Band at Georgetown Underground",
+    "width": 3024,
+    "height": 3548,
+    "bytes": 4250864,
+    "credit": null
+  },
+  {
+    "file": "sarah-and-bud-portrait-with-guitar-and-microphone.jpg",
+    "preview": "/images/music/sarah-and-bud-portrait-with-guitar-and-microphone.webp",
+    "act": "acoustic-duo",
+    "label": "Sarah & Bud with guitar and microphone",
+    "width": 1536,
+    "height": 1864,
+    "bytes": 753580,
+    "credit": null
+  },
+  {
+    "file": "sarah-and-the-buds-performing-in-wine-barrel-room.jpg",
+    "preview": "/images/music/sarah-and-the-buds-performing-in-wine-barrel-room.webp",
+    "act": "full-band",
+    "label": "Full band performing",
+    "width": 2048,
+    "height": 1536,
+    "bytes": 1081471,
+    "credit": null
+  }
+]
