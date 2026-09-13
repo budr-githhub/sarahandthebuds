@@ -47,4 +47,4 @@ Owner-requested “Back to Music” links are published at the top and bottom of
 
 ## Header navigation
 
-Press and Friends added beside About, Music, Shows and Booking in the shared header. Publication verification pending.
+Press and Friends added beside About, Music, Shows and Booking in the shared header. Published in PR #16 (`328ace847ddbf96b19c3efc198f9c21bef213ff1`). Cloudflare succeeded; live Chrome verification confirmed About, Music, Shows, Press, Friends and Booking.
