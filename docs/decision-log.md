@@ -146,3 +146,6 @@ September 13: Bud requested a Music return link on Upcoming Shows. Added “← 
 
 
 Shows navigation published September 13 via PR #14 (`793a274`). Live Chrome verified two Back to Music links and successful navigation to `/#songbook`.
+
+
+September 13: Bud requested Press and Friends in the shared top navigation. Header order: About, Music, Shows, Press, Friends, Booking. Existing footer links remain.
