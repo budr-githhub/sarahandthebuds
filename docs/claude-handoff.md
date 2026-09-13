@@ -1,4 +1,4 @@
-> September 13 update: the prior release remains live. New Press/Friends/logo/events work is prepared on `feat/press-friends-brand`, not merged or published. See [current dashboard](dashboard.md) and [owner checklist](press-friends-brand.md) before continuing. No Claude project has been created.
+> September 13 update: the prior release remains live. New Press/Friends/logo/events work is approved for publication from `feat/press-friends-brand`; see dashboard for deployment verification. See [current dashboard](dashboard.md) and [owner checklist](press-friends-brand.md) before continuing. No Claude project has been created.
 
 # Claude handoff — September 12, 2026
 

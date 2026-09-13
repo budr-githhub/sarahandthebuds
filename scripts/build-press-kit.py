@@ -3,14 +3,16 @@ from pathlib import Path
 import json,zipfile
 r=Path(__file__).resolve().parents[1];d=r/'public/downloads'
 copy=json.loads((r/'src/data/press.json').read_text())
-text='SARAH & THE BUDS — PRESS MATERIALS FOR REVIEW\n\nFull band\n'+copy['band']+'\n\nAcoustic duo\n'+copy['duo']+'\n\nBooking: booksarahandbud@gmail.com | (859) 519-0840\nYouTube: https://www.youtube.com/@sarahandbud\n'
+text='SARAH & THE BUDS — PRESS MATERIALS\n\nFull band\n'+copy['band']+'\n\nAcoustic duo\n'+copy['duo']+'\n\nBooking: booksarahandbud@gmail.com | (859) 519-0840\nYouTube: https://www.youtube.com/@sarahandbud\n'
 (d/'promotional-copy.txt').write_text(text)
-usage='''PREVIEW — awaiting Bud’s final review
+usage='''SARAH & THE BUDS — PRESS KIT
 
-Photo credits: [Bud to confirm photographer/credit for each of the four JPEGs].
-Photo promotional-use permission: [Bud to confirm].
-Promotional introductions: [Bud to approve wording].
-Featured video: [Bud to select a band or duo performance].
+COMING SOON
+- Expanded band and duo promotional descriptions
+- Photo credits and promotional usage guidance
+- Featured performance videos
+
+For specific promotional needs, contact booksarahandbud@gmail.com.
 
 Use the correct act name: Sarah & the Buds (full band); Sarah & Bud (acoustic duo).
 Keep logo proportions, black/warm-white colors and clear space. Do not retype S&B.

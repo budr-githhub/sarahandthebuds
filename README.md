@@ -38,4 +38,4 @@ Edit `src/data/events.json` for the combined calendar. Dates use YYYY-MM-DD and 
 Follow [the S&B style guide](docs/style-guide.md) for colors, typography, logo artwork, photography and promotional materials. Its original DOCX is archived in docs/assets.
 
 
-Press, Friends, branding and event-detail additions are prepared for owner review; see [the implementation and owner checklist](docs/press-friends-brand.md) for downloads, maintenance, sources and pending inputs. This branch is not a production release.
+Press, Friends, branding and event-detail additions are approved for publication; see [the implementation and owner checklist](docs/press-friends-brand.md) for downloads, maintenance, sources and pending inputs. See the dashboard for verified deployment status.

@@ -1,6 +1,6 @@
 # Press, Friends, branding and event details
 
-September 13, 2026. Owner: Bud. Implementation: Codex. Prepared and pushed in draft [PR #8](https://github.com/budr-githhub/sarahandthebuds/pull/8) on `feat/press-friends-brand`; implementation commit `2b0ec1a`. Not merged or published.
+September 13, 2026. Owner: Bud. Implementation: Codex. Prepared and pushed in draft [PR #8](https://github.com/budr-githhub/sarahandthebuds/pull/8) on `feat/press-friends-brand`; implementation commit `2b0ec1a`. Bud approved publication September 13; release verification pending.
 
 ## Implemented for review
 
@@ -39,7 +39,7 @@ Four existing prepared JPEGs copied to `public/downloads/photos/`; source metada
 - [ ] Optional: personal connection descriptions and permissioned Friends photos/logos. Current short factual descriptions are sufficient if preferred.
 - [ ] Review traced logo shapes, portrait arrangement and small favicon; approve release after placeholders are resolved or explicitly accepted.
 
-Preview notes on Press/Friends are deliberate owner placeholders. Remove those owner notes only after their corresponding decisions are complete. Update the ZIP read-me at the same time.
+Bud approved the existing materials for publication with “Coming soon” notices replacing internal review notes. Expanded descriptions, photo credits/usage, featured videos and Friends stories/photos will follow with Sarah’s help. Update the ZIP read-me alongside these additions.
 
 ## Verified link sources (September 13)
 

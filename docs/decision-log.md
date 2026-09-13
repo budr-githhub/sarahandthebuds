@@ -114,3 +114,8 @@ Live pages: [Homepage](https://sarahandthebuds.com/) and [Songbook](https://sara
 **Alternatives considered:** Retyping the logo or claiming a vector original; rejected. Automatically assigning acts; rejected.
 
 **Impact:** New Press/Friends routes, static downloads, vector traces and icons, venue directory and optional act enum. Existing dates, times, photography and songbook retained. Release pending owner review; see [checklist](press-friends-brand.md).
+
+
+## Publication approval — September 13, 2026
+
+Bud requested publication of the prepared work, replacing preview-material notes with a public “Coming soon” list. Bud will ask Sarah to help complete descriptions, credits/usage and featured videos. Internal review language is removed from pages and ZIP read-me. Event assignments remain unknown.
