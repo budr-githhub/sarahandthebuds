@@ -74,3 +74,6 @@ Press text: `src/data/press.json`; photo download metadata: `press-photos.json`;
 ## Validation
 
 Six-page production build passed. Browser checks at 390 and 1280px: no horizontal overflow or failed images, logo frames contain artwork, internal download links return successfully. Copy-to-clipboard verified. Advancing the browser clock to October 24 moves completed shows to Past and leaves December 16 upcoming. Seven event dates/times/names match base exactly. Both ZIPs pass integrity checks (59 press files, 54 logo files). External Facebook fetch unavailable; Zoe URL is owner-provided. No email delivery tested. Production Cloudflare success and Chrome page content verified after release.
+
+
+September 13 photo-credit release: PR #10 merged as `85a2d1e7028a67097d19a885eb1e9e7ad414820a`; Cloudflare succeeded. Live `/press/` returned 200 in Chrome with four Andrew Von Neida credits and promotional-use guidance, without the old credit placeholder. Introduction drafts remain for review; Sarah will select video.
