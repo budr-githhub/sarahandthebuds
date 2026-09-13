@@ -573,3 +573,8 @@ Press & Booking and Friends page copy is implemented for review. The canonical d
 
 
 September 13 publication approval: replace internal owner-preview notes with “Coming soon” and list expanded band/duo descriptions, photo credits/usage guidance and featured videos. Friends says “Coming soon: More stories, photos and introductions from our music community.” Existing descriptions/downloads are published under Bud’s authorization; future additions remain tracked.
+
+
+## Press credits confirmed — September 13, 2026
+
+Bud confirmed Andrew Von Neida as photographer for all four press JPEGs and confirmed promotional-use permission. Press photo metadata, visible credits and both ZIP read-mes now reflect this. Credit/permission is removed from Coming soon. Sarah owns featured-video selection. Revised promotional introductions are drafts for review, not substituted into the published copy yet.
