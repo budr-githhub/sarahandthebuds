@@ -149,3 +149,6 @@ Shows navigation published September 13 via PR #14 (`793a274`). Live Chrome veri
 
 
 September 13: Bud requested Press and Friends in the shared top navigation. Header order: About, Music, Shows, Press, Friends, Booking. Existing footer links remain.
+
+
+Header links released September 13 through PR #16 (`328ace8`); Cloudflare succeeded and the live six-link navigation was verified in Chrome.
