@@ -137,3 +137,6 @@ September 13 photo-credit release: PR #10 merged as `85a2d1e7028a67097d19a885eb1
 ## Introductions approved — September 13, 2026
 
 Bud approved the full-band and acoustic-duo drafts. The exact approved text is in [approved introductions](press-introduction-drafts.md) and `src/data/press.json`; press downloads are regenerated. Expanded descriptions are removed from Coming soon. Sarah’s featured-video selection remains pending.
+
+
+September 13: approved introductions published through PR #12, merge `185513b639d9c4c7b594c04f58c71f1e6ad56d71`. Cloudflare succeeded; live Chrome verification returned 200 and found both approved introductions with the expanded-description Coming soon item removed. Press downloads were regenerated. Sarah’s video selection remains pending.

@@ -67,3 +67,6 @@ Bud authorized publication with Coming soon notices. PR #8 merged as `c0d795eaad
 
 
 September 13 photo-credit release: PR #10 merged as `85a2d1e7028a67097d19a885eb1e9e7ad414820a`; Cloudflare succeeded. Live `/press/` returned 200 in Chrome with four Andrew Von Neida credits and promotional-use guidance, without the old credit placeholder. Introduction drafts remain for review; Sarah will select video.
+
+
+September 13: approved introductions published through PR #12, merge `185513b639d9c4c7b594c04f58c71f1e6ad56d71`. Cloudflare succeeded; live Chrome verification returned 200 and found both approved introductions with the expanded-description Coming soon item removed. Press downloads were regenerated. Sarah’s video selection remains pending.
