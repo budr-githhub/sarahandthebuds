@@ -23,6 +23,7 @@ Updated September 14, 2026. Owner: Bud. Implementation: Codex. Published and ver
 | Approved introductions | #12 | `185513b` |
 | Back to Music links | #14 | `793a274` |
 | Press/Friends header links | #16 | `328ace847ddbf96b19c3efc198f9c21bef213ff1` |
+| Confirmed full-band and Midway solo lineups | #19 | `3a3b00b07f16effd03924a7c99e51a2920c0955b` |
 
 Repository: [GitHub](https://github.com/budr-githhub/sarahandthebuds). Subsequent documentation-only commits do not change page behavior. Plan & Adapt separation is complete in its PR #23 (`b606ba5`); legacy calendars redirect to band Shows. No second calendar or sync workflow exists.
 
@@ -36,6 +37,6 @@ Photo permission and introductions are complete, not pending. No Claude project 
 
 ## Verification and maintenance
 
-Six-page production build passed. Responsive checks at 390/1280px covered header, pages and downloads; photo layout also checked at 768px. Clipboard, ZIP integrity, preserved event fields and calendar rollover passed. Cloudflare checks and live Chrome verified released changes, including latest header links. Plain automated text requests sometimes return 403; Chrome requests succeeded. Email delivery was not tested. No DNS changes are needed.
+Six-page production build passed. Responsive checks at 390/1280px covered header, pages and downloads; photo layout also checked at 768px. Clipboard, ZIP integrity, preserved event fields and calendar rollover passed. Cloudflare checks and live Chrome verified released changes, including six full-band labels, one solo label and the Midway wandering-minstrel note. Plain automated text requests sometimes return 403; Chrome requests succeeded. Email delivery was not tested. No DNS changes are needed.
 
 Keep docs aligned after every push. Current records: [copy deck](copy-deck.md), [press/brand inventory](press-friends-brand.md), [approved introductions](approved-introductions.md), [photos](photo-inventory.md), [songbook](songbook-source.md), [style](style-guide.md), [hosting](domain-and-hosting.md). Historical decisions remain in [decision log](decision-log.md).

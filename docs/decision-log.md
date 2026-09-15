@@ -164,3 +164,6 @@ Audited all repository Markdown against current source and completed releases th
 ## Current show acts confirmed — September 14, 2026
 
 Bud confirmed that all seven listed shows are Sarah & the Buds full band except Midway Fall Festival (September 20), which is Bud Ratliff solo as a wandering minstrel. Updated act values and the festival note; dates/times/venues remain unchanged. Notes also render on Past cards so the description remains after rollover. This supersedes earlier unknown-lineup statements for these seven dates only.
+
+
+September 14: published confirmed lineups through PR #19 (`3a3b00b07f16effd03924a7c99e51a2920c0955b`). Six-page build and preserved event-field checks passed. Cloudflare succeeded; live Chrome returned 200 with six full-band labels, one solo label and the Midway wandering-minstrel note. Release documentation reconciled after publication.

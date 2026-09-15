@@ -56,7 +56,7 @@ No database or new hosting service was added. IONOS domain renewal remains separ
 
 ## Published implementation and verification
 
-The latest page behavior is PR #16, `328ace847ddbf96b19c3efc198f9c21bef213ff1`: Press and Friends header links. Cloudflare reported success; live Chrome verified the six-link header. Earlier releases added Press/Friends, logos/favicon, photo attribution/permission, approved introductions and Music return links; see [dashboard](dashboard.md) for the release table and [decision log](decision-log.md) for history.
+The latest page behavior is PR #19, `3a3b00b07f16effd03924a7c99e51a2920c0955b`: confirmed show lineups. Cloudflare reported success; live Chrome returned 200 and verified six full-band labels, one solo label and the Midway wandering-minstrel note. Earlier releases added Press/Friends, logos/favicon, photo attribution/permission, approved introductions and Music return links; see [dashboard](dashboard.md) for the release table and [decision log](decision-log.md) for history.
 
 Live pages: [Home](https://sarahandthebuds.com/), [Shows](https://sarahandthebuds.com/shows/), [Songbook](https://sarahandthebuds.com/songbook/), [Press](https://sarahandthebuds.com/press/), [Friends](https://sarahandthebuds.com/friends/). All released page changes were verified in Chrome. Plain automated text requests sometimes return 403; browser requests succeeded. Documentation-only merges may create later deployments with identical site behavior.
 
