@@ -6,7 +6,7 @@ Read [AGENTS](../AGENTS.md), [dashboard](dashboard.md), [style guide](style-guid
 
 Completed: calendar/separation, monochrome identity, photo/gallery updates, full songbook, Press and Friends pages, logo family/favicon, event locations/links, photo credits/permission, approved introductions, Music return links and Press/Friends header navigation. The dashboard records releases and verification.
 
-Andrew Von Neida is photographer for all four press JPEGs, and Bud confirmed promotional-use permission. Both introductions are approved and published. Sarah owns featured-video selection. Bud still needs to identify event acts; never infer those from a venue. Friends stories/photos and a technical rider are optional.
+Andrew Von Neida is photographer for all four press JPEGs, and Bud confirmed promotional-use permission. Both introductions are approved and published. Sarah owns featured-video selection. Bud confirmed all seven current event acts September 14: full band except Midway Fall Festival, which is Bud solo as a wandering minstrel. Future assignments still require confirmation. Friends stories/photos and a technical rider are optional.
 
 The band repository owns the combined calendar. Plan & Adapt retains radio and solo introductions and redirects old calendars here; do not reintroduce synchronization or a second calendar source. Keep one artist row per homepage songbook entry, originals by request without titles, no specialty section, and no gallery captions. Accessible alt text and press download credits remain.
 
