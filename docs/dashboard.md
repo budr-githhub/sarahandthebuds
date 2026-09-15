@@ -1,13 +1,13 @@
 # Sarah & the Buds — current status
 
-Updated September 13, 2026. Owner: Bud. Implementation: Codex. Published and verified; no release approval is pending.
+Updated September 14, 2026. Owner: Bud. Implementation: Codex. Published and verified; no release approval is pending.
 
 ## Published site
 
 - Header on every page: About, Music, Shows, Press, Friends, Booking. Footer includes resource links.
 - Homepage: owner-approved inward-facing microphone S&B logo; band-only AI-edited hero; matching 4:5 band/duo portraits; 12 gallery photos without captions.
 - Songbook: 44 homepage artist rows in one disclosure; 146 named cover/holiday selections on `/songbook/`; originals by request only. No specialty songs or named originals.
-- Shows: one calendar source in `src/data/events.json`; seven preserved dates with venue locations, available website/directions links and unconfirmed act labels. Eastern time and automatic Upcoming/Past movement. Back to Music links at top and bottom target `/#songbook`.
+- Shows: one calendar source in `src/data/events.json`; seven preserved dates with venue locations, available website/directions links and confirmed act labels: six full-band shows and Midway Fall Festival solo, with Bud as a wandering minstrel. Eastern time and automatic Upcoming/Past movement. Back to Music links at top and bottom target `/#songbook`.
 - Press: approved band/duo introductions, copy buttons, four downloadable JPEGs, 16 logo/color variants in SVG/PNG/PDF, favicon assets and ZIPs. All four photos credited to Andrew Von Neida; Bud confirmed promotional-use permission.
 - Friends: six musicians, four venues, two community organizations. Zoe Zamora’s Facebook URL supplied by Bud. Personal stories/photos are optional future additions.
 
@@ -29,7 +29,7 @@ Repository: [GitHub](https://github.com/budr-githhub/sarahandthebuds). Subsequen
 ## Still needed
 
 - **Sarah:** select featured performance video(s). This is the only Press “Coming soon” item.
-- **Bud:** confirm full-band / duo / solo for the seven dates; preferred Georgetown Underground website/social link; precise festival stage/porch if useful.
+- **Bud:** preferred Georgetown Underground website/social link; precise festival stage/porch if useful. All seven current event acts are confirmed.
 - Optional: Friends descriptions/photos/logos, preferred Willcutt display name, technical rider. See [owner checklist](press-friends-brand.md).
 
 Photo permission and introductions are complete, not pending. No Claude project exists yet.

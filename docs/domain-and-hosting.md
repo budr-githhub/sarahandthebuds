@@ -60,4 +60,4 @@ The latest page behavior is PR #16, `328ace847ddbf96b19c3efc198f9c21bef213ff1`: 
 
 Live pages: [Home](https://sarahandthebuds.com/), [Shows](https://sarahandthebuds.com/shows/), [Songbook](https://sarahandthebuds.com/songbook/), [Press](https://sarahandthebuds.com/press/), [Friends](https://sarahandthebuds.com/friends/). All released page changes were verified in Chrome. Plain automated text requests sometimes return 403; browser requests succeeded. Documentation-only merges may create later deployments with identical site behavior.
 
-All publication and copy/photo approvals for these releases are complete. Sarah’s video and Bud’s event-act confirmations are remaining content inputs, not failed deployments. No DNS changes or email tests accompanied these releases.
+All publication and copy/photo approvals for these releases are complete. Sarah’s video and optional venue/Friends details are remaining content inputs, not failed deployments. No DNS changes or email tests accompanied these releases.

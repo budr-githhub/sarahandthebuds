@@ -7,7 +7,7 @@ September 13, 2026. Owner: Bud. Implementation: Codex. Published through [PR #8]
 - `/press/`: separate full-band and duo introductions, copy buttons, four individual JPEG downloads, 16 logo/color previews with SVG/PNG/PDF downloads, complete logo and press ZIPs, booking contacts, social/video links and section return links.
 - `/friends/`: musicians, venues, community friends in Bud’s requested order. Text-first cards; no invented endorsements or borrowed logos. Zoe’s Facebook URL was supplied by Bud.
 - Homepage: portrait S&B with microphones aligned to the lettering’s vertical center, round heads inward, no act name inside the logo. Existing page heading remains separate. Photography and songbook retained.
-- Events: reusable venue directory; location, venue link where verified, directions where address is known, and act labels. All seven `act` values are null pending Bud. Original dates/times/names preserved. Existing optional event URLs and performer text remain supported. Eastern time and client-side Upcoming/Past movement remain.
+- Events: reusable venue directory; location, venue link where verified, directions where address is known, and act labels. Bud confirmed all seven acts September 14: six full-band shows; Midway Fall Festival is Bud solo as a wandering minstrel. Original dates/times/names preserved. Existing optional event URLs and performer text remain supported. Eastern time and client-side Upcoming/Past movement remain.
 - Header and footer link to Press and Friends; sitemap includes both pages. Shows has top/bottom Back to Music links to `/#songbook`. Compact S&B favicon and Apple icon are published.
 
 ## Logo production
@@ -29,7 +29,7 @@ Four existing prepared JPEGs copied to `public/downloads/photos/`; source metada
 
 ## Bud’s remaining inputs
 
-- [ ] Confirm full-band / duo / solo for Aug 1, Aug 22, Sep 19, Sep 20, Oct 3, Oct 23 and Dec 16, 2026. If solo, confirm Bud Ratliff is the appropriate public performer name.
+- [x] Bud confirmed all listed dates: Sarah & the Buds full band, except September 20 Midway Fall Festival — Bud solo as a wandering minstrel.
 - [ ] Confirm exact stage/porch for Kenwick Porch Fest and Midway Fall Festival if useful. General festival locations are used until then.
 - [ ] Supply Georgetown Underground’s preferred official website/social link; address has documentary support but no official artist-facing URL was confidently identified.
 - [x] Bud approved both introductions; applied to `src/data/press.json` and regenerated downloads.

@@ -26,7 +26,7 @@ const actNames = {"full-band":"Sarah & the Buds",duo:"Sarah & Bud",solo:"Bud Rat
 const venueFor = (e: EventItem) => venues[e.venueId as keyof typeof venues];
 
 // Single maintained calendar; preserve unknown optional fields.
-const events: EventItem[] = eventData;
+const events = eventData as EventItem[];
 
 // All date/time comparisons happen as America/New_York wall-clock strings
 // ("YYYY-MM-DDTHH:MM"), compared lexicographically — this avoids needing
@@ -190,6 +190,7 @@ const eventSchema = upcoming.map((e) => ({
                 <div class="event-venue">{e.name}</div>
                 {formatTimeRange(e) && <div class="event-time">{formatTimeRange(e)}</div>}
                 <EventMeta event={e} venue={venueFor(e)} />
+                {e.notes && <div class="event-time">{e.notes}</div>}
               </div>
             </li>
           ))

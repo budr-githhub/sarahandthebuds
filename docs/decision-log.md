@@ -159,3 +159,8 @@ Header links released September 13 through PR #16 (`328ace8`); Cloudflare succee
 ## Documentation reconciliation — September 13, 2026
 
 Audited all repository Markdown against current source and completed releases through PR #16. Consolidated dashboard, handoff, copy deck, hosting and photo inventory; removed stale pending-copy/credit/logo notes. Renamed the approved-introduction document and updated references. Preserved historical decisions. Remaining inputs are Sarah’s video, Bud’s event acts/details and optional Friends material. No site behavior changes.
+
+
+## Current show acts confirmed — September 14, 2026
+
+Bud confirmed that all seven listed shows are Sarah & the Buds full band except Midway Fall Festival (September 20), which is Bud Ratliff solo as a wandering minstrel. Updated act values and the festival note; dates/times/venues remain unchanged. Notes also render on Past cards so the description remains after rollover. This supersedes earlier unknown-lineup statements for these seven dates only.

@@ -180,7 +180,7 @@ SAT, SEPTEMBER 19, 2026
 Ghost Fox Winery
 1 PM–3 PM
 
-Performing act to be confirmed
+Full band · Sarah & the Buds
 
 2385 Chrisman Mill Road, Nicholasville, KY 40356
 
@@ -190,7 +190,9 @@ SUN, SEPTEMBER 20, 2026
 Midway Fall Festival
 3 PM–5 PM
 
-Performing act to be confirmed
+Solo · Bud Ratliff
+
+Bud solo as a wandering minstrel.
 
 Downtown Midway, KY
 
@@ -199,7 +201,7 @@ SAT, OCTOBER 3, 2026
 Wildside Winery
 1 PM–4 PM
 
-Performing act to be confirmed
+Full band · Sarah & the Buds
 
 5500 Troy Pike, Versailles, KY 40383
 
@@ -209,7 +211,7 @@ FRI, OCTOBER 23, 2026
 Shaker Village
 4:30 PM–6:30 PM
 
-Performing act to be confirmed
+Full band · Sarah & the Buds
 
 3501 Lexington Road, Harrodsburg, KY 40330
 
@@ -219,7 +221,7 @@ WED, DECEMBER 16, 2026
 Georgetown Underground
 6 PM–8 PM
 
-Performing act to be confirmed
+Full band · Sarah & the Buds
 
 152 E Main Street, Georgetown, KY 40324
 
@@ -229,7 +231,7 @@ SAT, AUGUST 22, 2026
 Kenwick Porch Fest
 4:15 PM–5:15 PM
 
-Performing act to be confirmed
+Full band · Sarah & the Buds
 
 Lexington, KY
 
@@ -238,7 +240,7 @@ SAT, AUGUST 1, 2026
 Georgetown Underground
 1 PM–3 PM
 
-Performing act to be confirmed
+Full band · Sarah & the Buds
 
 152 E Main Street, Georgetown, KY 40324
 
