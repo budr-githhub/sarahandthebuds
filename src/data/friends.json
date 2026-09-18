@@ -15,9 +15,9 @@
         "description": "Singer-songwriter"
       },
       {
-        "name": "Mo Bell",
-        "url": "https://mobellmusic.com/home",
-        "description": "Blues, R&B and rock"
+        "name": "JJ Marrs",
+        "url": "https://www.facebook.com/jeremiah.marrs.7",
+        "description": ""
       },
       {
         "name": "Mela B",
@@ -25,9 +25,9 @@
         "description": "Singer-songwriter"
       },
       {
-        "name": "Zoe Zamora",
-        "url": "https://www.facebook.com/ZoeZamoraMusic/about",
-        "description": "Music and updates"
+        "name": "Mo Bell",
+        "url": "https://mobellmusic.com/home",
+        "description": "Blues, R&B and rock"
       },
       {
         "name": "Reb Butler",
@@ -35,9 +35,9 @@
         "description": "Songs and releases"
       },
       {
-        "name": "JJ Marrs",
-        "url": "https://www.facebook.com/jeremiah.marrs.7",
-        "description": ""
+        "name": "Zoe Zamora",
+        "url": "https://www.facebook.com/ZoeZamoraMusic/about",
+        "description": "Music and updates"
       }
     ]
   },
@@ -47,9 +47,14 @@
     "intro": "Places to gather and enjoy live music.",
     "entries": [
       {
-        "name": "Wildside Winery",
-        "url": "https://www.wildsidewinery.com/",
-        "description": "Versailles, Kentucky"
+        "name": "Equus Run Vineyards",
+        "url": "https://www.equusrunvineyards.com/",
+        "description": "Midway, Kentucky"
+      },
+      {
+        "name": "Georgetown Underground",
+        "url": "https://www.georgetownunderground.com/",
+        "description": "Georgetown, Kentucky"
       },
       {
         "name": "Ghost Fox Winery",
@@ -57,19 +62,14 @@
         "description": "Nicholasville, Kentucky"
       },
       {
-        "name": "Equus Run Vineyards",
-        "url": "https://www.equusrunvineyards.com/",
-        "description": "Midway, Kentucky"
-      },
-      {
         "name": "Kenwick Table",
         "url": "https://www.kenwicktable.com/",
         "description": "Lexington, Kentucky"
       },
       {
-        "name": "Georgetown Underground",
-        "url": "https://www.georgetownunderground.com/",
-        "description": "Georgetown, Kentucky"
+        "name": "Wildside Winery",
+        "url": "https://www.wildsidewinery.com/",
+        "description": "Versailles, Kentucky"
       }
     ]
   },
@@ -79,14 +79,14 @@
     "intro": "More people and places that make our music community special.",
     "entries": [
       {
-        "name": "WRFL 88.1 FM",
-        "url": "https://wrfl.fm/",
-        "description": "Lexington community radio"
-      },
-      {
         "name": "Willcutt Guitars",
         "url": "https://willcuttguitars.com/",
         "description": "Guitars and music gear in Lexington"
+      },
+      {
+        "name": "WRFL 88.1 FM",
+        "url": "https://wrfl.fm/",
+        "description": "Lexington community radio"
       }
     ]
   }

@@ -10,6 +10,10 @@ Owner: Codex. Branch: `codex/friends-additions`. Base: `57f45419d0260f05604dda02
 
 Bud requested moving JJ Marrs to Musicians. Published via PR #23 at `0c7c65de79634480a9b60cd769995de14a7dfbd4`; build and rendered-section check passed. Cloudflare succeeded and live Chrome verified JJ under Musicians.
 
+## Friends alphabetical order
+
+Owner: Codex. Bud requested A–Z ordering within Musicians, Venues and Community friends, using displayed names. Data and copy deck reordered; preserve this ordering for future additions. Build and generated-page order checks passed. Release in progress on `codex/alphabetize-friends`.
+
 ## Published site
 
 - Header on every page: About, Music, Shows, Press, Friends, Booking. Footer includes resource links.
