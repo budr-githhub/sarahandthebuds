@@ -563,7 +563,8 @@ Friends of the band
 
 Good music brings people together. Here are some of the musicians, venues and community friends we’d like you to know.
 
-MusiciansVenuesCommunity friends
+Musicians · Venues · Community friends
+
 Musicians
 
 Music makers from our Central Kentucky community.
@@ -572,36 +573,41 @@ Bryce Ernest Taylor
 
 Singer-songwriter
 
-Visit Bryce Ernest Taylor ↗
+Visit Bryce Ernest Taylor ↗ → https://www.brycetaylormusic.com/
+
 Jason Kyle Smith
 
 Singer-songwriter
 
-Visit Jason Kyle Smith ↗
-Mo Bell
-
-Blues, R&B and rock
-
-Visit Mo Bell ↗
-Mela B
-
-Singer-songwriter
-
-Visit Mela B ↗
-Zoe Zamora
-
-Music and updates
-
-Visit Zoe Zamora ↗
-Reb Butler
-
-Songs and releases
-
-Visit Reb Butler ↗
+Visit Jason Kyle Smith ↗ → https://jasonkylesmith.bandcamp.com/
 
 JJ Marrs
 
 Visit JJ Marrs ↗ → https://www.facebook.com/jeremiah.marrs.7
+
+Mela B
+
+Singer-songwriter
+
+Visit Mela B ↗ → https://melabmusic.com/
+
+Mo Bell
+
+Blues, R&B and rock
+
+Visit Mo Bell ↗ → https://mobellmusic.com/home
+
+Reb Butler
+
+Songs and releases
+
+Visit Reb Butler ↗ → https://music.apple.com/us/artist/reb-butler/1422069885
+
+Zoe Zamora
+
+Music and updates
+
+Visit Zoe Zamora ↗ → https://www.facebook.com/ZoeZamoraMusic/about
 
 Back to top ↑
 
@@ -609,26 +615,11 @@ Venues
 
 Places to gather and enjoy live music.
 
-Wildside Winery
-
-Versailles, Kentucky
-
-Visit Wildside Winery ↗
-Ghost Fox Winery
-
-Nicholasville, Kentucky
-
-Visit Ghost Fox Winery ↗
 Equus Run Vineyards
 
 Midway, Kentucky
 
-Visit Equus Run Vineyards ↗
-Kenwick Table
-
-Lexington, Kentucky
-
-Visit Kenwick Table ↗
+Visit Equus Run Vineyards ↗ → https://www.equusrunvineyards.com/
 
 Georgetown Underground
 
@@ -636,22 +627,41 @@ Georgetown, Kentucky
 
 Visit Georgetown Underground ↗ → https://www.georgetownunderground.com/
 
+Ghost Fox Winery
+
+Nicholasville, Kentucky
+
+Visit Ghost Fox Winery ↗ → https://ghostfoxwinery.com/
+
+Kenwick Table
+
+Lexington, Kentucky
+
+Visit Kenwick Table ↗ → https://www.kenwicktable.com/
+
+Wildside Winery
+
+Versailles, Kentucky
+
+Visit Wildside Winery ↗ → https://www.wildsidewinery.com/
+
 Back to top ↑
 
 Community friends
 
 More people and places that make our music community special.
 
-WRFL 88.1 FM
-
-Lexington community radio
-
-Visit WRFL 88.1 FM ↗
 Willcutt Guitars
 
 Guitars and music gear in Lexington
 
-Visit Willcutt Guitars ↗
+Visit Willcutt Guitars ↗ → https://willcuttguitars.com/
+
+WRFL 88.1 FM
+
+Lexington community radio
+
+Visit WRFL 88.1 FM ↗ → https://wrfl.fm/
 
 Back to top ↑
 

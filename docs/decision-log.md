@@ -194,3 +194,8 @@ September 14: published confirmed lineups through PR #19 (`3a3b00b07f16effd03924
 Bud confirmed JJ belongs under Musicians. Moved the existing entry from Community friends, preserving his supplied Facebook link and leaving biography blank. Updated copy and category counts. Build and rendered-section check passed.
 
 Published through PR #23 (`0c7c65d`); Cloudflare succeeded and live Chrome verified JJ Marrs under Musicians.
+
+
+## Friends alphabetical order — September 17, 2026
+
+At Bud’s request, alphabetize entries by displayed name within Musicians, Venues and Community friends. Keep section order, names, descriptions and links unchanged. Maintain A–Z order when adding future entries. Source data and matching copy updated together.
