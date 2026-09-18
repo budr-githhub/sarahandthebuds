@@ -4,7 +4,11 @@ Updated September 17, 2026. Owner: Bud. Implementation: Codex. Published and ver
 
 ## Friends additions — published and verified, September 17, 2026
 
-Owner: Codex. Branch: `codex/friends-additions`. Base: `57f45419d0260f05604dda02533c1f9a2950c16a`. Bud requested JJ Marrs and Georgetown Underground. Added Georgetown Underground under Venues using the established Georgetown location; JJ Marrs is listed under Community friends without an invented biography, using the Facebook profile supplied by Bud (`https://www.facebook.com/jeremiah.marrs.7`). Spelling corrected to Marrs to match that profile URL. Bud supplied Georgetown Underground’s website (`https://www.georgetownunderground.com/`); Friends and the shared Shows venue record now use it. Cards now omit absent links/descriptions rather than render empty links. Source and copy deck match. Six-page build passed; Chrome at 320px verified both new entries, no empty links and no horizontal overflow. Published through PR #21 at `d78fda84cda23c1dbee9468638c4a26891a57eee`. Cloudflare succeeded; live Chrome verified both Friends links, both Georgetown Shows links, HTTP 200 and no mobile overflow.
+Owner: Codex. Branch: `codex/friends-additions`. Base: `57f45419d0260f05604dda02533c1f9a2950c16a`. Bud requested JJ Marrs and Georgetown Underground. Added Georgetown Underground under Venues using the established Georgetown location; JJ Marrs is listed under Musicians (category corrected at Bud’s request) without an invented biography, using the Facebook profile supplied by Bud (`https://www.facebook.com/jeremiah.marrs.7`). Spelling corrected to Marrs to match that profile URL. Bud supplied Georgetown Underground’s website (`https://www.georgetownunderground.com/`); Friends and the shared Shows venue record now use it. Cards now omit absent links/descriptions rather than render empty links. Source and copy deck match. Six-page build passed; Chrome at 320px verified both new entries, no empty links and no horizontal overflow. Published through PR #21 at `d78fda84cda23c1dbee9468638c4a26891a57eee`. Cloudflare succeeded; live Chrome verified both Friends links, both Georgetown Shows links, HTTP 200 and no mobile overflow.
+
+## JJ category correction
+
+Bud requested moving JJ Marrs to Musicians. Prepared on `codex/jj-musician`; build and rendered-section check passed. Publication in progress.
 
 ## Published site
 
@@ -13,7 +17,7 @@ Owner: Codex. Branch: `codex/friends-additions`. Base: `57f45419d0260f05604dda02
 - Songbook: 44 homepage artist rows in one disclosure; 146 named cover/holiday selections on `/songbook/`; originals by request only. No specialty songs or named originals.
 - Shows: one calendar source in `src/data/events.json`; seven preserved dates with venue locations, available website/directions links and confirmed act labels: six full-band shows and Midway Fall Festival solo, with Bud as a wandering minstrel. Eastern time and automatic Upcoming/Past movement. Back to Music links at top and bottom target `/#songbook`.
 - Press: approved band/duo introductions, copy buttons, four downloadable JPEGs, 16 logo/color variants in SVG/PNG/PDF, favicon assets and ZIPs. All four photos credited to Andrew Von Neida; Bud confirmed promotional-use permission.
-- Friends: six musicians, five venues, three community friends. Zoe Zamora’s Facebook URL supplied by Bud. Personal stories/photos are optional future additions.
+- Friends: seven musicians, five venues, two community friends. Zoe Zamora’s Facebook URL supplied by Bud. Personal stories/photos are optional future additions.
 
 ## Completed releases
 

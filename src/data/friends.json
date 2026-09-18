@@ -33,6 +33,11 @@
         "name": "Reb Butler",
         "url": "https://music.apple.com/us/artist/reb-butler/1422069885",
         "description": "Songs and releases"
+      },
+      {
+        "name": "JJ Marrs",
+        "url": "https://www.facebook.com/jeremiah.marrs.7",
+        "description": ""
       }
     ]
   },
@@ -82,11 +87,6 @@
         "name": "Willcutt Guitars",
         "url": "https://willcuttguitars.com/",
         "description": "Guitars and music gear in Lexington"
-      },
-      {
-        "name": "JJ Marrs",
-        "url": "https://www.facebook.com/jeremiah.marrs.7",
-        "description": ""
       }
     ]
   }

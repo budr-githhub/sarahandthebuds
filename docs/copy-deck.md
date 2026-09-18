@@ -599,6 +599,10 @@ Songs and releases
 
 Visit Reb Butler ↗
 
+JJ Marrs
+
+Visit JJ Marrs ↗ → https://www.facebook.com/jeremiah.marrs.7
+
 Back to top ↑
 
 Venues
@@ -648,10 +652,6 @@ Willcutt Guitars
 Guitars and music gear in Lexington
 
 Visit Willcutt Guitars ↗
-
-JJ Marrs
-
-Visit JJ Marrs ↗ → https://www.facebook.com/jeremiah.marrs.7
 
 Back to top ↑
 

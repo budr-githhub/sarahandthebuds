@@ -187,3 +187,8 @@ September 14: published confirmed lineups through PR #19 (`3a3b00b07f16effd03924
 
 
 **Release completed:** PR #21 merged at `d78fda84cda23c1dbee9468638c4a26891a57eee`. Cloudflare deployment succeeded. Live Chrome verified JJ Marrs and Georgetown Underground links on Friends, both Georgetown venue links on Shows, HTTP 200 and no horizontal overflow at 390px. This supersedes local/unpublished status above.
+
+
+## JJ Marrs category correction — September 17, 2026
+
+Bud confirmed JJ belongs under Musicians. Moved the existing entry from Community friends, preserving his supplied Facebook link and leaving biography blank. Updated copy and category counts. Build and rendered-section check passed.
