@@ -31,7 +31,7 @@ Four existing prepared JPEGs copied to `public/downloads/photos/`; source metada
 
 - [x] Bud confirmed all listed dates: Sarah & the Buds full band, except September 20 Midway Fall Festival — Bud solo as a wandering minstrel.
 - [ ] Confirm exact stage/porch for Kenwick Porch Fest and Midway Fall Festival if useful. General festival locations are used until then.
-- [ ] Supply Georgetown Underground’s preferred official website/social link; address has documentary support but no official artist-facing URL was confidently identified.
+- [x] Bud supplied Georgetown Underground’s website: https://www.georgetownunderground.com/. Added locally to Friends and the shared venue record; publication pending.
 - [x] Bud approved both introductions; applied to `src/data/press.json` and regenerated downloads.
 - [x] All four photographs: Andrew Von Neida. Promotional-use permission confirmed by Bud.
 - [ ] Sarah will select the featured performance video; optional technical rider can follow later.
