@@ -12,7 +12,7 @@ Bud requested moving JJ Marrs to Musicians. Published via PR #23 at `0c7c65de796
 
 ## Friends alphabetical order
 
-Owner: Codex. Bud requested A–Z ordering within Musicians, Venues and Community friends, using displayed names. Data and copy deck reordered; preserve this ordering for future additions. Build and generated-page order checks passed. Release in progress on `codex/alphabetize-friends`.
+Owner: Codex. Bud requested A–Z ordering within Musicians, Venues and Community friends, using displayed names. Data and copy deck reordered; preserve this ordering for future additions. Build and generated-page order checks passed. Published through PR #25 at `d8abae3476d4bb4aab78fa36939774c962c1a4a6`. Cloudflare succeeded; live Chrome verified A–Z order in all three groups.
 
 ## Published site
 

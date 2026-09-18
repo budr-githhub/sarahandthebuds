@@ -199,3 +199,5 @@ Published through PR #23 (`0c7c65d`); Cloudflare succeeded and live Chrome verif
 ## Friends alphabetical order — September 17, 2026
 
 At Bud’s request, alphabetize entries by displayed name within Musicians, Venues and Community friends. Keep section order, names, descriptions and links unchanged. Maintain A–Z order when adding future entries. Source data and matching copy updated together.
+
+PR #25 published at `d8abae3`; Cloudflare succeeded and live Chrome verified alphabetical ordering in all three groups.
