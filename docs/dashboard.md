@@ -8,7 +8,7 @@ Owner: Codex. Branch: `codex/friends-additions`. Base: `57f45419d0260f05604dda02
 
 ## JJ category correction
 
-Bud requested moving JJ Marrs to Musicians. Prepared on `codex/jj-musician`; build and rendered-section check passed. Publication in progress.
+Bud requested moving JJ Marrs to Musicians. Published via PR #23 at `0c7c65de79634480a9b60cd769995de14a7dfbd4`; build and rendered-section check passed. Cloudflare succeeded and live Chrome verified JJ under Musicians.
 
 ## Published site
 
