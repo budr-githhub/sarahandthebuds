@@ -184,3 +184,6 @@ September 14: published confirmed lineups through PR #19 (`3a3b00b07f16effd03924
 
 
 **Follow-up:** Bud supplied https://www.georgetownunderground.com/. Added to Friends and the shared Georgetown Underground venue record so its Shows entries link to the same website. This resolves the earlier pending-link notes. Event dates, times, acts and address are unchanged. Build and rendered-link checks passed; changes remain local and unpublished.
+
+
+**Release completed:** PR #21 merged at `d78fda84cda23c1dbee9468638c4a26891a57eee`. Cloudflare deployment succeeded. Live Chrome verified JJ Marrs and Georgetown Underground links on Friends, both Georgetown venue links on Shows, HTTP 200 and no horizontal overflow at 390px. This supersedes local/unpublished status above.
