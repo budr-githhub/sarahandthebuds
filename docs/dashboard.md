@@ -1,6 +1,6 @@
 # Sarah & the Buds — current status
 
-Updated September 17, 2026. Owner: Bud. Implementation: Codex. Published and verified; no release approval is pending.
+Updated September 18, 2026. Owner: Bud. Implementation: Codex. Published and verified; no release approval is pending.
 
 ## Friends additions — published and verified, September 17, 2026
 
@@ -21,7 +21,7 @@ Owner: Codex. Bud requested A–Z ordering within Musicians, Venues and Communit
 - Songbook: 44 homepage artist rows in one disclosure; 146 named cover/holiday selections on `/songbook/`; originals by request only. No specialty songs or named originals.
 - Shows: one calendar source in `src/data/events.json`; seven preserved dates with venue locations, available website/directions links and confirmed act labels: six full-band shows and Midway Fall Festival solo, with Bud as a wandering minstrel. Eastern time and automatic Upcoming/Past movement. Back to Music links at top and bottom target `/#songbook`.
 - Press: approved band/duo introductions, copy buttons, four downloadable JPEGs, 16 logo/color variants in SVG/PNG/PDF, favicon assets and ZIPs. All four photos credited to Andrew Von Neida; Bud confirmed promotional-use permission.
-- Friends: seven musicians, five venues, two community friends. Zoe Zamora’s Facebook URL supplied by Bud. Personal stories/photos are optional future additions.
+- Friends: seven musicians, five venues, two community friends; each group is alphabetized by displayed name. Zoe Zamora’s Facebook URL supplied by Bud. Personal stories/photos are optional future additions.
 
 ## Completed releases
 
@@ -35,6 +35,9 @@ Owner: Codex. Bud requested A–Z ordering within Musicians, Venues and Communit
 | Approved introductions | #12 | `185513b` |
 | Back to Music links | #14 | `793a274` |
 | Press/Friends header links | #16 | `328ace847ddbf96b19c3efc198f9c21bef213ff1` |
+| Friends additions and Georgetown website | #21 | `d78fda8` |
+| JJ Marrs moved to Musicians | #23 | `0c7c65d` |
+| Friends A–Z within each group | #25 | `d8abae3` |
 | Confirmed full-band and Midway solo lineups | #19 | `3a3b00b07f16effd03924a7c99e51a2920c0955b` |
 
 Repository: [GitHub](https://github.com/budr-githhub/sarahandthebuds). Subsequent documentation-only commits do not change page behavior. Plan & Adapt separation is complete in its PR #23 (`b606ba5`); legacy calendars redirect to band Shows. No second calendar or sync workflow exists.
@@ -45,7 +48,7 @@ Repository: [GitHub](https://github.com/budr-githhub/sarahandthebuds). Subsequen
 - **Bud (optional):** precise festival stage/porch if useful. All seven current event acts are confirmed.
 - Optional: Friends descriptions/photos/logos, preferred Willcutt display name, technical rider. See [owner checklist](press-friends-brand.md).
 
-Photo permission and introductions are complete, not pending. No Claude project exists yet.
+Photo permission and introductions are complete, not pending.
 
 ## Verification and maintenance
 

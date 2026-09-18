@@ -44,6 +44,7 @@ Bud approved the existing materials for publication with “Coming soon” notic
 ## Verified link sources (September 13)
 
 Musicians:
+- [JJ Marrs](https://www.facebook.com/jeremiah.marrs.7): exact profile supplied by Bud September 17; Bud confirmed the Musicians category. No biography inferred.
 - [Bryce Ernest Taylor](https://www.brycetaylormusic.com/): official site and biography.
 - [Jason Kyle Smith](https://jasonkylesmith.bandcamp.com/): artist Bandcamp, Georgetown KY.
 - [Mo Bell](https://mobellmusic.com/home): official music site.
@@ -61,7 +62,7 @@ Venues and community:
 - [Shaker Village contact](https://shakervillageky.org/contact-us/): 3501 Lexington Road, Harrodsburg KY 40330.
 - [Midway Fall Festival](https://www.midwayfallfestival.com/): Downtown Midway. Festival schedule does not replace the band’s set time.
 - [Kenwick Porch Fest FAQ](https://www.kenwickporchfest.com/faqs): Kenwick neighborhood, Lexington.
-- Georgetown Underground: [city tourism shopping guide](https://georgetownky.com/images/PDF/NEW%20Downtown%20Shopping%20Guide%202025%20111725.pdf) and [published business notice](https://kypublicnotice.com/KYLegals/2025/70151-2025-12-05_1001.pdf), 152 E Main Street, Georgetown KY 40324.
+- [Georgetown Underground](https://www.georgetownunderground.com/): official website supplied by Bud September 17, used on Friends and Shows. Address sources: [city tourism shopping guide](https://georgetownky.com/images/PDF/NEW%20Downtown%20Shopping%20Guide%202025%20111725.pdf) and [published business notice](https://kypublicnotice.com/KYLegals/2025/70151-2025-12-05_1001.pdf), 152 E Main Street, Georgetown KY 40324.
 
 Research informing the press framework: [Merle Marlow Band](https://merlemarlowband.com/presskit/), [Dusky Waters](https://www.duskywaters.com/epk), [Southbound](https://www.southbound-band.co.uk/press-kit.html). Adapted the straightforward combination of introductions, direct media downloads and booking contact to this Astro site.
 
@@ -69,7 +70,7 @@ Research informing the press framework: [Merle Marlow Band](https://merlemarlowb
 
 Edit event dates/times and `act` in `src/data/events.json`. Valid acts: `full-band`, `duo`, `solo`, or null. Reused venue facts belong in `src/data/venues.json`; keep a source URL and verify before changing them. `url` on an event is for event-specific details. Never infer an act from a venue or date. Build and review both Upcoming and Past, including mobile, before pushing. Keep the band repository as the calendar source.
 
-Press text: `src/data/press.json`; photo download metadata: `press-photos.json`; Friends: `friends.json`. Update packages and documentation together. After every push, verify GitHub docs reflect that exact branch/release state. Merging main triggers Cloudflare; no merge/deploy occurs before release approval.
+Press text: `src/data/press.json`; photo download metadata: `press-photos.json`; Friends: `friends.json`. Keep entries alphabetized by displayed name within each group (Musicians, Venues, Community friends); preserve the group order. Update packages and documentation together. After every push, verify GitHub docs reflect that exact branch/release state. Merging main triggers Cloudflare; no merge/deploy occurs before release approval.
 
 ## Validation
 

@@ -201,3 +201,8 @@ Published through PR #23 (`0c7c65d`); Cloudflare succeeded and live Chrome verif
 At Bud’s request, alphabetize entries by displayed name within Musicians, Venues and Community friends. Keep section order, names, descriptions and links unchanged. Maintain A–Z order when adding future entries. Source data and matching copy updated together.
 
 PR #25 published at `d8abae3`; Cloudflare succeeded and live Chrome verified alphabetical ordering in all three groups.
+
+
+## Documentation reconciliation — September 18, 2026
+
+Updated completed-release table through PR #25, current Friends counts and A–Z maintenance rule, and owner-supplied JJ/Georgetown link references. Removed an unverified statement about whether a separate Claude project exists. No website behavior changed.
