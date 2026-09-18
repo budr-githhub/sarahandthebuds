@@ -2,6 +2,10 @@
 
 Updated September 14, 2026. Owner: Bud. Implementation: Codex. Published and verified; no release approval is pending.
 
+## Friends additions — release approved, September 17, 2026
+
+Owner: Codex. Branch: `codex/friends-additions`. Base: `57f45419d0260f05604dda02533c1f9a2950c16a`. Bud requested JJ Marrs and Georgetown Underground. Added Georgetown Underground under Venues using the established Georgetown location; JJ Marrs is listed under Community friends without an invented biography, using the Facebook profile supplied by Bud (`https://www.facebook.com/jeremiah.marrs.7`). Spelling corrected to Marrs to match that profile URL. Bud supplied Georgetown Underground’s website (`https://www.georgetownunderground.com/`); Friends and the shared Shows venue record now use it. Cards now omit absent links/descriptions rather than render empty links. Source and copy deck match. Six-page build passed; Chrome at 320px verified both new entries, no empty links and no horizontal overflow. Bud approved publication. Validated and ready for release; deployment verification pending. Published counts below describe the existing release, not these local additions.
+
 ## Published site
 
 - Header on every page: About, Music, Shows, Press, Friends, Booking. Footer includes resource links.
@@ -30,7 +34,7 @@ Repository: [GitHub](https://github.com/budr-githhub/sarahandthebuds). Subsequen
 ## Still needed
 
 - **Sarah:** select featured performance video(s). This is the only Press “Coming soon” item.
-- **Bud:** preferred Georgetown Underground website/social link; precise festival stage/porch if useful. All seven current event acts are confirmed.
+- **Bud (optional):** precise festival stage/porch if useful. All seven current event acts are confirmed.
 - Optional: Friends descriptions/photos/logos, preferred Willcutt display name, technical rider. See [owner checklist](press-friends-brand.md).
 
 Photo permission and introductions are complete, not pending. No Claude project exists yet.

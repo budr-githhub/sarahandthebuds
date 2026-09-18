@@ -60,6 +60,11 @@
         "name": "Kenwick Table",
         "url": "https://www.kenwicktable.com/",
         "description": "Lexington, Kentucky"
+      },
+      {
+        "name": "Georgetown Underground",
+        "url": "https://www.georgetownunderground.com/",
+        "description": "Georgetown, Kentucky"
       }
     ]
   },
@@ -77,6 +82,11 @@
         "name": "Willcutt Guitars",
         "url": "https://willcuttguitars.com/",
         "description": "Guitars and music gear in Lexington"
+      },
+      {
+        "name": "JJ Marrs",
+        "url": "https://www.facebook.com/jeremiah.marrs.7",
+        "description": ""
       }
     ]
   }

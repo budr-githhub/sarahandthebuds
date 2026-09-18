@@ -167,3 +167,20 @@ Bud confirmed that all seven listed shows are Sarah & the Buds full band except 
 
 
 September 14: published confirmed lineups through PR #19 (`3a3b00b07f16effd03924a7c99e51a2920c0955b`). Six-page build and preserved event-field checks passed. Cloudflare succeeded; live Chrome returned 200 with six full-band labels, one solo label and the Midway wandering-minstrel note. Release documentation reconciled after publication.
+
+
+## Friends additions — September 17, 2026
+
+**Decision:** Bud requested JJ Marss and Georgetown Underground on Friends. Add their names without inventing links, endorsements or biographies; use the existing Georgetown venue location.
+
+**Reason:** Extend the owner-selected community list.
+
+**Alternatives considered:** Guessing social URLs or JJ’s biography; rejected.
+
+**Impact:** Friends data, conditional optional fields and matching copy updated locally. JJ’s supplied spelling and placement in Community friends await confirmation; preferred links remain pending. Not published.
+
+
+**Follow-up:** Bud supplied JJ’s Facebook profile: https://www.facebook.com/jeremiah.marrs.7. Linked the Friends entry and corrected the display spelling to JJ Marrs to match the supplied URL. No biography inferred. Georgetown Underground’s preferred link remains pending; changes remain local and unpublished.
+
+
+**Follow-up:** Bud supplied https://www.georgetownunderground.com/. Added to Friends and the shared Georgetown Underground venue record so its Shows entries link to the same website. This resolves the earlier pending-link notes. Event dates, times, acts and address are unchanged. Build and rendered-link checks passed; changes remain local and unpublished.
