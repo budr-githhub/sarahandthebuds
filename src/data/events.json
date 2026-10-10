@@ -33,12 +33,13 @@
     "notes": "Bud solo as a wandering minstrel."
   },
   {
-    "start": "2026-10-03",
-    "startTime": "13:00",
-    "endTime": "16:00",
-    "name": "Wildside Winery",
+    "start": "2026-10-17",
+    "startTime": "14:00",
+    "endTime": "17:00",
+    "name": "Zoë Zamora, Bud Ratliff & Mela B — Wildside Winery",
     "venueId": "wildside",
-    "act": "full-band"
+    "performers": "Zoë Zamora, Bud Ratliff & Mela B",
+    "notes": "Featured artists followed by open mic."
   },
   {
     "start": "2026-10-23",
@@ -47,6 +48,24 @@
     "name": "Shaker Village",
     "venueId": "shaker-village",
     "act": "full-band"
+  },
+  {
+    "start": "2026-11-17",
+    "startTime": "18:00",
+    "endTime": "20:00",
+    "name": "The Lost Dogs — Wildside Winery",
+    "venueId": "wildside",
+    "performers": "The Lost Dogs",
+    "notes": "John Prine tribute band featuring Bud Ratliff. Benefit for Wolf Run."
+  },
+  {
+    "start": "2026-12-12",
+    "startTime": "16:00",
+    "endTime": "19:00",
+    "name": "Christmas Balloon Glow — Wildside Winery",
+    "venueId": "wildside",
+    "act": "full-band",
+    "notes": "Live music with Sarah & the Buds. When the sun goes down, the balloons light up."
   },
   {
     "start": "2026-12-16",

@@ -75,3 +75,7 @@ Press text: `src/data/press.json`; photo download metadata: `press-photos.json`;
 ## Validation
 
 Six-page production build passed. Browser checks at 390 and 1280px: no horizontal overflow or failed images, logo frames contain artwork, internal download links return successfully. Copy-to-clipboard verified. Advancing the browser clock to October 24 moves completed shows to Past and leaves December 16 upcoming. Seven event dates/times/names match base exactly. Both ZIPs pass integrity checks (59 press files, 54 logo files). External Facebook fetch unavailable; Zoe URL is owner-provided. No email delivery tested. Production Cloudflare success and Chrome page content verified after release.
+
+## Calendar correction — October 10, 2026
+
+Current calendar supersedes the seven-date September inventory: nine events, including six full-band shows, Midway solo, October 17 Zoë Zamora/Bud Ratliff/Mela B collaboration and November 17 The Lost Dogs. October 3 did not occur and is removed. December 12 Christmas Balloon Glow is full band. Bud confirmed November 17 (Tuesday), 6–8 PM, correcting the originally supplied November 14. See dashboard for release status.
