@@ -1,6 +1,6 @@
 # Sarah & the Buds — current status
 
-Updated October 10, 2026. Owner: Bud. Implementation: Codex. Calendar update approved; six-page build and rendered calendar checks passed; publication pending.
+Updated October 10, 2026. Owner: Bud. Implementation: Codex. Published and verified; no release approval is pending.
 
 ## Friends additions — published and verified, September 17, 2026
 
@@ -28,6 +28,8 @@ Owner: Codex. Bud requested A–Z ordering within Musicians, Venues and Communit
 | Change | PR | Published implementation commit |
 |---|---|---|
 | Calendar | #2 | `c5577d2` |
+| Autumn gigs and October 3 removal | #28 | `ff50dddd93eca681716ecd128977437ef1f6dba6` |
+| Easter Egg Hunt | #29 | `ede9346f5bddc723b55bf6c6c9fa643aeb176473` |
 | Style guide | #4 | `4276d44` |
 | Photos and songbook | #5 | `b99f8f1` |
 | Press, Friends, logo set, event details | #8 | `c0d795e` |
@@ -58,6 +60,6 @@ Keep docs aligned after every push. Current records: [copy deck](copy-deck.md), 
 
 ## October calendar update
 
-Owner: Codex. Branch: `fix/autumn-gigs`. Base: `067a7a9`. Add October 17 collaboration (2–5 PM), November 17 Lost Dogs John Prine tribute/Wolf Run benefit (6–8 PM), December 12 full-band Christmas Balloon Glow (4–7 PM), all at Wildside Winery. Remove October 3 entirely. Preserve other events, venue links and Eastern-time rollover. Verify build, rendered cards and production before marking published.
+Owner: Codex. Branch: `fix/autumn-gigs`. Base: `067a7a9`. Add October 17 collaboration (2–5 PM), November 17 Lost Dogs John Prine tribute/Wolf Run benefit (6–8 PM), December 12 full-band Christmas Balloon Glow (4–7 PM), all at Wildside Winery. Remove October 3 entirely. Preserve other events, venue links and Eastern-time rollover. Published in PR #28 (`ff50ddd`) and PR #29 (`ede9346`). Six-page build passed; Cloudflare succeeded. Live Chrome verified all ten cards, four additions, October 3 removal and no horizontal overflow at 390px.
 
 Easter Egg Hunt: Sunday, March 21, 2027, 2–5 PM Eastern at Wildside Winery, 5500 Troy Pike, Versailles, KY 40383. Sarah & the Buds — full band. Added from Bud’s October 10 follow-up; year inferred from the next March 21 falling on Sunday.
