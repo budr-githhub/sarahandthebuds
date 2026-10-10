@@ -1,6 +1,6 @@
 # Editing shows with Pages CMS
 
-Status: trial prepared October 10, 2026. Hosted sign-in, GitHub app authorization and the first real CMS save still require Bud. No CMS account or collaborator invitation has been created by Codex.
+Status: website support and configuration published October 10, 2026 in PR #31 (`ce9bc69`); live Manage shows link verified. Hosted sign-in, GitHub app authorization and the first real CMS save still require Bud. No CMS account or collaborator invitation has been created by Codex.
 
 ## One-time setup (Bud)
 

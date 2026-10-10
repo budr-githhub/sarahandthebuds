@@ -64,8 +64,10 @@ Owner: Codex. Branch: `fix/autumn-gigs`. Base: `067a7a9`. Add October 17 collabo
 
 Easter Egg Hunt: Sunday, March 21, 2027, 2–5 PM Eastern at Wildside Winery, 5500 Troy Pike, Versailles, KY 40383. Sarah & the Buds — full band. Added from Bud’s October 10 follow-up; year inferred from the next March 21 falling on Sunday.
 
-## Pages CMS trial — prepared, awaiting publication and owner setup
+## Pages CMS trial — published, awaiting owner setup
 
 Owner: Codex. Branch `feat/pages-cms-trial`, base `e194b60`. Scope: Shows and six existing Venues, footer Manage shows link, draft/cancelled support, validation and read-only calendar reports. Existing ten public shows retained. Six-page build, three validator tests, rendered draft/cancellation checks and configuration field coverage passed. CMS authentication/authorization and first saved edit remain untested pending Bud’s setup. Instructions: [editing shows](editing-shows.md). Current calendar content is linked from [calendar source and reports](calendar-inventory.md); previous dated release counts are historical.
 
 Automatic main-branch documentation commits were not enabled: approval review rejected persistent workflow write access. The workflow only validates and uploads a report; it has no repository write permission.
+
+PR #31 (`ce9bc6967e5730b4f7b3098c9be7b07243e70d19`) deployed October 10. Live browser verified all ten real show cards and the Manage shows footer link. Read-only report workflow run `38090448305` succeeded. Pages CMS sign-in is open; terms acceptance, GitHub app authorization and first save remain with Bud.
