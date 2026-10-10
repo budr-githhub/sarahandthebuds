@@ -7,6 +7,7 @@ import EventMeta from "../components/EventMeta.astro";
 interface EventItem {
   /** "YYYY-MM-DD" */
   start: string;
+  status?: "draft" | "published" | "cancelled";
   /** "YYYY-MM-DD", only for multi-day events */
   end?: string;
   /** "HH:MM", 24-hour, America/New_York wall-clock time */
@@ -14,7 +15,7 @@ interface EventItem {
   endTime?: string;
   name: string;
   venueId?: string;
-  act?: "full-band" | "duo" | "solo" | null;
+  act?: "full-band" | "duo" | "solo" | "other" | null;
   location?: string;
   performers?: string;
   url?: string;
@@ -26,7 +27,7 @@ const actNames = {"full-band":"Sarah & the Buds",duo:"Sarah & Bud",solo:"Bud Rat
 const venueFor = (e: EventItem) => venues[e.venueId as keyof typeof venues];
 
 // Single maintained calendar; preserve unknown optional fields.
-const events = eventData as EventItem[];
+const events = (eventData as EventItem[]).filter(e => e.status !== "draft");
 
 // All date/time comparisons happen as America/New_York wall-clock strings
 // ("YYYY-MM-DDTHH:MM"), compared lexicographically — this avoids needing
@@ -49,7 +50,7 @@ function nowInNY(): string {
 }
 
 function effectiveEnd(event: EventItem): string {
-  const date = event.end ?? event.start;
+  const date = event.end || event.start;
   const time = event.endTime ?? event.startTime ?? "23:59";
   return `${date}T${time}`;
 }
@@ -107,14 +108,15 @@ const eventSchema = upcoming.map((e) => ({
   "@context": "https://schema.org",
   "@type": "Event",
   name: e.name,
+  eventStatus: e.status === "cancelled" ? "https://schema.org/EventCancelled" : "https://schema.org/EventScheduled",
   startDate: toISOWithOffset(e.start, e.startTime ?? "00:00"),
-  endDate: toISOWithOffset(e.end ?? e.start, e.endTime ?? e.startTime ?? "23:59"),
+  endDate: toISOWithOffset(e.end || e.start, e.endTime ?? e.startTime ?? "23:59"),
   location: {
     "@type": "Place",
     name: venueFor(e)?.name ?? e.name,
     ...(venueFor(e)?.address ? {address: venueFor(e).address} : {}),
   },
-  ...((e.act || e.performers) ? { performer: { "@type": e.act === "solo" ? "Person" : "PerformingGroup", name: e.act ? actNames[e.act] : e.performers } } : {}),
+  ...((e.act || e.performers) ? { performer: { "@type": e.act === "solo" ? "Person" : "PerformingGroup", name: e.act && e.act !== "other" ? actNames[e.act] : e.performers } } : {}),
   ...(e.url ? { url: e.url } : {}),
 }));
 ---
@@ -154,6 +156,7 @@ const eventSchema = upcoming.map((e) => ({
                   {e.name}
                   {e.location && <span class="event-location"> · {e.location}</span>}
                 </div>
+                {e.status === "cancelled" && <p><strong>Cancelled</strong></p>}
                 {formatTimeRange(e) && <div class="event-time">{formatTimeRange(e)}</div>}
                 <EventMeta event={e} venue={venueFor(e)} />
                 {e.admission && <div class="event-time">{e.admission}</div>}
@@ -188,6 +191,7 @@ const eventSchema = upcoming.map((e) => ({
               </div>
               <div class="event-details">
                 <div class="event-venue">{e.name}</div>
+                {e.status === "cancelled" && <p><strong>Cancelled</strong></p>}
                 {formatTimeRange(e) && <div class="event-time">{formatTimeRange(e)}</div>}
                 <EventMeta event={e} venue={venueFor(e)} />
                 {e.notes && <div class="event-time">{e.notes}</div>}

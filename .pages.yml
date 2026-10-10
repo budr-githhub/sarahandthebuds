@@ -1,0 +1,428 @@
+{
+  "settings": {
+    "content": {
+      "merge": true
+    }
+  },
+  "content": [
+    {
+      "name": "shows",
+      "label": "Shows — all dates",
+      "type": "file",
+      "path": "src/data/events.json",
+      "format": "json",
+      "list": true,
+      "operations": {
+        "delete": false,
+        "rename": false
+      },
+      "fields": [
+        {
+          "name": "name",
+          "label": "Event name",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "status",
+          "label": "Publication status",
+          "type": "select",
+          "required": true,
+          "default": "draft",
+          "options": {
+            "values": [
+              {
+                "name": "draft",
+                "label": "Draft — hidden from visitors"
+              },
+              {
+                "name": "published",
+                "label": "Published"
+              },
+              {
+                "name": "cancelled",
+                "label": "Cancelled — visible with a cancellation notice"
+              }
+            ]
+          }
+        },
+        {
+          "name": "start",
+          "label": "Date",
+          "type": "date",
+          "required": true,
+          "default": "",
+          "options": {
+            "format": "yyyy-MM-dd"
+          }
+        },
+        {
+          "name": "end",
+          "label": "End date (multi-day events only)",
+          "type": "date",
+          "default": "",
+          "options": {
+            "format": "yyyy-MM-dd"
+          }
+        },
+        {
+          "name": "startTime",
+          "label": "Start time (Eastern, 24-hour)",
+          "type": "string",
+          "required": true,
+          "pattern": {
+            "regex": "^([01][0-9]|2[0-3]):[0-5][0-9]$",
+            "message": "Use 24-hour Eastern time, such as 14:00 for 2 PM."
+          }
+        },
+        {
+          "name": "endTime",
+          "label": "End time (Eastern, 24-hour)",
+          "type": "string",
+          "required": true,
+          "pattern": {
+            "regex": "^([01][0-9]|2[0-3]):[0-5][0-9]$",
+            "message": "Use 24-hour Eastern time, such as 14:00 for 2 PM."
+          }
+        },
+        {
+          "name": "venueId",
+          "label": "Venue",
+          "type": "select",
+          "required": true,
+          "options": {
+            "values": [
+              {
+                "name": "georgetown-underground",
+                "label": "Georgetown Underground"
+              },
+              {
+                "name": "kenwick-porch-fest",
+                "label": "Kenwick Porch Fest"
+              },
+              {
+                "name": "ghost-fox",
+                "label": "Ghost Fox Winery"
+              },
+              {
+                "name": "midway-fall-festival",
+                "label": "Midway Fall Festival"
+              },
+              {
+                "name": "wildside",
+                "label": "Wildside Winery"
+              },
+              {
+                "name": "shaker-village",
+                "label": "Shaker Village of Pleasant Hill"
+              }
+            ]
+          }
+        },
+        {
+          "name": "act",
+          "label": "Performing act",
+          "type": "select",
+          "required": true,
+          "options": {
+            "values": [
+              {
+                "name": "full-band",
+                "label": "Sarah & the Buds — full band"
+              },
+              {
+                "name": "duo",
+                "label": "Sarah & Bud — acoustic duo"
+              },
+              {
+                "name": "solo",
+                "label": "Bud Ratliff — solo"
+              },
+              {
+                "name": "other",
+                "label": "Other act / collaboration (enter names below)"
+              }
+            ]
+          }
+        },
+        {
+          "name": "performers",
+          "label": "Other act / performer names",
+          "type": "string",
+          "description": "Required when Other act / collaboration is selected."
+        },
+        {
+          "name": "notes",
+          "label": "Description / benefit / other details",
+          "type": "text"
+        },
+        {
+          "name": "url",
+          "label": "Event or ticket URL",
+          "type": "string",
+          "pattern": {
+            "regex": "^https?://.+",
+            "message": "Use a complete https:// URL, or leave blank."
+          }
+        },
+        {
+          "name": "admission",
+          "label": "Admission / ticket information",
+          "type": "string"
+        },
+        {
+          "name": "location",
+          "label": "Additional location detail",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "venues",
+      "label": "Venues — existing locations",
+      "type": "file",
+      "path": "src/data/venues.json",
+      "format": "json",
+      "operations": {
+        "delete": false,
+        "rename": false
+      },
+      "fields": [
+        {
+          "name": "georgetown-underground",
+          "label": "Georgetown Underground",
+          "type": "object",
+          "fields": [
+            {
+              "name": "name",
+              "label": "Venue name",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "city",
+              "label": "City, state",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "address",
+              "label": "Street address (optional)",
+              "type": "string"
+            },
+            {
+              "name": "url",
+              "label": "Venue website",
+              "type": "string",
+              "pattern": {
+                "regex": "^https?://.+",
+                "message": "Use a complete https:// URL, or leave blank."
+              }
+            },
+            {
+              "name": "source",
+              "label": "Verification source URL",
+              "type": "string",
+              "description": "Optional source used to verify this venue."
+            }
+          ]
+        },
+        {
+          "name": "kenwick-porch-fest",
+          "label": "Kenwick Porch Fest",
+          "type": "object",
+          "fields": [
+            {
+              "name": "name",
+              "label": "Venue name",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "city",
+              "label": "City, state",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "address",
+              "label": "Street address (optional)",
+              "type": "string"
+            },
+            {
+              "name": "url",
+              "label": "Venue website",
+              "type": "string",
+              "pattern": {
+                "regex": "^https?://.+",
+                "message": "Use a complete https:// URL, or leave blank."
+              }
+            },
+            {
+              "name": "source",
+              "label": "Verification source URL",
+              "type": "string",
+              "description": "Optional source used to verify this venue."
+            }
+          ]
+        },
+        {
+          "name": "ghost-fox",
+          "label": "Ghost Fox Winery",
+          "type": "object",
+          "fields": [
+            {
+              "name": "name",
+              "label": "Venue name",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "city",
+              "label": "City, state",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "address",
+              "label": "Street address (optional)",
+              "type": "string"
+            },
+            {
+              "name": "url",
+              "label": "Venue website",
+              "type": "string",
+              "pattern": {
+                "regex": "^https?://.+",
+                "message": "Use a complete https:// URL, or leave blank."
+              }
+            },
+            {
+              "name": "source",
+              "label": "Verification source URL",
+              "type": "string",
+              "description": "Optional source used to verify this venue."
+            }
+          ]
+        },
+        {
+          "name": "midway-fall-festival",
+          "label": "Midway Fall Festival",
+          "type": "object",
+          "fields": [
+            {
+              "name": "name",
+              "label": "Venue name",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "city",
+              "label": "City, state",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "address",
+              "label": "Street address (optional)",
+              "type": "string"
+            },
+            {
+              "name": "url",
+              "label": "Venue website",
+              "type": "string",
+              "pattern": {
+                "regex": "^https?://.+",
+                "message": "Use a complete https:// URL, or leave blank."
+              }
+            },
+            {
+              "name": "source",
+              "label": "Verification source URL",
+              "type": "string",
+              "description": "Optional source used to verify this venue."
+            }
+          ]
+        },
+        {
+          "name": "wildside",
+          "label": "Wildside Winery",
+          "type": "object",
+          "fields": [
+            {
+              "name": "name",
+              "label": "Venue name",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "city",
+              "label": "City, state",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "address",
+              "label": "Street address (optional)",
+              "type": "string"
+            },
+            {
+              "name": "url",
+              "label": "Venue website",
+              "type": "string",
+              "pattern": {
+                "regex": "^https?://.+",
+                "message": "Use a complete https:// URL, or leave blank."
+              }
+            },
+            {
+              "name": "source",
+              "label": "Verification source URL",
+              "type": "string",
+              "description": "Optional source used to verify this venue."
+            }
+          ]
+        },
+        {
+          "name": "shaker-village",
+          "label": "Shaker Village of Pleasant Hill",
+          "type": "object",
+          "fields": [
+            {
+              "name": "name",
+              "label": "Venue name",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "city",
+              "label": "City, state",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "address",
+              "label": "Street address (optional)",
+              "type": "string"
+            },
+            {
+              "name": "url",
+              "label": "Venue website",
+              "type": "string",
+              "pattern": {
+                "regex": "^https?://.+",
+                "message": "Use a complete https:// URL, or leave blank."
+              }
+            },
+            {
+              "name": "source",
+              "label": "Verification source URL",
+              "type": "string",
+              "description": "Optional source used to verify this venue."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

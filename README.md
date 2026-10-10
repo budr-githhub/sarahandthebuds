@@ -42,3 +42,5 @@ Follow [the S&B style guide](docs/style-guide.md) for colors, typography, logo a
 
 
 Press, Friends, branding and event-detail additions are published; see [the implementation and owner checklist](docs/press-friends-brand.md) for downloads, maintenance, sources and pending inputs. See the dashboard for verified deployment status.
+
+Calendar editing: [Pages CMS instructions](docs/editing-shows.md).

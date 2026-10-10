@@ -63,3 +63,9 @@ Keep docs aligned after every push. Current records: [copy deck](copy-deck.md), 
 Owner: Codex. Branch: `fix/autumn-gigs`. Base: `067a7a9`. Add October 17 collaboration (2–5 PM), November 17 Lost Dogs John Prine tribute/Wolf Run benefit (6–8 PM), December 12 full-band Christmas Balloon Glow (4–7 PM), all at Wildside Winery. Remove October 3 entirely. Preserve other events, venue links and Eastern-time rollover. Published in PR #28 (`ff50ddd`) and PR #29 (`ede9346`). Six-page build passed; Cloudflare succeeded. Live Chrome verified all ten cards, four additions, October 3 removal and no horizontal overflow at 390px.
 
 Easter Egg Hunt: Sunday, March 21, 2027, 2–5 PM Eastern at Wildside Winery, 5500 Troy Pike, Versailles, KY 40383. Sarah & the Buds — full band. Added from Bud’s October 10 follow-up; year inferred from the next March 21 falling on Sunday.
+
+## Pages CMS trial — prepared, awaiting publication and owner setup
+
+Owner: Codex. Branch `feat/pages-cms-trial`, base `e194b60`. Scope: Shows and six existing Venues, footer Manage shows link, draft/cancelled support, validation and read-only calendar reports. Existing ten public shows retained. Six-page build, three validator tests, rendered draft/cancellation checks and configuration field coverage passed. CMS authentication/authorization and first saved edit remain untested pending Bud’s setup. Instructions: [editing shows](editing-shows.md). Current calendar content is linked from [calendar source and reports](calendar-inventory.md); previous dated release counts are historical.
+
+Automatic main-branch documentation commits were not enabled: approval review rejected persistent workflow write access. The workflow only validates and uploads a report; it has no repository write permission.
