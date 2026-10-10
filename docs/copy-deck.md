@@ -1,6 +1,6 @@
 # Current copy deck
 
-Rendered text snapshot of the published source through PR #16, updated September 13, 2026. No draft copy is included. Links, layout and data remain authoritative in the Astro pages and JSON sources. Events reflect the seven maintained records; Upcoming/Past changes with time.
+Rendered text snapshot of the published source through PR #16, updated September 13, 2026. No draft copy is included. Links, layout and data remain authoritative in the Astro pages and JSON sources. Events reflect the nine maintained records; Upcoming/Past changes with time.
 
 Shared header: About · Music · Shows · Press · Friends · Booking.
 
@@ -173,53 +173,77 @@ Upcoming Shows
 
 Live music, upcoming dates, and past performances.
 
-This page lists Sarah & Bud, Sarah & the Buds, and Bud's solo shows. All times are Eastern. Shows move to Past once they're over.
+This page lists Sarah & Bud, Sarah & the Buds, and Bud's solo shows and collaborations. All times are Eastern. Shows move to Past once they're over.
 
 Upcoming
-SAT, SEPTEMBER 19, 2026
-Ghost Fox Winery
-1 PM–3 PM
 
-Full band · Sarah & the Buds
+2026-10-17
 
-2385 Chrisman Mill Road, Nicholasville, KY 40356
+Zoë Zamora, Bud Ratliff & Mela B — Wildside Winery
 
-Venue website ↗
-Directions ↗
-SUN, SEPTEMBER 20, 2026
-Midway Fall Festival
-3 PM–5 PM
+14:00–17:00 Eastern
 
-Solo · Bud Ratliff
-
-Bud solo as a wandering minstrel.
-
-Downtown Midway, KY
-
-Venue website ↗
-SAT, OCTOBER 3, 2026
-Wildside Winery
-1 PM–4 PM
-
-Full band · Sarah & the Buds
+Zoë Zamora, Bud Ratliff & Mela B
 
 5500 Troy Pike, Versailles, KY 40383
 
-Venue website ↗
+Venue website → https://www.wildsidewinery.com/
+
 Directions ↗
-FRI, OCTOBER 23, 2026
+
+Featured artists followed by open mic.
+
+2026-10-23
+
 Shaker Village
-4:30 PM–6:30 PM
+
+16:30–18:30 Eastern
 
 Full band · Sarah & the Buds
 
 3501 Lexington Road, Harrodsburg, KY 40330
 
-Venue website ↗
+Venue website → https://shakervillageky.org/
+
 Directions ↗
-WED, DECEMBER 16, 2026
+
+2026-11-17
+
+The Lost Dogs — Wildside Winery
+
+18:00–20:00 Eastern
+
+The Lost Dogs
+
+5500 Troy Pike, Versailles, KY 40383
+
+Venue website → https://www.wildsidewinery.com/
+
+Directions ↗
+
+John Prine tribute band featuring Bud Ratliff. Benefit for Wolf Run.
+
+2026-12-12
+
+Christmas Balloon Glow — Wildside Winery
+
+16:00–19:00 Eastern
+
+Full band · Sarah & the Buds
+
+5500 Troy Pike, Versailles, KY 40383
+
+Venue website → https://www.wildsidewinery.com/
+
+Directions ↗
+
+Live music with Sarah & the Buds. When the sun goes down, the balloons light up.
+
+2026-12-16
+
 Georgetown Underground
-6 PM–8 PM
+
+18:00–20:00 Eastern
 
 Full band · Sarah & the Buds
 
@@ -228,19 +252,54 @@ Full band · Sarah & the Buds
 Venue website → https://www.georgetownunderground.com/
 
 Directions ↗
+
 Past
-SAT, AUGUST 22, 2026
+
+2026-09-20
+
+Midway Fall Festival
+
+15:00–17:00 Eastern
+
+Solo · Bud Ratliff
+
+Downtown Midway, KY
+
+Venue website → https://www.midwayfallfestival.com/
+
+Bud solo as a wandering minstrel.
+
+2026-09-19
+
+Ghost Fox Winery
+
+13:00–15:00 Eastern
+
+Full band · Sarah & the Buds
+
+2385 Chrisman Mill Road, Nicholasville, KY 40356
+
+Venue website → https://ghostfoxwinery.com/
+
+Directions ↗
+
+2026-08-22
+
 Kenwick Porch Fest
-4:15 PM–5:15 PM
+
+16:15–17:15 Eastern
 
 Full band · Sarah & the Buds
 
 Lexington, KY
 
-Venue website ↗
-SAT, AUGUST 1, 2026
+Venue website → https://www.kenwickporchfest.com/
+
+2026-08-01
+
 Georgetown Underground
-1 PM–3 PM
+
+13:00–15:00 Eastern
 
 Full band · Sarah & the Buds
 
@@ -249,6 +308,7 @@ Full band · Sarah & the Buds
 Venue website → https://www.georgetownunderground.com/
 
 Directions ↗
+
 Have a date in mind?
 
 Ask about a full-band or acoustic-duo booking.

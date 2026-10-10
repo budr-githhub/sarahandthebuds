@@ -206,3 +206,7 @@ PR #25 published at `d8abae3`; Cloudflare succeeded and live Chrome verified alp
 ## Documentation reconciliation — September 18, 2026
 
 Updated completed-release table through PR #25, current Friends counts and A–Z maintenance rule, and owner-supplied JJ/Georgetown link references. Removed an unverified statement about whether a separate Claude project exists. No website behavior changed.
+
+## October calendar changes — October 10, 2026
+
+Decision: add the supplied October 17 and December 12 Wildside gigs and The Lost Dogs on Tuesday November 17, 6–8 PM (Bud confirmed correction from November 14). Remove October 3 because the band did not play it. Use named performer labels for collaborations, preserving band/duo/solo meanings. Reason: owner-supplied posters and explicit date confirmation. Alternative rejected: retaining an unplayed show in Past or labeling guest acts as Sarah & the Buds. Impact: nine records; existing venue links and other dates retained.

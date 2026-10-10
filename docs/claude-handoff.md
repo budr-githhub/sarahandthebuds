@@ -11,3 +11,7 @@ Andrew Von Neida is photographer for all four press JPEGs, and Bud confirmed pro
 The band repository owns the combined calendar. Plan & Adapt retains radio and solo introductions and redirects old calendars here; do not reintroduce synchronization or a second calendar source. Keep one artist row per homepage songbook entry, originals by request without titles, no specialty section, and no gallery captions. Accessible alt text and press download credits remain.
 
 Historical decision entries are not current tasks. No release remains blocked on copy or photo approval. Follow new user requests for additional work; no DNS changes are needed. Keep documentation current after pushes and verified releases.
+
+## Calendar correction — October 10, 2026
+
+Current calendar supersedes the seven-date September inventory: nine events, including six full-band shows, Midway solo, October 17 Zoë Zamora/Bud Ratliff/Mela B collaboration and November 17 The Lost Dogs. October 3 did not occur and is removed. December 12 Christmas Balloon Glow is full band. Bud confirmed November 17 (Tuesday), 6–8 PM, correcting the originally supplied November 14. See dashboard for release status.
