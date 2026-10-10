@@ -19,7 +19,7 @@ Owner: Codex. Bud requested A–Z ordering within Musicians, Venues and Communit
 - Header on every page: About, Music, Shows, Press, Friends, Booking. Footer includes resource links.
 - Homepage: owner-approved inward-facing microphone S&B logo; band-only AI-edited hero; matching 4:5 band/duo portraits; 12 gallery photos without captions.
 - Songbook: 44 homepage artist rows in one disclosure; 146 named cover/holiday selections on `/songbook/`; originals by request only. No specialty songs or named originals.
-- Shows: one calendar source in `src/data/events.json`; nine dates with venue locations, available website/directions links and confirmed act labels: six full-band shows, Midway Fall Festival solo with Bud as a wandering minstrel, the October 17 collaboration and The Lost Dogs on November 17. October 3 removed because it did not take place. Eastern time and automatic Upcoming/Past movement. Back to Music links at top and bottom target `/#songbook`.
+- Shows: one calendar source in `src/data/events.json`; ten dates with venue locations, available website/directions links and confirmed act labels: seven full-band shows, Midway Fall Festival solo with Bud as a wandering minstrel, the October 17 collaboration and The Lost Dogs on November 17. October 3 removed because it did not take place. Eastern time and automatic Upcoming/Past movement. Back to Music links at top and bottom target `/#songbook`.
 - Press: approved band/duo introductions, copy buttons, four downloadable JPEGs, 16 logo/color variants in SVG/PNG/PDF, favicon assets and ZIPs. All four photos credited to Andrew Von Neida; Bud confirmed promotional-use permission.
 - Friends: seven musicians, five venues, two community friends; each group is alphabetized by displayed name. Zoe Zamora’s Facebook URL supplied by Bud. Personal stories/photos are optional future additions.
 
@@ -59,3 +59,5 @@ Keep docs aligned after every push. Current records: [copy deck](copy-deck.md), 
 ## October calendar update
 
 Owner: Codex. Branch: `fix/autumn-gigs`. Base: `067a7a9`. Add October 17 collaboration (2–5 PM), November 17 Lost Dogs John Prine tribute/Wolf Run benefit (6–8 PM), December 12 full-band Christmas Balloon Glow (4–7 PM), all at Wildside Winery. Remove October 3 entirely. Preserve other events, venue links and Eastern-time rollover. Verify build, rendered cards and production before marking published.
+
+Easter Egg Hunt: Sunday, March 21, 2027, 2–5 PM Eastern at Wildside Winery, 5500 Troy Pike, Versailles, KY 40383. Sarah & the Buds — full band. Added from Bud’s October 10 follow-up; year inferred from the next March 21 falling on Sunday.

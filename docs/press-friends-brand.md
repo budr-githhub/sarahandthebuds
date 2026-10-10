@@ -78,4 +78,6 @@ Six-page production build passed. Browser checks at 390 and 1280px: no horizonta
 
 ## Calendar correction — October 10, 2026
 
-Current calendar supersedes the seven-date September inventory: nine events, including six full-band shows, Midway solo, October 17 Zoë Zamora/Bud Ratliff/Mela B collaboration and November 17 The Lost Dogs. October 3 did not occur and is removed. December 12 Christmas Balloon Glow is full band. Bud confirmed November 17 (Tuesday), 6–8 PM, correcting the originally supplied November 14. See dashboard for release status.
+Current calendar supersedes the seven-date September inventory: ten events, including seven full-band shows, Midway solo, October 17 Zoë Zamora/Bud Ratliff/Mela B collaboration and November 17 The Lost Dogs. October 3 did not occur and is removed. December 12 Christmas Balloon Glow is full band. Bud confirmed November 17 (Tuesday), 6–8 PM, correcting the originally supplied November 14. See dashboard for release status.
+
+Easter Egg Hunt: Sunday, March 21, 2027, 2–5 PM Eastern at Wildside Winery, 5500 Troy Pike, Versailles, KY 40383. Sarah & the Buds — full band. Added from Bud’s October 10 follow-up; year inferred from the next March 21 falling on Sunday.

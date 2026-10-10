@@ -1,6 +1,6 @@
 # Current copy deck
 
-Rendered text snapshot of the published source through PR #16, updated September 13, 2026. No draft copy is included. Links, layout and data remain authoritative in the Astro pages and JSON sources. Events reflect the nine maintained records; Upcoming/Past changes with time.
+Rendered text snapshot of the published source through PR #16, updated September 13, 2026. No draft copy is included. Links, layout and data remain authoritative in the Astro pages and JSON sources. Events reflect the ten maintained records; Upcoming/Past changes with time.
 
 Shared header: About · Music · Shows · Press · Friends · Booking.
 
@@ -250,6 +250,20 @@ Full band · Sarah & the Buds
 152 E Main Street, Georgetown, KY 40324
 
 Venue website → https://www.georgetownunderground.com/
+
+Directions ↗
+
+2027-03-21
+
+Easter Egg Hunt — Wildside Winery
+
+14:00–17:00 Eastern
+
+Full band · Sarah & the Buds
+
+5500 Troy Pike, Versailles, KY 40383
+
+Venue website → https://www.wildsidewinery.com/
 
 Directions ↗
 
