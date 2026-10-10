@@ -61,3 +61,7 @@ The latest page behavior is PR #19, `3a3b00b07f16effd03924a7c99e51a2920c0955b`: 
 Live pages: [Home](https://sarahandthebuds.com/), [Shows](https://sarahandthebuds.com/shows/), [Songbook](https://sarahandthebuds.com/songbook/), [Press](https://sarahandthebuds.com/press/), [Friends](https://sarahandthebuds.com/friends/). All released page changes were verified in Chrome. Plain automated text requests sometimes return 403; browser requests succeeded. Documentation-only merges may create later deployments with identical site behavior.
 
 All publication and copy/photo approvals for these releases are complete. Sarah’s video and optional venue/Friends details are remaining content inputs, not failed deployments. No DNS changes or email tests accompanied these releases.
+
+## October 10 calendar release
+
+Latest implementation: PR #29, `ede9346f5bddc723b55bf6c6c9fa643aeb176473`, includes the autumn changes from PR #28 (`ff50dddd93eca681716ecd128977437ef1f6dba6`). Cloudflare succeeded. Live `/shows/` returned HTTP 200; Chrome verified ten events, all four additions, removal of October 3 and no horizontal overflow at 390px. This supersedes prior latest-implementation statements above. No DNS changes.
