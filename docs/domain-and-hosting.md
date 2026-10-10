@@ -65,3 +65,7 @@ All publication and copy/photo approvals for these releases are complete. Sarahâ
 ## October 10 calendar release
 
 Latest implementation: PR #29, `ede9346f5bddc723b55bf6c6c9fa643aeb176473`, includes the autumn changes from PR #28 (`ff50dddd93eca681716ecd128977437ef1f6dba6`). Cloudflare succeeded. Live `/shows/` returned HTTP 200; Chrome verified ten events, all four additions, removal of October 3 and no horizontal overflow at 390px. This supersedes prior latest-implementation statements above. No DNS changes.
+
+## Pages CMS trial release â€” October 10
+
+PR #31 (`ce9bc6967e5730b4f7b3098c9be7b07243e70d19`) adds calendar editor configuration, status handling and a Manage shows footer link. Six-page build and draft/cancellation checks passed; live browser verified ten real shows and editor link. Read-only GitHub calendar report workflow succeeded. Owner sign-in/app authorization and first CMS save are pending, so end-to-end CMS editing has not yet been verified. No new hosting service for the website or DNS changes.
