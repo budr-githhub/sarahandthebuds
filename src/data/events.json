@@ -74,5 +74,13 @@
     "name": "Georgetown Underground",
     "venueId": "georgetown-underground",
     "act": "full-band"
+  },
+  {
+    "start": "2027-03-21",
+    "startTime": "14:00",
+    "endTime": "17:00",
+    "name": "Easter Egg Hunt — Wildside Winery",
+    "venueId": "wildside",
+    "act": "full-band"
   }
 ]
