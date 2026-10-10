@@ -1,0 +1,30 @@
+name: Validate calendar and generate report
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/data/events.json'
+      - 'src/data/venues.json'
+      - 'scripts/calendar.mjs'
+      - '.github/workflows/calendar-docs.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: calendar-documentation
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node scripts/calendar.mjs --write
+      - uses: actions/upload-artifact@v4
+        with:
+          name: calendar-inventory
+          path: reports/calendar-inventory.md

@@ -214,3 +214,9 @@ Decision: add the supplied October 17 and December 12 Wildside gigs and The Lost
 October 10 follow-up: add Easter Egg Hunt at Wildside, Sunday March 21, 2027, 2–5 PM Eastern, Sarah & the Buds full band. Next March 21 is Sunday in 2027; “we” follows the established full-band Wildside context. Calendar now has ten records.
 
 October 10 release verification: PR #28 (`ff50ddd`) published autumn changes; PR #29 (`ede9346`) added Easter. Six-page builds passed; ten cards and DST offsets checked. Cloudflare succeeded and live Chrome verified four additions, removed October 3, HTTP 200 and no mobile overflow. GitHub release records reconciled after publication.
+
+## Pages CMS trial — October 10, 2026
+
+Bud selected the recommended GitHub-backed CMS. Keep existing JSON sources and Cloudflare hosting; expose Shows and six existing Venues through `.pages.yml`. Add explicit published status to existing shows and “other” act to the two named collaborations without changing public content. New entries default to draft. Cancelled entries retain their notice. Validate calendar before builds; automatically generate a downloadable report after main data changes. Hosted account authorization and first real save are owner setup steps, not completed by code deployment. Avoid a database migration or custom authentication service for this trial.
+
+Approval review rejected a proposed contents-write documentation workflow. Replaced it with read-only validation/report uploads; no automated commit or push permission is granted. Checked-in calendar documentation links directly to current source and reports to avoid stale copies.

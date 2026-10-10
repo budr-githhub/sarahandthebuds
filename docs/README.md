@@ -21,3 +21,5 @@ Shared agent rules live in [AGENTS.md](../AGENTS.md); Claude imports them from [
 
 - [Press, Friends and brand inventory](press-friends-brand.md): published features, source links, asset generation and remaining owner inputs.
 - [Approved introductions](approved-introductions.md): exact approved full-band and duo text, published on Press and in downloads.
+
+Calendar editing: [Pages CMS instructions](editing-shows.md).
