@@ -69,3 +69,7 @@ Latest implementation: PR #29, `ede9346f5bddc723b55bf6c6c9fa643aeb176473`, inclu
 ## Pages CMS trial release — October 10
 
 PR #31 (`ce9bc6967e5730b4f7b3098c9be7b07243e70d19`) adds calendar editor configuration, status handling and a Manage shows footer link. Six-page build and draft/cancellation checks passed; live browser verified ten real shows and editor link. Read-only GitHub calendar report workflow succeeded. Owner sign-in/app authorization and first CMS save are pending, so end-to-end CMS editing has not yet been verified. No new hosting service for the website or DNS changes.
+
+## October 16, 2026 — songbook artist labels
+
+PR #33 merged at `e97df7b84b39abe05a93918b1e623e160c85f2ed`. Production browser at https://sarahandthebuds.com/songbook/ verified 146 artist labels and no horizontal overflow. Six-page build passed before release. Request notifications and Venmo remain proposed only; no service, DNS or payment settings changed. See `song-requests-plan.md`.
