@@ -222,3 +222,13 @@ Bud selected the recommended GitHub-backed CMS. Keep existing JSON sources and C
 Approval review rejected a proposed contents-write documentation workflow. Replaced it with read-only validation/report uploads; no automated commit or push permission is granted. Checked-in calendar documentation links directly to current source and reports to avoid stale copies.
 
 PR #31 (`ce9bc69`) published the CMS trial configuration and website support; live ten-card calendar and Manage shows link verified. Read-only report workflow succeeded. Hosted CMS authorization and a first trial save remain pending with Bud.
+
+## October 16, 2026 — songbook artists and request proposal
+
+**Decision:** Display title and artist/recording labels for the full public songbook; keep existing homepage grouping and by-request-only originals. Propose email notifications plus optional Venmo tips, without activating external services.
+
+**Reason:** Fans can identify songs and cover versions more easily. Optional tips permit a simple request flow without implying guaranteed performance or verified payment.
+
+**Alternatives:** Title-only list; SMS-first notifications; mandatory merchant checkout. The latter two add setup and need owner decisions.
+
+**Impact:** Song records now contain title and artist. No private song text published. Request integration remains proposed in `docs/song-requests-plan.md`.

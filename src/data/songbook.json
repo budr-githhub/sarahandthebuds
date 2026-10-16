@@ -299,153 +299,591 @@
     }
   ],
   "covers": [
-    "(Lover) You Don’t Treat Me No Good",
-    "867-5309 / Jenny",
-    "A Life Where We Work Out",
-    "A Long December",
-    "Accidentally in Love",
-    "Acrobat",
-    "Across the Universe",
-    "Alcohol",
-    "All I Have to Do",
-    "All Over Now",
-    "All Star",
-    "All You Need Is Love",
-    "Always on My Mind",
-    "Anna Begins",
-    "Armadillo",
-    "Automobile",
-    "Bad Habits",
-    "Basket Case",
-    "Be Not So Fearful",
-    "Biscuits",
-    "Bitin’ List",
-    "Blackbird",
-    "Blowin’ in the Wind",
-    "Boulevard of Broken Dreams",
-    "Brown Eyed Girl",
-    "Bruises",
-    "C.R.E.A.M.",
-    "Calling Baton Rouge",
-    "Champagne Supernova",
-    "Choosin’ Texas",
-    "Coconut",
-    "Complicated",
-    "Crazy",
-    "Crimson and Clover",
-    "Danny’s Song",
-    "Doctor My Eyes",
-    "Don’t Dream It’s Over",
-    "Don’t Get Me Wrong",
-    "Don’t Speak",
-    "Don’t Think Twice, It’s All Right",
-    "Emmylou",
-    "Every Breaking Wave",
-    "Every Morning",
-    "Fake Flowers",
-    "Falling Slowly",
-    "Fast Car",
-    "For What It’s Worth",
-    "Forever Young",
-    "Found Out About You",
-    "Free Fallin’",
-    "Friday I’m in Love",
-    "Give Me Novacaine",
-    "Give Me One Reason",
-    "Go Your Own Way",
-    "Gone Gone Gone (Done Moved On)",
-    "Goose Chase",
-    "Graceland",
-    "Hallelujah",
-    "Harvest Moon",
-    "Head over Feet",
-    "Here",
-    "Hey Jude",
-    "I Belong to You",
-    "I Only Miss You",
-    "I Won’t Back Down",
-    "If I Fell",
-    "In His Arms",
-    "Into the Mystic",
-    "Is This Love",
-    "It Makes No Difference",
-    "I’m Like a Bird",
-    "Jackson",
-    "Jersey Giant",
-    "Jolene",
-    "July",
-    "Jumper",
-    "King of the Road",
-    "Kiss Me",
-    "L.A. Freeway",
-    "Landslide",
-    "Last Time",
-    "Let Her Go",
-    "Let It Be",
-    "Like a Rolling Stone",
-    "Little Talks",
-    "Losing My Religion",
-    "Lotta Love",
-    "Low Rising",
-    "Mad World",
-    "Malibu",
-    "Marfa Lights",
-    "Message to My Girl",
-    "No Scrubs",
-    "Not Strong Enough",
-    "Oh, Tonight",
-    "On a Train Back to Boston",
-    "One",
-    "One Headlight",
-    "Overkill",
-    "Paint It Black",
-    "Pancho and Lefty",
-    "Peace of Mind",
-    "Peaceful Easy Feeling",
-    "Pieces",
-    "Pink Pony Club",
-    "Shake It Off",
-    "She Likes Girls",
-    "Ship to Wreck",
-    "Song for Someone",
-    "Song of Good Hope",
-    "Speak Too Soon",
-    "Stand by Me",
-    "Stick Season",
-    "Stop Draggin’ My Heart Around",
-    "Stuck in the Middle with You",
-    "Sweet Caroline",
-    "Sweet Child o’ Mine",
-    "Sweet Home Alabama",
-    "Take Me Home, Country Roads",
-    "That’s So True",
-    "The Architect",
-    "The Bees",
-    "The Middle",
-    "The Times They Are A-Changin’",
-    "The Tree",
-    "The Weight",
-    "There Is a Light That Never Goes Out",
-    "There She Goes",
-    "These Boots Are Made for Walkin’",
-    "Till There Was You",
-    "Up on Cripple Creek",
-    "Weather with You",
-    "What a Wonderful World",
-    "When You’re Gone",
-    "Whiskey in Your Water",
-    "Whose Bed Have Your Boots Been Under?",
-    "Wildflowers",
-    "With or Without You",
-    "Wonderful Tonight",
-    "Yellow",
-    "You Ain’t Got to Die (to Be Dead to Me)",
-    "Zombie"
+    {
+      "title": "(Lover) You Don’t Treat Me No Good",
+      "artist": "Sonia Dada"
+    },
+    {
+      "title": "867-5309 / Jenny",
+      "artist": "Tommy Tutone"
+    },
+    {
+      "title": "A Life Where We Work Out",
+      "artist": "Flatland Cavalry"
+    },
+    {
+      "title": "A Long December",
+      "artist": "Counting Crows"
+    },
+    {
+      "title": "Accidentally in Love",
+      "artist": "Counting Crows"
+    },
+    {
+      "title": "Acrobat",
+      "artist": "U2"
+    },
+    {
+      "title": "Across the Universe",
+      "artist": "The Beatles"
+    },
+    {
+      "title": "Alcohol",
+      "artist": "Brad Paisley"
+    },
+    {
+      "title": "All I Have to Do",
+      "artist": "The Everly Brothers"
+    },
+    {
+      "title": "All Over Now",
+      "artist": "Eric Hutchinson"
+    },
+    {
+      "title": "All Star",
+      "artist": "Smash Mouth"
+    },
+    {
+      "title": "All You Need Is Love",
+      "artist": "The Beatles"
+    },
+    {
+      "title": "Always on My Mind",
+      "artist": "Willie Nelson"
+    },
+    {
+      "title": "Anna Begins",
+      "artist": "Counting Crows"
+    },
+    {
+      "title": "Armadillo",
+      "artist": "Miranda Lambert"
+    },
+    {
+      "title": "Automobile",
+      "artist": "KALEO"
+    },
+    {
+      "title": "Bad Habits",
+      "artist": "Ed Sheeran"
+    },
+    {
+      "title": "Basket Case",
+      "artist": "Green Day"
+    },
+    {
+      "title": "Be Not So Fearful",
+      "artist": "Bill Fay"
+    },
+    {
+      "title": "Biscuits",
+      "artist": "Kacey Musgraves"
+    },
+    {
+      "title": "Bitin’ List",
+      "artist": "Tyler Childers"
+    },
+    {
+      "title": "Blackbird",
+      "artist": "The Beatles"
+    },
+    {
+      "title": "Blowin’ in the Wind",
+      "artist": "Bob Dylan"
+    },
+    {
+      "title": "Boulevard of Broken Dreams",
+      "artist": "Green Day"
+    },
+    {
+      "title": "Brown Eyed Girl",
+      "artist": "Van Morrison"
+    },
+    {
+      "title": "Bruises",
+      "artist": "Train feat. Ashley Monroe"
+    },
+    {
+      "title": "C.R.E.A.M.",
+      "artist": "Wu-Tang Clan"
+    },
+    {
+      "title": "Calling Baton Rouge",
+      "artist": "Garth Brooks"
+    },
+    {
+      "title": "Champagne Supernova",
+      "artist": "Oasis"
+    },
+    {
+      "title": "Choosin’ Texas",
+      "artist": "Ella Langley"
+    },
+    {
+      "title": "Coconut",
+      "artist": "Harry Nilsson"
+    },
+    {
+      "title": "Complicated",
+      "artist": "Avril Lavigne"
+    },
+    {
+      "title": "Crazy",
+      "artist": "Patsy Cline"
+    },
+    {
+      "title": "Crimson and Clover",
+      "artist": "Joan Jett"
+    },
+    {
+      "title": "Danny’s Song",
+      "artist": "Loggins & Messina"
+    },
+    {
+      "title": "Doctor My Eyes",
+      "artist": "Jackson Browne"
+    },
+    {
+      "title": "Don’t Dream It’s Over",
+      "artist": "Crowded House"
+    },
+    {
+      "title": "Don’t Get Me Wrong",
+      "artist": "The Pretenders"
+    },
+    {
+      "title": "Don’t Speak",
+      "artist": "No Doubt"
+    },
+    {
+      "title": "Don’t Think Twice, It’s All Right",
+      "artist": "Bob Dylan"
+    },
+    {
+      "title": "Emmylou",
+      "artist": "First Aid Kit"
+    },
+    {
+      "title": "Every Breaking Wave",
+      "artist": "U2"
+    },
+    {
+      "title": "Every Morning",
+      "artist": "Sugar Ray"
+    },
+    {
+      "title": "Fake Flowers",
+      "artist": "Maggie Rose"
+    },
+    {
+      "title": "Falling Slowly",
+      "artist": "Glen Hansard & Markéta Irglová"
+    },
+    {
+      "title": "Fast Car",
+      "artist": "Tracy Chapman"
+    },
+    {
+      "title": "For What It’s Worth",
+      "artist": "Buffalo Springfield"
+    },
+    {
+      "title": "Forever Young",
+      "artist": "Rhiannon Giddens & Iron & Wine"
+    },
+    {
+      "title": "Found Out About You",
+      "artist": "Gin Blossoms"
+    },
+    {
+      "title": "Free Fallin’",
+      "artist": "Tom Petty"
+    },
+    {
+      "title": "Friday I’m in Love",
+      "artist": "The Cure"
+    },
+    {
+      "title": "Give Me Novacaine",
+      "artist": "Green Day"
+    },
+    {
+      "title": "Give Me One Reason",
+      "artist": "Tracy Chapman"
+    },
+    {
+      "title": "Go Your Own Way",
+      "artist": "The Cranberries"
+    },
+    {
+      "title": "Gone Gone Gone (Done Moved On)",
+      "artist": "Robert Plant & Alison Krauss"
+    },
+    {
+      "title": "Goose Chase",
+      "artist": "Muscadine Bloodline"
+    },
+    {
+      "title": "Graceland",
+      "artist": "Paul Simon"
+    },
+    {
+      "title": "Hallelujah",
+      "artist": "Leonard Cohen / Jeff Buckley"
+    },
+    {
+      "title": "Harvest Moon",
+      "artist": "Neil Young"
+    },
+    {
+      "title": "Head over Feet",
+      "artist": "Alanis Morissette"
+    },
+    {
+      "title": "Here",
+      "artist": "Mumford & Sons"
+    },
+    {
+      "title": "Hey Jude",
+      "artist": "The Beatles"
+    },
+    {
+      "title": "I Belong to You",
+      "artist": "Brandi Carlile"
+    },
+    {
+      "title": "I Only Miss You",
+      "artist": "Megan Moroney feat. Ed Sheeran"
+    },
+    {
+      "title": "I Won’t Back Down",
+      "artist": "Tom Petty"
+    },
+    {
+      "title": "If I Fell",
+      "artist": "The Beatles"
+    },
+    {
+      "title": "In His Arms",
+      "artist": "Miranda Lambert"
+    },
+    {
+      "title": "Into the Mystic",
+      "artist": "Van Morrison"
+    },
+    {
+      "title": "Is This Love",
+      "artist": "Bob Marley"
+    },
+    {
+      "title": "It Makes No Difference",
+      "artist": "The Band"
+    },
+    {
+      "title": "I’m Like a Bird",
+      "artist": "Nelly Furtado"
+    },
+    {
+      "title": "Jackson",
+      "artist": "Johnny Cash & June Carter Cash"
+    },
+    {
+      "title": "Jersey Giant",
+      "artist": "Elle King / Tyler Childers"
+    },
+    {
+      "title": "Jolene",
+      "artist": "Dolly Parton"
+    },
+    {
+      "title": "July",
+      "artist": "Noah Cyrus feat. Leon Bridges"
+    },
+    {
+      "title": "Jumper",
+      "artist": "Third Eye Blind"
+    },
+    {
+      "title": "King of the Road",
+      "artist": "Roger Miller"
+    },
+    {
+      "title": "Kiss Me",
+      "artist": "Sixpence None the Richer"
+    },
+    {
+      "title": "L.A. Freeway",
+      "artist": "Guy Clark"
+    },
+    {
+      "title": "Landslide",
+      "artist": "Fleetwood Mac"
+    },
+    {
+      "title": "Last Time",
+      "artist": "Medium Build"
+    },
+    {
+      "title": "Let Her Go",
+      "artist": "Passenger"
+    },
+    {
+      "title": "Let It Be",
+      "artist": "The Beatles"
+    },
+    {
+      "title": "Like a Rolling Stone",
+      "artist": "Bob Dylan"
+    },
+    {
+      "title": "Little Talks",
+      "artist": "Of Monsters and Men"
+    },
+    {
+      "title": "Losing My Religion",
+      "artist": "R.E.M."
+    },
+    {
+      "title": "Lotta Love",
+      "artist": "Neil Young"
+    },
+    {
+      "title": "Low Rising",
+      "artist": "The Swell Season"
+    },
+    {
+      "title": "Mad World",
+      "artist": "Tears for Fears"
+    },
+    {
+      "title": "Malibu",
+      "artist": "Hole"
+    },
+    {
+      "title": "Marfa Lights",
+      "artist": "Kaitlin Butts"
+    },
+    {
+      "title": "Message to My Girl",
+      "artist": "Split Enz"
+    },
+    {
+      "title": "No Scrubs",
+      "artist": "TLC"
+    },
+    {
+      "title": "Not Strong Enough",
+      "artist": "boygenius"
+    },
+    {
+      "title": "Oh, Tonight",
+      "artist": "Josh Abbott Band feat. Kacey Musgraves"
+    },
+    {
+      "title": "On a Train Back to Boston",
+      "artist": "Stella Lefty"
+    },
+    {
+      "title": "One",
+      "artist": "U2"
+    },
+    {
+      "title": "One Headlight",
+      "artist": "The Wallflowers"
+    },
+    {
+      "title": "Overkill",
+      "artist": "Colin Hay / Men at Work"
+    },
+    {
+      "title": "Paint It Black",
+      "artist": "The Rolling Stones"
+    },
+    {
+      "title": "Pancho and Lefty",
+      "artist": "Townes Van Zandt"
+    },
+    {
+      "title": "Peace of Mind",
+      "artist": "Boston"
+    },
+    {
+      "title": "Peaceful Easy Feeling",
+      "artist": "Eagles"
+    },
+    {
+      "title": "Pieces",
+      "artist": "Muscadine Bloodline"
+    },
+    {
+      "title": "Pink Pony Club",
+      "artist": "Chappell Roan"
+    },
+    {
+      "title": "Shake It Off",
+      "artist": "Taylor Swift"
+    },
+    {
+      "title": "She Likes Girls",
+      "artist": "Dexter and The Moonrocks"
+    },
+    {
+      "title": "Ship to Wreck",
+      "artist": "Florence + the Machine"
+    },
+    {
+      "title": "Song for Someone",
+      "artist": "U2"
+    },
+    {
+      "title": "Song of Good Hope",
+      "artist": "Glen Hansard"
+    },
+    {
+      "title": "Speak Too Soon",
+      "artist": "Wild Rivers"
+    },
+    {
+      "title": "Stand by Me",
+      "artist": "Ben E. King"
+    },
+    {
+      "title": "Stick Season",
+      "artist": "Noah Kahan"
+    },
+    {
+      "title": "Stop Draggin’ My Heart Around",
+      "artist": "Stevie Nicks & Tom Petty and the Heartbreakers"
+    },
+    {
+      "title": "Stuck in the Middle with You",
+      "artist": "Stealers Wheel"
+    },
+    {
+      "title": "Sweet Caroline",
+      "artist": "Neil Diamond"
+    },
+    {
+      "title": "Sweet Child o’ Mine",
+      "artist": "Guns N' Roses / Sheryl Crow"
+    },
+    {
+      "title": "Sweet Home Alabama",
+      "artist": "Lynyrd Skynyrd"
+    },
+    {
+      "title": "Take Me Home, Country Roads",
+      "artist": "John Denver"
+    },
+    {
+      "title": "That’s So True",
+      "artist": "Gracie Abrams"
+    },
+    {
+      "title": "The Architect",
+      "artist": "Kacey Musgraves"
+    },
+    {
+      "title": "The Bees",
+      "artist": "Lee Ann Womack"
+    },
+    {
+      "title": "The Middle",
+      "artist": "Jimmy Eat World"
+    },
+    {
+      "title": "The Times They Are A-Changin’",
+      "artist": "Bob Dylan"
+    },
+    {
+      "title": "The Tree",
+      "artist": "Maren Morris"
+    },
+    {
+      "title": "The Weight",
+      "artist": "The Band"
+    },
+    {
+      "title": "There Is a Light That Never Goes Out",
+      "artist": "The Smiths"
+    },
+    {
+      "title": "There She Goes",
+      "artist": "Sixpence None the Richer"
+    },
+    {
+      "title": "These Boots Are Made for Walkin’",
+      "artist": "Nancy Sinatra"
+    },
+    {
+      "title": "Till There Was You",
+      "artist": "The Beatles"
+    },
+    {
+      "title": "Up on Cripple Creek",
+      "artist": "The Band"
+    },
+    {
+      "title": "Weather with You",
+      "artist": "Crowded House"
+    },
+    {
+      "title": "What a Wonderful World",
+      "artist": "Louis Armstrong"
+    },
+    {
+      "title": "When You’re Gone",
+      "artist": "Bryan Adams & Melanie C"
+    },
+    {
+      "title": "Whiskey in Your Water",
+      "artist": "Evan Felker"
+    },
+    {
+      "title": "Whose Bed Have Your Boots Been Under?",
+      "artist": "Shania Twain"
+    },
+    {
+      "title": "Wildflowers",
+      "artist": "Tom Petty"
+    },
+    {
+      "title": "With or Without You",
+      "artist": "U2"
+    },
+    {
+      "title": "Wonderful Tonight",
+      "artist": "Eric Clapton"
+    },
+    {
+      "title": "Yellow",
+      "artist": "Coldplay"
+    },
+    {
+      "title": "You Ain’t Got to Die (to Be Dead to Me)",
+      "artist": "Kaitlin Butts"
+    },
+    {
+      "title": "Zombie",
+      "artist": "The Cranberries"
+    }
   ],
   "holiday": [
-    "A Very Willie Christmas",
-    "Fairytale of New York",
-    "Feliz Navidad",
-    "Have Yourself a Merry Little Christmas"
+    {
+      "title": "A Very Willie Christmas",
+      "artist": "Kacey Musgraves feat. Willie Nelson"
+    },
+    {
+      "title": "Fairytale of New York",
+      "artist": "The Pogues feat. Kirsty MacColl"
+    },
+    {
+      "title": "Feliz Navidad",
+      "artist": "José Feliciano"
+    },
+    {
+      "title": "Have Yourself a Merry Little Christmas",
+      "artist": "Judy Garland"
+    }
   ]
 }
