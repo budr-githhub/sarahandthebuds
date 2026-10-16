@@ -1,6 +1,6 @@
 # Sarah & the Buds — current status
 
-Updated October 10, 2026. Owner: Bud. Implementation: Codex. Published and verified; no release approval is pending.
+Updated October 16, 2026. Owner: Bud. Implementation: Codex. Published and verified; no release approval is pending.
 
 ## Friends additions — published and verified, September 17, 2026
 
@@ -71,3 +71,7 @@ Owner: Codex. Branch `feat/pages-cms-trial`, base `e194b60`. Scope: Shows and si
 Automatic main-branch documentation commits were not enabled: approval review rejected persistent workflow write access. The workflow only validates and uploads a report; it has no repository write permission.
 
 PR #31 (`ce9bc6967e5730b4f7b3098c9be7b07243e70d19`) deployed October 10. Live browser verified all ten real show cards and the Manage shows footer link. Read-only report workflow run `38090448305` succeeded. Pages CMS sign-in is open; terms acceptance, GitHub app authorization and first save remain with Bud.
+
+## Songbook artists and request proposal — October 16
+
+Owner: Codex. Branch: `feat/songbook-artists`. Artist names added to all 146 cover/holiday selections; homepage remains compact. Private master used for metadata only. Source, copy deck and songbook documentation updated together. Six-page build passed; browser verified all 146 artist labels, three back-to-top links and no horizontal overflow at 319px. All existing titles and homepage samples are unchanged. Publication verification pending. [Request and Venmo plan](song-requests-plan.md) is proposed only; no new payment or notification service is enabled. Bud needs to confirm the Venmo profile, notification inbox and optional-tip policy before integration.

@@ -13,11 +13,12 @@ const total = sections.reduce((n, section) => n + section.songs.length, 0);
       <a href="/#songbook">← Back to the band</a>
       <h1>Our songbook</h1>
       <p>{total} covers and seasonal selections from our songbook. Original songs are available by request. Have a favorite in mind? <a href="mailto:booksarahandbud@gmail.com?subject=Song%20request">Ask us about it.</a></p>
+      <p class="artist-note">Artists identify familiar recordings, including cover versions featured in our songbook.</p>
       <nav aria-label="Songbook sections">{sections.map((section) => <a href={`#${section.id}`}>{section.title}</a>)}<a href="#originals">Originals</a></nav>
       {sections.map((section) => (
         <section aria-labelledby={section.id}>
           <h2 id={section.id} tabindex="-1">{section.title} <span>({section.songs.length})</span></h2>
-          <ul>{section.songs.map((song) => <li>{song}</li>)}</ul>
+          <ul>{section.songs.map((song) => <li><span class="song-title">{song.title}</span><span class="song-artist"> — {song.artist}</span></li>)}</ul>
           <a class="back-to-top" href="#top">Back to top ↑</a>
         </section>
       ))}
@@ -37,6 +38,8 @@ const total = sections.reduce((n, section) => n + section.songs.length, 0);
   h2 span { font-size: var(--text-small); font-weight: 400; }
   h2 { scroll-margin-top: 32px; }
   ul { columns: 2; column-gap: 32px; padding-left: 20px; }
-  li { break-inside: avoid; padding-block: 6px; }
+  li { break-inside: avoid; padding-block: 8px; overflow-wrap: anywhere; }
+  .song-title { font-weight: 600; }
+  .song-artist, .artist-note { color: var(--color-text, #D8D5CE); }
   @media(max-width:600px) { ul { columns: 1; } }
 </style>

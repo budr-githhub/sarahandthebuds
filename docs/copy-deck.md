@@ -193,6 +193,10 @@ Our songbook
 
 146 covers and seasonal selections from our songbook. Original songs are available by request. Have a favorite in mind? Ask us about it.
 
+Artists identify familiar recordings, including cover versions featured in our songbook.
+
+Each cover and holiday row displays **Title — Artist** from `src/data/songbook.json`.
+
 Covers
 Holiday songs
 Originals
