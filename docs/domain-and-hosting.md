@@ -73,3 +73,8 @@ PR #31 (`ce9bc6967e5730b4f7b3098c9be7b07243e70d19`) adds calendar editor configu
 ## October 16, 2026 — songbook artist labels
 
 PR #33 merged at `e97df7b84b39abe05a93918b1e623e160c85f2ed`. Production browser at https://sarahandthebuds.com/songbook/ verified 146 artist labels and no horizontal overflow. Six-page build passed before release. Request notifications and Venmo remain proposed only; no service, DNS or payment settings changed. See `song-requests-plan.md`.
+
+
+## October 27 calendar detail update
+
+Added the confirmed Toys for Tots charity note to the existing December 16, 2026 Georgetown Underground show. The live Shows page was checked before the change: it already displayed the correct event date, 6–8 PM time, venue, full-band lineup and venue links. October 17 and October 23 were correctly in Past. The change is limited to the event note; release status and live verification will be added after the GitHub change is merged and Cloudflare deploys.
