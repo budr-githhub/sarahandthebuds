@@ -243,3 +243,6 @@ PR #31 (`ce9bc69`) published the CMS trial configuration and website support; li
 **Alternatives considered:** Leave the listing without the charity detail; rejected because the confirmed purpose helps visitors understand the event.
 
 **Impact:** Added a concise note to the December 16 event record. No date, time, venue or performer changes. Other upcoming dates were checked against available notes; no additional confirmed bookings were found.
+
+
+**Release completed:** PR #35 merged as `c565287ebd66bdc0fc63679365523f5fda66f4d6`. Cloudflare reported a successful deployment; live Shows verified the Toys for Tots detail on October 27. Existing date, time, venue, lineup and automatic Past handling remain correct.
