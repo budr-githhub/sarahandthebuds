@@ -232,3 +232,14 @@ PR #31 (`ce9bc69`) published the CMS trial configuration and website support; li
 **Alternatives:** Title-only list; SMS-first notifications; mandatory merchant checkout. The latter two add setup and need owner decisions.
 
 **Impact:** Song records now contain title and artist. No private song text published. Request integration remains proposed in `docs/song-requests-plan.md`.
+
+
+## October 27, 2026 — December 16 charity detail
+
+**Decision:** Add “Toys for Tots charity event” to the existing December 16 Georgetown Underground show.
+
+**Reason:** Bud’s recent project context identified the date as a charity event for Toys for Tots; the date, venue and 6–8 PM time were already in the calendar.
+
+**Alternatives considered:** Leave the listing without the charity detail; rejected because the confirmed purpose helps visitors understand the event.
+
+**Impact:** Added a concise note to the December 16 event record. No date, time, venue or performer changes. Other upcoming dates were checked against available notes; no additional confirmed bookings were found.
