@@ -1,6 +1,6 @@
 # Sarah & the Buds — current status
 
-Updated October 16, 2026. Owner: Bud. Implementation: Codex. Published and verified; no release approval is pending.
+Updated October 27, 2026. Owner: Bud. Implementation: Codex. Published and verified; no release approval is pending.
 
 ## Friends additions — published and verified, September 17, 2026
 
@@ -19,7 +19,7 @@ Owner: Codex. Bud requested A–Z ordering within Musicians, Venues and Communit
 - Header on every page: About, Music, Shows, Press, Friends, Booking. Footer includes resource links.
 - Homepage: owner-approved inward-facing microphone S&B logo; band-only AI-edited hero; matching 4:5 band/duo portraits; 12 gallery photos without captions.
 - Songbook: 44 homepage artist rows in one disclosure; 146 cover/holiday selections with artist names on `/songbook/`; originals by request only. No specialty songs or named originals.
-- Shows: one calendar source in `src/data/events.json`; ten dates with venue locations, available website/directions links and confirmed act labels: seven full-band shows, Midway Fall Festival solo with Bud as a wandering minstrel, the October 17 collaboration and The Lost Dogs on November 17. October 3 removed because it did not take place. Eastern time and automatic Upcoming/Past movement. Back to Music links at top and bottom target `/#songbook`.
+- Shows: one calendar source in `src/data/events.json`; ten dates with venue locations, available website/directions links and confirmed act labels: seven full-band shows, Midway Fall Festival solo with Bud as a wandering minstrel, the October 17 collaboration, The Lost Dogs on November 17 and Georgetown Underground’s December 16 Toys for Tots charity event. October 3 removed because it did not take place. Eastern time and automatic Upcoming/Past movement. Back to Music links at top and bottom target `/#songbook`.
 - Press: approved band/duo introductions, copy buttons, four downloadable JPEGs, 16 logo/color variants in SVG/PNG/PDF, favicon assets and ZIPs. All four photos credited to Andrew Von Neida; Bud confirmed promotional-use permission.
 - Friends: seven musicians, five venues, two community friends; each group is alphabetized by displayed name. Zoe Zamora’s Facebook URL supplied by Bud. Personal stories/photos are optional future additions.
 
@@ -75,3 +75,8 @@ PR #31 (`ce9bc6967e5730b4f7b3098c9be7b07243e70d19`) deployed October 10. Live br
 ## Songbook artists and request proposal — October 16
 
 Owner: Codex. Branch: `feat/songbook-artists`. Artist names added to all 146 cover/holiday selections; homepage remains compact. Private master used for metadata only. Source, copy deck and songbook documentation updated together. Six-page build passed; browser verified all 146 artist labels, three back-to-top links and no horizontal overflow at 319px. All existing titles and homepage samples are unchanged. Published through PR #33 at `e97df7b84b39abe05a93918b1e623e160c85f2ed`; live browser verified all 146 artist labels and no horizontal overflow on October 16, 2026. [Request and Venmo plan](song-requests-plan.md) is proposed only; no new payment or notification service is enabled. Bud needs to confirm the Venmo profile, notification inbox and optional-tip policy before integration.
+
+
+## October 27 calendar check
+
+The live Shows page was reviewed on October 27. October 17 and October 23 correctly appear under Past; October 23 is the most recent completed show. Upcoming dates are November 17, December 12, December 16 and March 21, 2027. Bud’s recent project context identifies the December 16 Georgetown Underground show as a Toys for Tots charity event. Added that confirmed event note to the calendar source; the date, time, venue and band lineup were already present. No other upcoming dates were confirmed in the available project notes. Calendar release verification is recorded in the hosting notes after deployment.
