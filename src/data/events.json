@@ -57,6 +57,17 @@
     "status": "published"
   },
   {
+    "start": "2026-11-14",
+    "startTime": "12:00",
+    "endTime": "14:00",
+    "name": "Christmas Market — Shaker Village",
+    "venueId": "shaker-village",
+    "act": "other",
+    "performers": "Sarah & Leo",
+    "url": "https://shakervillageky.org/events/christmas-market-2026/",
+    "status": "published"
+  },
+  {
     "start": "2026-11-17",
     "startTime": "18:00",
     "endTime": "20:00",
@@ -66,6 +77,16 @@
     "notes": "John Prine tribute band featuring Bud Ratliff. Benefit for Wolf Run.",
     "status": "published",
     "act": "other"
+  },
+  {
+    "start": "2026-12-04",
+    "startTime": "19:00",
+    "endTime": "21:00",
+    "name": "Midway European Christmas Market",
+    "venueId": "downtown-midway",
+    "act": "other",
+    "performers": "Sarah & the Buds",
+    "status": "published"
   },
   {
     "start": "2026-12-12",
