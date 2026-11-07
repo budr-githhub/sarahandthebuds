@@ -78,3 +78,8 @@ PR #33 merged at `e97df7b84b39abe05a93918b1e623e160c85f2ed`. Production browser 
 ## October 27 calendar detail update
 
 Added the confirmed Toys for Tots charity note to the existing December 16, 2026 Georgetown Underground show. The live Shows page was checked before the change: it already displayed the correct event date, 6–8 PM time, venue, full-band lineup and venue links. October 17 and October 23 were correctly in Past. The change was published in PR #35, merged as `c565287ebd66bdc0fc63679365523f5fda66f4d6`. Cloudflare reported “Deployed successfully”; live Chrome verified the Toys for Tots note, the existing date/time/venue/band details, and correct Upcoming/Past placement on October 27. No build or data validation failure was reported.
+
+
+## November 7, 2026 — Christmas markets published
+
+PR #37 merged as `471680fd177c5faee7720031ab8ad2d00e467536` after Bud explicitly approved merging and publishing both listings. Cloudflare reported “Deployed successfully” and the calendar-report workflow passed. Live HTTP checks of https://sarahandthebuds.com/shows/ verified both Upcoming cards: November 14, noon–2 PM Eastern, Sarah & Leo at Shaker Village, with the official event link; December 4, 7–9 PM Eastern, Sarah & the Buds in Downtown Midway, KY. Twelve total records; the original ten event records and existing venue fields are preserved. Six-page build, three calendar tests, rendered metadata and whitespace checks passed. Browser visual QA was not performed. This supersedes the pending/blocked release status above.
