@@ -68,6 +68,16 @@
     "act": "other"
   },
   {
+    "start": "2026-12-04",
+    "startTime": "19:00",
+    "endTime": "21:00",
+    "name": "Midway European Christmas Market",
+    "venueId": "downtown-midway",
+    "act": "other",
+    "performers": "Sarah & the Buds",
+    "status": "published"
+  },
+  {
     "start": "2026-12-12",
     "startTime": "16:00",
     "endTime": "19:00",
