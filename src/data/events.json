@@ -57,6 +57,17 @@
     "status": "published"
   },
   {
+    "start": "2026-11-14",
+    "startTime": "12:00",
+    "endTime": "14:00",
+    "name": "Christmas Market — Shaker Village",
+    "venueId": "shaker-village",
+    "act": "other",
+    "performers": "Sarah & Leo",
+    "url": "https://shakervillageky.org/events/christmas-market-2026/",
+    "status": "published"
+  },
+  {
     "start": "2026-11-17",
     "startTime": "18:00",
     "endTime": "20:00",
