@@ -1,6 +1,6 @@
 # Sarah & the Buds — current status
 
-Updated October 27, 2026. Owner: Bud. Implementation: Codex. Published site retained; approved Midway market addition is in release preparation.
+Updated October 27, 2026. Owner: Bud. Implementation: Codex. Published site retained; approved Christmas market additions are on PR #37, awaiting explicit production merge approval.
 
 ## Friends additions — published and verified, September 17, 2026
 
@@ -87,3 +87,10 @@ The live Shows page was reviewed on October 27. October 17 and October 23 correc
 Owner: dot. Branch: `feat/midway-christmas-market`. Base: `ee6c7146e83fb644db2a691c08635aa3bd5ad98a`. Bud confirmed Friday, December 4, 2026, 7–9 PM Eastern in downtown Midway and approved pushing the reviewed listing. Add Sarah & the Buds using the named-performer field without asserting individual personnel or a full-band lineup. New downtown venue has no invented street address or website. Existing ten shows are unchanged. This release remains pending deployment verification.
 
 Validation: six-page production build, three calendar tests, eleven rendered cards, December 4 EST timestamps, Upcoming placement, preserved existing event records and whitespace checks passed. Deployment verification remains pending.
+
+
+## November 7 — Shaker Village Christmas Market
+
+Bud requested the November 14 Christmas Market listing as well. Official market page confirms the event; Kristen’s email confirms Sarah & Leo, noon–2 PM Eastern. Add the named performers without using the Sarah & Bud duo label. Preserve the established Shaker Village address and venue links; add the official event link. PR #37 now includes both market listings. Midway has been pushed; merge to main was stopped by approval review pending explicit production-publication approval. Neither addition is verified live.
+
+Combined verification: six-page production build, three calendar tests, twelve rendered cards, both market cards in Upcoming with correct Eastern timestamps, event link and named performers, preserved original ten event records and whitespace checks passed. Browser visual QA and production deployment remain unverified.
