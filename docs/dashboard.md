@@ -1,6 +1,6 @@
 # Sarah & the Buds — current status
 
-Updated October 27, 2026. Owner: Bud. Implementation: Codex. Published and verified; no release approval is pending.
+Updated October 27, 2026. Owner: Bud. Implementation: Codex. Published site retained; approved Midway market addition is in release preparation.
 
 ## Friends additions — published and verified, September 17, 2026
 
@@ -80,3 +80,10 @@ Owner: Codex. Branch: `feat/songbook-artists`. Artist names added to all 146 cov
 ## October 27 calendar check
 
 The live Shows page was reviewed on October 27. October 17 and October 23 correctly appear under Past; October 23 is the most recent completed show. Upcoming dates are November 17, December 12, December 16 and March 21, 2027. Bud’s recent project context identifies the December 16 Georgetown Underground show as a Toys for Tots charity event. Added that confirmed event note to the calendar source; the date, time, venue and band lineup were already present. No other upcoming dates were confirmed in the available project notes. Published in PR #35 (`c565287`); Cloudflare reported success and live Chrome verified the Toys for Tots note on October 27.
+
+
+## November 7 — Midway European Christmas Market
+
+Owner: dot. Branch: `feat/midway-christmas-market`. Base: `ee6c7146e83fb644db2a691c08635aa3bd5ad98a`. Bud confirmed Friday, December 4, 2026, 7–9 PM Eastern in downtown Midway and approved pushing the reviewed listing. Add Sarah & the Buds using the named-performer field without asserting individual personnel or a full-band lineup. New downtown venue has no invented street address or website. Existing ten shows are unchanged. This release remains pending deployment verification.
+
+Validation: six-page production build, three calendar tests, eleven rendered cards, December 4 EST timestamps, Upcoming placement, preserved existing event records and whitespace checks passed. Deployment verification remains pending.
