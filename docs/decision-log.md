@@ -246,3 +246,14 @@ PR #31 (`ce9bc69`) published the CMS trial configuration and website support; li
 
 
 **Release completed:** PR #35 merged as `c565287ebd66bdc0fc63679365523f5fda66f4d6`. Cloudflare reported a successful deployment; live Shows verified the Toys for Tots detail on October 27. Existing date, time, venue, lineup and automatic Past handling remain correct.
+
+
+## November 7, 2026 — Midway European Christmas Market
+
+**Decision:** Add the owner-confirmed December 4, 2026 market performance, 7–9 PM Eastern, Sarah & the Buds, Downtown Midway, KY.
+
+**Reason:** Bud confirmed the booking and approved pushing the reviewed Shows listing.
+
+**Alternatives considered:** Guessing a full-band lineup, street address, admission or event link; rejected because those details were not supplied.
+
+**Impact:** Add one event and one reusable venue; preserve the existing ten shows and automatic Upcoming/Past handling. Use the named-performer label rather than asserting individual personnel.
