@@ -268,3 +268,8 @@ PR #31 (`ce9bc69`) published the CMS trial configuration and website support; li
 **Alternatives considered:** Labeling the act Sarah & Bud or the full band; rejected because Sarah & Leo are the confirmed performers.
 
 **Impact:** One additional event using the existing Shaker Village venue. Both November 14 and December 4 market additions await production merge approval in PR #37.
+
+
+## November 7, 2026 — Christmas markets published
+
+PR #37 merged as `471680fd177c5faee7720031ab8ad2d00e467536` after Bud explicitly approved merging and publishing both listings. Cloudflare reported “Deployed successfully” and the calendar-report workflow passed. Live HTTP checks of https://sarahandthebuds.com/shows/ verified both Upcoming cards: November 14, noon–2 PM Eastern, Sarah & Leo at Shaker Village, with the official event link; December 4, 7–9 PM Eastern, Sarah & the Buds in Downtown Midway, KY. Twelve total records; the original ten event records and existing venue fields are preserved. Six-page build, three calendar tests, rendered metadata and whitespace checks passed. Browser visual QA was not performed. This supersedes the pending/blocked release status above.
