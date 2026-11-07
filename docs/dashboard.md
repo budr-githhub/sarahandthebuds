@@ -1,6 +1,6 @@
 # Sarah & the Buds — current status
 
-Updated October 27, 2026. Owner: Bud. Implementation: Codex. Published site retained; approved Christmas market additions are on PR #37, awaiting explicit production merge approval.
+Updated November 7, 2026. Owner: Bud. Implementation: Codex. Published site retained; both Christmas market additions are published and live-verified via PR #37.
 
 ## Friends additions — published and verified, September 17, 2026
 
@@ -94,3 +94,8 @@ Validation: six-page production build, three calendar tests, eleven rendered car
 Bud requested the November 14 Christmas Market listing as well. Official market page confirms the event; Kristen’s email confirms Sarah & Leo, noon–2 PM Eastern. Add the named performers without using the Sarah & Bud duo label. Preserve the established Shaker Village address and venue links; add the official event link. PR #37 now includes both market listings. Midway has been pushed; merge to main was stopped by approval review pending explicit production-publication approval. Neither addition is verified live.
 
 Combined verification: six-page production build, three calendar tests, twelve rendered cards, both market cards in Upcoming with correct Eastern timestamps, event link and named performers, preserved original ten event records and whitespace checks passed. Browser visual QA and production deployment remain unverified.
+
+
+## November 7, 2026 — Christmas markets published
+
+PR #37 merged as `471680fd177c5faee7720031ab8ad2d00e467536` after Bud explicitly approved merging and publishing both listings. Cloudflare reported “Deployed successfully” and the calendar-report workflow passed. Live HTTP checks of https://sarahandthebuds.com/shows/ verified both Upcoming cards: November 14, noon–2 PM Eastern, Sarah & Leo at Shaker Village, with the official event link; December 4, 7–9 PM Eastern, Sarah & the Buds in Downtown Midway, KY. Twelve total records; the original ten event records and existing venue fields are preserved. Six-page build, three calendar tests, rendered metadata and whitespace checks passed. Browser visual QA was not performed. This supersedes the pending/blocked release status above.
