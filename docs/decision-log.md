@@ -257,3 +257,14 @@ PR #31 (`ce9bc69`) published the CMS trial configuration and website support; li
 **Alternatives considered:** Guessing a full-band lineup, street address, admission or event link; rejected because those details were not supplied.
 
 **Impact:** Add one event and one reusable venue; preserve the existing ten shows and automatic Upcoming/Past handling. Use the named-performer label rather than asserting individual personnel.
+
+
+## November 7, 2026 — Shaker Village Christmas Market
+
+**Decision:** Add November 14, 2026, noon–2 PM Eastern, Sarah & Leo at Shaker Village’s Christmas Market.
+
+**Reason:** Bud requested the website addition; Kristen’s email confirms the named performers and performance time. Official event source: https://shakervillageky.org/events/christmas-market-2026/.
+
+**Alternatives considered:** Labeling the act Sarah & Bud or the full band; rejected because Sarah & Leo are the confirmed performers.
+
+**Impact:** One additional event using the existing Shaker Village venue. Both November 14 and December 4 market additions await production merge approval in PR #37.
