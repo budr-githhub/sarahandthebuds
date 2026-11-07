@@ -40,5 +40,11 @@
     "address": "3501 Lexington Road, Harrodsburg, KY 40330",
     "url": "https://shakervillageky.org/",
     "source": "https://shakervillageky.org/contact-us/"
+  },
+  "downtown-midway": {
+    "name": "Downtown Midway",
+    "city": "Downtown Midway, KY",
+    "address": null,
+    "url": null
   }
 }
