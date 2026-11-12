@@ -46,5 +46,12 @@
     "city": "Downtown Midway, KY",
     "address": null,
     "url": null
+  },
+  "kenwick-table": {
+    "name": "Kenwick Table",
+    "city": "Lexington, KY",
+    "address": null,
+    "url": "https://www.kenwicktable.com/",
+    "source": "https://www.kenwicktable.com/"
   }
 }
