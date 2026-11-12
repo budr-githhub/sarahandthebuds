@@ -79,6 +79,18 @@
     "act": "other"
   },
   {
+    "start": "2026-11-18",
+    "startTime": "17:30",
+    "endTime": "19:30",
+    "name": "Fellowship of the Song",
+    "venueId": "kenwick-table",
+    "act": "other",
+    "performers": "Bud Ratliff, Mo Bell, Zoë Zamora & Mela B",
+    "notes": "Songwriter round hosted by Bryce Ernest Taylor. Bud performing solo.",
+    "url": "https://facebook.com/events/s/fellowship-of-the-song-w-mo-be/1179124881211894/",
+    "status": "published"
+  },
+  {
     "start": "2026-12-04",
     "startTime": "19:00",
     "endTime": "21:00",
