@@ -584,6 +584,10 @@ Community friends
 
 More people and places that make our music community special.
 
+Goldenrod Guitars
+
+Visit Goldenrod Guitars ↗ → https://www.goldenrodguitars.com/
+
 Willcutt Guitars
 
 Guitars and music gear in Lexington
