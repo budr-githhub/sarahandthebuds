@@ -1,6 +1,6 @@
 # Sarah & the Buds — current status
 
-Updated November 7, 2026. Owner: Bud. Implementation: Codex. Published site retained; both Christmas market additions are published and live-verified via PR #37.
+Updated November 13, 2026. Owner: Bud. Implementation: Codex. Published site retained; both Christmas market additions are published and live-verified via PR #37.
 
 ## Friends additions — published and verified, September 17, 2026
 
@@ -21,7 +21,7 @@ Owner: Codex. Bud requested A–Z ordering within Musicians, Venues and Communit
 - Songbook: 44 homepage artist rows in one disclosure; 146 cover/holiday selections with artist names on `/songbook/`; originals by request only. No specialty songs or named originals.
 - Shows: one calendar source in `src/data/events.json`; ten dates with venue locations, available website/directions links and confirmed act labels: seven full-band shows, Midway Fall Festival solo with Bud as a wandering minstrel, the October 17 collaboration, The Lost Dogs on November 17 and Georgetown Underground’s December 16 Toys for Tots charity event. October 3 removed because it did not take place. Eastern time and automatic Upcoming/Past movement. Back to Music links at top and bottom target `/#songbook`.
 - Press: approved band/duo introductions, copy buttons, four downloadable JPEGs, 16 logo/color variants in SVG/PNG/PDF, favicon assets and ZIPs. All four photos credited to Andrew Von Neida; Bud confirmed promotional-use permission.
-- Friends: seven musicians, five venues, two community friends; each group is alphabetized by displayed name. Zoe Zamora’s Facebook URL supplied by Bud. Personal stories/photos are optional future additions.
+- Friends: seven musicians, five venues, three community friends; each group is alphabetized by displayed name. Zoe Zamora’s Facebook URL supplied by Bud. Personal stories/photos are optional future additions.
 
 ## Completed releases
 
@@ -99,3 +99,8 @@ Combined verification: six-page production build, three calendar tests, twelve r
 ## November 7, 2026 — Christmas markets published
 
 PR #37 merged as `471680fd177c5faee7720031ab8ad2d00e467536` after Bud explicitly approved merging and publishing both listings. Cloudflare reported “Deployed successfully” and the calendar-report workflow passed. Live HTTP checks of https://sarahandthebuds.com/shows/ verified both Upcoming cards: November 14, noon–2 PM Eastern, Sarah & Leo at Shaker Village, with the official event link; December 4, 7–9 PM Eastern, Sarah & the Buds in Downtown Midway, KY. Twelve total records; the original ten event records and existing venue fields are preserved. Six-page build, three calendar tests, rendered metadata and whitespace checks passed. Browser visual QA was not performed. This supersedes the pending/blocked release status above.
+
+
+## November 13 — Goldenrod Guitars
+
+Added Goldenrod Guitars to Community friends using the website supplied by Bud. Alphabetical placement is preserved; no description was added.
